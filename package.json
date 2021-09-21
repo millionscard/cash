@@ -1,27 +1,42 @@
 {
   "name": "@millionscard/cash",
   "version": "1.0.0",
-  "description": "Millions React Native components",
+  "description": "Millions UI Component Library for React Native",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint 'src/**/*.{js}'",
     "format": "prettier --write 'src/**/*.{js,md}'",
     "precommit": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prestorybook": "rnstl",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "src/**/*.{js,md}": "prettier --write"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "expo": "42.0.3"
+  },
   "devDependencies": {
+    "@babel/core": "7.15.5",
+    "@storybook/addon-actions": "6.3.8",
+    "@storybook/addon-essentials": "6.3.8",
+    "@storybook/addon-links": "6.3.8",
+    "@storybook/react": "6.3.8",
+    "@storybook/react-native": "5.3.25",
+    "babel-loader": "8.2.2",
     "eslint": "7.32.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-react": "7.26.0",
+    "expo-cli": "4.11.0",
     "husky": "7.0.2",
     "lint-staged": "11.1.2",
-    "prettier": "2.4.1"
+    "prettier": "2.4.1",
+    "react-dom": "17.0.2",
+    "react-native": "0.65.1",
+    "react-native-storybook-loader": "2.0.4",
+    "react-native-web": "0.17.1"
   }
 }

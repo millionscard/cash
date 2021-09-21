@@ -1,3 +1,3 @@
 # cash
 
-> Millions React Native components
+> Millions UI Component Library for React Native

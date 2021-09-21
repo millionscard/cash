@@ -2,3 +2,4 @@ node_modules
 \__*
 *.log
 .env
+.expo
