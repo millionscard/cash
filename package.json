@@ -4,8 +4,14 @@
   "description": "Millions React Native components",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint src/**/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint 'src/**/*.{js}'",
+    "format": "prettier --write 'src/**/*.{js,md}'",
+    "precommit": "lint-staged",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "src/**/*.{js,md}": "prettier --write"
   },
   "keywords": [],
   "author": "",
