@@ -4,7 +4,7 @@
 
 <h1 align="center">Cash</h1>
 
-<p align="center">Millions UI Component Library for React Native</p>
+<p align="center">Millions UI Component Library for React Native & Web</p>
 
 <p align="center">
   <a href="https://github.com/millionscard/cash/actions/workflows/ci.yml">

@@ -1,7 +1,7 @@
 {
   "name": "@millionscard/cash",
   "version": "1.0.0",
-  "description": "Millions UI Component Library for React Native",
+  "description": "Millions UI Component Library for React Native & Web",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
