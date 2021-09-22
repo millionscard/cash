@@ -14,7 +14,8 @@
     "build-storybook": "build-storybook"
   },
   "lint-staged": {
-    "src/**/*.{js,md}": "prettier --write"
+    "src/**/*.{js,md}": "prettier --write",
+    "src/**/*.js": "eslint"
   },
   "dependencies": {
     "expo": "42.0.3"
