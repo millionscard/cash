@@ -1,6 +1,5 @@
-import React from 'react';
-import { Button } from 'react-native';
+import styled from 'styled-components/native';
 
-const ButtonBase = (props) => <Button {...props} />;
+const ButtonBase = styled.Pressable``;
 
 export default ButtonBase;
