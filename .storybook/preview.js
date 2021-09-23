@@ -1,3 +1,4 @@
+import React from 'react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 
 export const parameters = {
@@ -25,3 +26,11 @@ export const parameters = {
     ],
   },
 };
+
+export const decorators = [
+  Story => (
+    <div style={{ height: '100vh' }}>
+      <Story />
+    </div>
+  ),
+];
