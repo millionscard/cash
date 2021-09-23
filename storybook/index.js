@@ -1,4 +1,4 @@
-import { configure, getStorybookUI } from "@storybook/react-native";
+import { configure, getStorybookUI } from '@storybook/react-native';
 import { loadStories } from './storyLoader';
 
 const StorybookUIRoot = getStorybookUI({
@@ -10,10 +10,8 @@ configure(() => {
   // manually import files ending in *.stories.js
   // require("./src/stories");
 
-  // Workaround to prevent a stories/index.js with exports
+  // Workaround to prevent a stories/index.js with all story exports
   loadStories();
 }, module);
 
 export default StorybookUIRoot;
-
-
