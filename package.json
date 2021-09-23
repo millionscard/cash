@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Millions UI Component Library for React Native & Web",
   "main": "src/index.js",
+  "files": [
+    "src"
+  ],
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
     "lint": "eslint 'src/**/*.js'",
