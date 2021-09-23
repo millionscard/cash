@@ -1,5 +1,8 @@
 module.exports = {
-  stories: ['../storybook/stories/**/*.stories.mdx', '../storybook/stories/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: [
+    '../storybook/stories/**/*.stories.mdx',
+    '../storybook/stories/**/*.stories.@(js|jsx|ts|tsx)',
+  ],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
