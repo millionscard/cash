@@ -11,7 +11,8 @@ module.exports = {
 
     config.resolve.alias = {
       ...config.resolve.alias,
-      'react-native$': 'react-native-web',
+      'react-native': 'react-native-web',
+      'react-native-linear-gradient': 'react-native-web-linear-gradient',
       '@storybook/react-native': '@storybook/react',
       'styled-components/native': 'styled-components',
     };
