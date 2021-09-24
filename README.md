@@ -12,4 +12,8 @@
   </a>
 </p>
 
-> WIP ...
+## Development
+
+```
+npm run storybook
+```
