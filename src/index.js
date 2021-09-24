@@ -5,4 +5,4 @@ export { default as ThemeProvider } from './ThemeProvider';
 export { default as Box } from './Box';
 
 // Components
-export { default as Button } from './Button';
+export { default as Button, ButtonPrimary } from './Button';
