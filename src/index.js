@@ -7,4 +7,5 @@ export { default as Box } from './Box';
 // Components
 export { default as Button, ButtonPrimary } from './Button';
 export { default as Card } from './Card';
+export { default as Heading } from './Heading';
 export { default as Text } from './Text';
