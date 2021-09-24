@@ -17,8 +17,7 @@
     "build-storybook": "build-storybook"
   },
   "lint-staged": {
-    "**/*.{js,md}": "prettier --write --ignore-path ./.gitignore",
-    "src/**/*.js": "eslint"
+    "**/*.{js,md}": "prettier --write --ignore-path ./.gitignore"
   },
   "dependencies": {
     "expo": "42.0.3",
