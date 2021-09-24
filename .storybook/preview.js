@@ -1,5 +1,6 @@
 import React from 'react';
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import ThemeProvider from '../src/ThemeProvider';
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -29,8 +30,8 @@ export const parameters = {
 
 export const decorators = [
   Story => (
-    <div style={{ height: '100vh' }}>
+    <ThemeProvider>
       <Story />
-    </div>
+    </ThemeProvider>
   ),
 ];
