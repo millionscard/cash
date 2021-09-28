@@ -1,3 +1,5 @@
+import { lineHeight } from 'styled-system';
+
 const colors = {
   transparent: 'transparent',
   black: '#0a0b0c',
@@ -29,6 +31,18 @@ const fontSizes = {
   '6xl': 60,
 };
 
+const fontWeights = {
+  thin: 100,
+  ultraLight: 200,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  heavy: 800,
+  black: 900,
+};
+
 const radii = {
   none: 0,
   xs: 4,
@@ -46,6 +60,7 @@ const space = [0, 4, 8, 16, 24, 32, 40, 48, 64, 80, 96, 112, 128];
 const theme = {
   colors,
   fontSizes,
+  fontWeights,
   radii,
   space,
 };
