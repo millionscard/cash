@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LinearGradient from 'react-native-linear-gradient';
 import ButtonBase from './ButtonBase';
-import Box from '../Box';
+import Box from '@cash/Box';
 
 const colorSchemes = {
   purple: ['#8D34FF', '#5C00D0'],
