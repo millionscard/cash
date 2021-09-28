@@ -9,7 +9,7 @@ const HomeScreen = ({ navigation }) => {
     <ScrollView>
       <Box p="2">
         <Heading mb="3">Components</Heading>
-        {componentMapping.map(({ title: name }, index) => (
+        {componentMapping.sort(sortByKey('title')).map(({ title: name }, index) => (
           <Pressable
             accessibilityRole="button"
             key={`${name}-${index}`}
@@ -24,5 +24,23 @@ const HomeScreen = ({ navigation }) => {
     </ScrollView>
   );
 };
+
+function sortByKey(key) {
+  return function (a, b) {
+    // ignore upper and lowercase
+    const keyA = a[key].toUpperCase();
+    const keyB = b[key].toUpperCase();
+
+    if (keyA < keyB) {
+      return -1;
+    }
+    if (keyA > keyB) {
+      return 1;
+    }
+
+    // keys must be equal
+    return 0;
+  };
+}
 
 export default HomeScreen;
