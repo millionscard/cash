@@ -21,21 +21,25 @@
     "**/*.js": "eslint"
   },
   "dependencies": {
+    "@react-navigation/native": "6.0.4",
+    "@react-navigation/native-stack": "6.2.2",
     "@styled-system/theme-get": "5.1.2",
-    "react-native-linear-gradient": "2.5.6"
+    "react-native-linear-gradient": "2.5.6",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "3.8.0"
   },
   "devDependencies": {
     "@babel/core": "7.15.5",
     "@babel/runtime": "^7.12.5",
     "@react-native-community/eslint-config": "^2.0.0",
     "eslint": "7.32.0",
-    "metro-react-native-babel-preset": "^0.66.0",
-    "react-native-codegen": "^0.0.7",
     "husky": "7.0.2",
     "lint-staged": "11.1.2",
+    "metro-react-native-babel-preset": "^0.66.0",
     "prettier": "2.4.1",
     "react": "17.0.2",
     "react-native": "0.65.1",
+    "react-native-codegen": "^0.0.7",
     "styled-components": "5.3.1",
     "styled-system": "5.1.5"
   },
