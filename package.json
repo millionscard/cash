@@ -14,7 +14,7 @@
     "lint": "eslint 'src/**/*.js'",
     "format": "prettier --write '**/[!__]*.{js,md,json}' --ignore-path ./.gitignore",
     "precommit": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky install && npx pod-install"
   },
   "lint-staged": {
     "**/*.{js,md}": "prettier --write --ignore-path ./.gitignore",
