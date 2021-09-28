@@ -1,8 +1,8 @@
 import React from 'react';
 import { Pressable } from 'react-native';
 import { ScrollView } from 'react-native';
-import { Box, Heading } from '../../src';
-import componentMapping from '../config';
+import componentMapping from '@playground/config';
+import { Box, Heading } from '@cash';
 
 const HomeScreen = ({ navigation }) => {
   return (

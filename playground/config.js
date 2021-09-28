@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Button, ButtonPrimary, Heading, Box, Card } from '../src';
+import { Text, Button, ButtonPrimary, Heading, Box, Card } from '@cash';
 
 const components = [
   {

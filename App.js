@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import RootNavigator from './playground/components/RootNavigator';
-import { ThemeProvider } from './src';
+import RootNavigator from '@playground/components/RootNavigator';
+import { ThemeProvider } from '@cash';
 
 const App = () => {
   return (

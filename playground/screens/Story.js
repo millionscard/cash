@@ -1,8 +1,7 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import componentMapping from '../config';
-
-import { Heading, Box, Card } from '../../src';
+import componentMapping from '@playground/config';
+import { Heading, Box, Card } from '@cash';
 
 const StoryScreen = ({ route, navigation }) => {
   const componentName = route.params.name;
