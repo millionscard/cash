@@ -1,20 +1,15 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View, Text } from 'react-native';
-
-import { ThemeProvider, Box } from './src';
+import { NavigationContainer } from '@react-navigation/native';
+import RootNavigator from './playground/components/RootNavigator';
+import { ThemeProvider } from './src';
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
   return (
-    <SafeAreaView>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <ThemeProvider>
-          <Box>Cash Playground App</Box>
-        </ThemeProvider>
-      </ScrollView>
-    </SafeAreaView>
+    <NavigationContainer>
+      <ThemeProvider>
+        <RootNavigator />
+      </ThemeProvider>
+    </NavigationContainer>
   );
 };
 
