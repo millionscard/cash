@@ -4,35 +4,44 @@ import LinearGradient from 'react-native-linear-gradient';
 import ButtonBase from './ButtonBase';
 import Box from '../Box';
 
-const ButtonPrimary = ({ children, ...props }) => {
-  const { _text } = props;
+const colorSchemes = {
+  purple: ['#8D34FF', '#5C00D0'],
+  gold: ['#FFE970', '#E2A200'],
+  green: ['#4EDB86', '#1BA853'],
+};
+
+const ButtonPrimary = ({ children, colorScheme, ...props }) => {
+  const resolvedColorScheme = colorSchemes?.[colorScheme];
+
+  // TODO: pass margin props to ButtonBase to be able to add spacing
+
   return (
-    <ButtonBase {...props}>
-      <LinearGradient
-        colors={['#a45dff', '#712acc']}
-        start={{ x: 0.0, y: 0.25 }}
-        end={{ x: 0.5, y: 1.0 }}
-        style={{ borderRadius: 45 }}
-      >
-        <Box m={1} py={18} px={32} alignItems="center" _text={_text} bg="#8D34FF" borderRadius={45}>
-          {children}
-        </Box>
+    <ButtonBase>
+      <LinearGradient colors={resolvedColorScheme} style={{ borderRadius: 45 }}>
+        <LinearGradient colors={['rgba(255, 255, 255, 0.5)', 'rgba(255, 255, 255, 0)']}>
+          <LinearGradient colors={resolvedColorScheme} style={{ borderRadius: 45, margin: 3 }}>
+            <Box {...props}>{children}</Box>
+          </LinearGradient>
+        </LinearGradient>
       </LinearGradient>
     </ButtonBase>
   );
 };
 
 ButtonPrimary.propTypes = {
-  children: PropTypes.element.isRequired,
-  _text: PropTypes.object,
+  children: PropTypes.node,
+  colorScheme: PropTypes.oneOf(Object.keys(colorSchemes)),
 };
 
 ButtonPrimary.defaultProps = {
-  p: 0,
+  colorScheme: 'purple',
+  px: 32,
+  py: 18,
   _text: {
-    fontSize: 16,
+    textAlign: 'center',
     color: 'white',
-    fontWeight: 'bold',
+    fontWeight: 'semibold',
+    fontSize: 'xl',
   },
 };
 
