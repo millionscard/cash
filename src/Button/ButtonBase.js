@@ -18,7 +18,7 @@ const ButtonBase = ({ children, ...props }) => {
 };
 
 ButtonBase.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.node,
 };
 
 export default ButtonBase;
