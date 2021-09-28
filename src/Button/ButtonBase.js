@@ -6,15 +6,7 @@ import Box from '../Box';
 const StyledPressable = styled.Pressable``;
 
 const ButtonBase = ({ children, ...props }) => {
-  return (
-    <StyledPressable>
-      {children ? (
-        <Box bg="transparent" {...props}>
-          {children}
-        </Box>
-      ) : null}
-    </StyledPressable>
-  );
+  return <StyledPressable>{children ? <Box {...props}>{children}</Box> : null}</StyledPressable>;
 };
 
 ButtonBase.propTypes = {
