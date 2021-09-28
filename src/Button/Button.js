@@ -11,13 +11,13 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+  bg: 'white',
   px: 32,
   py: 18,
-  borderRadius: 45,
-  bg: 'white',
-  alignItems: 'center',
   _text: {
-    fontWeight: 'bold',
+    textAlign: 'center',
+    fontWeight: 'semibold',
+    fontSize: 'xl',
   },
 };
 
