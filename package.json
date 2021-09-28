@@ -11,7 +11,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "echo \"No test specified\" && exit 0",
-    "lint": "eslint 'src/**/*.js'",
+    "lint": "eslint '**/*.js'",
     "format": "prettier --write '**/[!__]*.{js,md,json}' --ignore-path ./.gitignore",
     "precommit": "lint-staged",
     "prepare": "husky install && npx pod-install"
