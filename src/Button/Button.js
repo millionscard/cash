@@ -12,6 +12,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   bg: 'white',
+  borderRadius: '2xl',
   px: 32,
   py: 18,
   _text: {
