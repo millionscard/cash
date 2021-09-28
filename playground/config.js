@@ -1,7 +1,46 @@
 import React from 'react';
-import { Text, Button, ButtonPrimary, Heading, Box } from '../src';
+import { Text, Button, ButtonPrimary, Heading, Box, Card } from '../src';
 
 const components = [
+  {
+    title: 'Button',
+    description: 'Primitive Element',
+    docs: null,
+    stories: [
+      {
+        title: 'Button',
+        description: '',
+        component: <Button background="white">Button</Button>,
+      },
+      {
+        title: 'Button Primary',
+        description: '',
+        component: (
+          <>
+            <ButtonPrimary>Button Primary</ButtonPrimary>
+            <ButtonPrimary colorScheme="gold">Button Primary</ButtonPrimary>
+            <ButtonPrimary colorScheme="green">Button Primary</ButtonPrimary>
+          </>
+        ),
+      },
+    ],
+  },
+  {
+    title: 'Box',
+    description: 'Primitive Element',
+    docs: null,
+    stories: [
+      {
+        title: 'Example',
+        description: '',
+        component: (
+          <Box bg="gray.100" p={3} _text={{ color: 'gray.300' }}>
+            Box
+          </Box>
+        ),
+      },
+    ],
+  },
   {
     title: 'Text',
     description: 'Primitive Element',
@@ -50,24 +89,18 @@ const components = [
     ],
   },
   {
-    title: 'Button',
-    description: 'Primitive Element',
+    title: 'Card',
+    description: null,
     docs: null,
     stories: [
       {
-        title: 'Button',
-        description: '',
-        component: <Button background="white">Button</Button>,
-      },
-      {
-        title: 'Button Primary',
+        title: 'Example',
         description: '',
         component: (
-          <>
-            <ButtonPrimary>Button Primary</ButtonPrimary>
-            <ButtonPrimary colorScheme="gold">Button Primary</ButtonPrimary>
-            <ButtonPrimary colorScheme="green">Button Primary</ButtonPrimary>
-          </>
+          <Card height={300} bg="yellow" justifyContent="space-between">
+            <Heading>Heading</Heading>
+            <Button>Some button</Button>
+          </Card>
         ),
       },
     ],
