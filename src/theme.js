@@ -1,5 +1,3 @@
-import { lineHeight } from 'styled-system';
-
 const colors = {
   transparent: 'transparent',
   black: '#0a0b0c',
