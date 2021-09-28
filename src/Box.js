@@ -5,9 +5,7 @@ import Text from './Text';
 
 const StyledBox = styled.View(space, color, typography, layout, flexbox, background, border);
 
-const Box = ({ children, ...props }) => {
-  const { _text } = props;
-
+const Box = ({ children, _text, ...props }) => {
   return (
     <StyledBox {...props}>
       {React.Children.map(children, child => {
