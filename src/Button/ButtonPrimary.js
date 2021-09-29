@@ -5,9 +5,19 @@ import ButtonBase from './ButtonBase';
 import Box from '@cash/Box';
 
 const colorSchemes = {
-  purple: ['#8D34FF', '#5C00D0'],
-  gold: ['#FFE970', '#E2A200'],
-  green: ['#4EDB86', '#1BA853'],
+  purple: {
+    gradient: ['#8D34FF', '#5C00D0'],
+    color: 'white',
+  },
+  gold: {
+    gradient: ['#FFDF32', '#FC8D39'],
+    color: '#996E00',
+    textShadow: '0px 2px 0px rgba(255, 255, 255, 0.35)',
+  },
+  green: {
+    gradient: ['#4EDB86', '#1BA853'],
+    color: 'white',
+  },
 };
 
 const ButtonPrimary = ({ children, colorScheme, ...props }) => {
@@ -15,15 +25,27 @@ const ButtonPrimary = ({ children, colorScheme, ...props }) => {
 
   // TODO: Refactor
   // Pass margin props to ButtonBase to be able to add spacing
-  const { m, mt, mr, mb, ml, mx, my, ...resolvedProps } = props;
+  const { m, mt, mr, mb, ml, mx, my, _text, ...resolvedProps } = props;
   const marginProps = { m, mx, my, mt, mr, mb, ml };
+  const textProps = {
+    _text: {
+      ..._text,
+      color: resolvedColorScheme.color,
+      textShadow: resolvedColorScheme.textShadow,
+    },
+  };
 
   return (
     <ButtonBase {...marginProps}>
-      <LinearGradient colors={resolvedColorScheme} style={{ borderRadius: 45 }}>
+      <LinearGradient colors={resolvedColorScheme.gradient} style={{ borderRadius: 45 }}>
         <LinearGradient colors={['rgba(255, 255, 255, 0.5)', 'rgba(255, 255, 255, 0)']}>
-          <LinearGradient colors={resolvedColorScheme} style={{ borderRadius: 45, margin: 3 }}>
-            <Box {...resolvedProps}>{children}</Box>
+          <LinearGradient
+            colors={resolvedColorScheme.gradient}
+            style={{ borderRadius: 45, margin: 3 }}
+          >
+            <Box {...resolvedProps} {...textProps}>
+              {children}
+            </Box>
           </LinearGradient>
         </LinearGradient>
       </LinearGradient>
@@ -42,7 +64,6 @@ ButtonPrimary.defaultProps = {
   py: 18,
   _text: {
     textAlign: 'center',
-    color: 'white',
     fontFamily: 'button',
     fontWeight: 'bold',
     fontSize: 'xl',
