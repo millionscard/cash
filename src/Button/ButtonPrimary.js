@@ -20,7 +20,7 @@ const colorSchemes = {
   },
 };
 
-const ButtonPrimary = ({ children, colorScheme, ...props }) => {
+const ButtonPrimary = ({ children, onPress, isDisabled, colorScheme, ...props }) => {
   const resolvedColorScheme = colorSchemes?.[colorScheme];
 
   // TODO: Refactor
@@ -36,7 +36,7 @@ const ButtonPrimary = ({ children, colorScheme, ...props }) => {
   };
 
   return (
-    <ButtonBase {...marginProps}>
+    <ButtonBase onPress={onPress} disabled={isDisabled} {...marginProps}>
       <LinearGradient colors={resolvedColorScheme.gradient} style={{ borderRadius: 45 }}>
         <LinearGradient colors={['rgba(255, 255, 255, 0.5)', 'rgba(255, 255, 255, 0)']}>
           <LinearGradient
@@ -55,6 +55,8 @@ const ButtonPrimary = ({ children, colorScheme, ...props }) => {
 
 ButtonPrimary.propTypes = {
   children: PropTypes.node,
+  onPress: PropTypes.func,
+  isDisabled: PropTypes.bool,
   colorScheme: PropTypes.oneOf(Object.keys(colorSchemes)),
 };
 

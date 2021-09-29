@@ -26,11 +26,17 @@ const components = [
         description: '',
         component: (
           <>
-            <Cash.ButtonPrimary mb="3">Button Primary</Cash.ButtonPrimary>
-            <Cash.ButtonPrimary mb="3" colorScheme="gold">
-              Button Primary
+            <Cash.ButtonPrimary mb="3">Button text</Cash.ButtonPrimary>
+            <Cash.ButtonPrimary
+              mb="3"
+              colorScheme="gold"
+              onPress={() => {
+                alert('👋 from the button');
+              }}
+            >
+              Button text
             </Cash.ButtonPrimary>
-            <Cash.ButtonPrimary colorScheme="green">Button Primary</Cash.ButtonPrimary>
+            <Cash.ButtonPrimary colorScheme="green">Button text</Cash.ButtonPrimary>
           </>
         ),
       },
