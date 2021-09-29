@@ -8,6 +8,8 @@ const Button = ({ children, ...props }) => {
 
 Button.propTypes = {
   children: PropTypes.node,
+  onPress: PropTypes.func,
+  isDisabled: PropTypes.bool,
 };
 
 Button.defaultProps = {

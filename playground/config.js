@@ -10,7 +10,16 @@ const components = [
       {
         title: 'Button',
         description: '',
-        component: <Cash.Button background="white">Button</Cash.Button>,
+        component: (
+          <Cash.Button
+            background="white"
+            onPress={() => {
+              alert('👋 from the button');
+            }}
+          >
+            Button text
+          </Cash.Button>
+        ),
       },
       {
         title: 'Button Primary',
