@@ -14,6 +14,16 @@
 		17FFFC68C9B06B3B6D8D2318 /* libPods-Cash-CashTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B964E01C73F6F68B1CCF95D8 /* libPods-Cash-CashTests.a */; };
 		71F4031E2A140A5A06AD90A8 /* libPods-Cash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F416762FFD22D2636CC5D68 /* libPods-Cash.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		22E143FC52D74FF99419969F /* Futura-PT-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5A3E54F2F4B40498355BDCD /* Futura-PT-Bold.ttf */; };
+		A5472CDD8D4F46D6BC06F1A0 /* Futura-PT-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55C78D80DB7E40B5B54C25C7 /* Futura-PT-Book.ttf */; };
+		9CAE122CFC8A4785A7824319 /* Futura-PT-Demi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A705D62D28BC4005A0CD13B4 /* Futura-PT-Demi.ttf */; };
+		279A5FAE22F94C12B70B1474 /* Futura-PT-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD517EE025E84DCEA78F78A4 /* Futura-PT-ExtraBold.ttf */; };
+		6B187EF14B9044A0A14708DF /* Futura-PT-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD57B8860424D1B992B0E3A /* Futura-PT-Heavy.ttf */; };
+		B432399D0C7D47D6A5120419 /* Futura-PT-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1F7BEB9D0EF4E7C8629943A /* Futura-PT-Light.ttf */; };
+		CC47C3BF075B4AAFAB247A15 /* Futura-PT-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5FBC98C958442DB8BB2C7C1 /* Futura-PT-Medium.ttf */; };
+		D04810C9DE1D4797A4825735 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4139D09A30CB4C4AB62DA3D7 /* SF-Pro-Text-Bold.otf */; };
+		FF92648684544B64A2A80D85 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FFC820C2E4E2484F8DBC9A8F /* SF-Pro-Text-Medium.otf */; };
+		D50C343F6E7C4202981E9B24 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 697305591DDC490DAD9A266C /* SF-Pro-Text-Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +54,16 @@
 		93FE03CB5DEE52B88A14E6B0 /* Pods-Cash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cash.debug.xcconfig"; path = "Target Support Files/Pods-Cash/Pods-Cash.debug.xcconfig"; sourceTree = "<group>"; };
 		B964E01C73F6F68B1CCF95D8 /* libPods-Cash-CashTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cash-CashTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F5A3E54F2F4B40498355BDCD /* Futura-PT-Bold.ttf */ = {isa = PBXFileReference; name = "Futura-PT-Bold.ttf"; path = "../assets/fonts/Futura-PT-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		55C78D80DB7E40B5B54C25C7 /* Futura-PT-Book.ttf */ = {isa = PBXFileReference; name = "Futura-PT-Book.ttf"; path = "../assets/fonts/Futura-PT-Book.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A705D62D28BC4005A0CD13B4 /* Futura-PT-Demi.ttf */ = {isa = PBXFileReference; name = "Futura-PT-Demi.ttf"; path = "../assets/fonts/Futura-PT-Demi.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CD517EE025E84DCEA78F78A4 /* Futura-PT-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Futura-PT-ExtraBold.ttf"; path = "../assets/fonts/Futura-PT-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EBD57B8860424D1B992B0E3A /* Futura-PT-Heavy.ttf */ = {isa = PBXFileReference; name = "Futura-PT-Heavy.ttf"; path = "../assets/fonts/Futura-PT-Heavy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B1F7BEB9D0EF4E7C8629943A /* Futura-PT-Light.ttf */ = {isa = PBXFileReference; name = "Futura-PT-Light.ttf"; path = "../assets/fonts/Futura-PT-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F5FBC98C958442DB8BB2C7C1 /* Futura-PT-Medium.ttf */ = {isa = PBXFileReference; name = "Futura-PT-Medium.ttf"; path = "../assets/fonts/Futura-PT-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4139D09A30CB4C4AB62DA3D7 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Bold.otf"; path = "../assets/fonts/SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FFC820C2E4E2484F8DBC9A8F /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Medium.otf"; path = "../assets/fonts/SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		697305591DDC490DAD9A266C /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; name = "SF-Pro-Text-Regular.otf"; path = "../assets/fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +142,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A49FEE8FAC9851CD9186162E /* Pods */,
+				AE0485E83FF9400EB807274B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -148,6 +169,24 @@
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		AE0485E83FF9400EB807274B /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				F5A3E54F2F4B40498355BDCD /* Futura-PT-Bold.ttf */,
+				55C78D80DB7E40B5B54C25C7 /* Futura-PT-Book.ttf */,
+				A705D62D28BC4005A0CD13B4 /* Futura-PT-Demi.ttf */,
+				CD517EE025E84DCEA78F78A4 /* Futura-PT-ExtraBold.ttf */,
+				EBD57B8860424D1B992B0E3A /* Futura-PT-Heavy.ttf */,
+				B1F7BEB9D0EF4E7C8629943A /* Futura-PT-Light.ttf */,
+				F5FBC98C958442DB8BB2C7C1 /* Futura-PT-Medium.ttf */,
+				4139D09A30CB4C4AB62DA3D7 /* SF-Pro-Text-Bold.otf */,
+				FFC820C2E4E2484F8DBC9A8F /* SF-Pro-Text-Medium.otf */,
+				697305591DDC490DAD9A266C /* SF-Pro-Text-Regular.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -245,6 +284,16 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				22E143FC52D74FF99419969F /* Futura-PT-Bold.ttf in Resources */,
+				A5472CDD8D4F46D6BC06F1A0 /* Futura-PT-Book.ttf in Resources */,
+				9CAE122CFC8A4785A7824319 /* Futura-PT-Demi.ttf in Resources */,
+				279A5FAE22F94C12B70B1474 /* Futura-PT-ExtraBold.ttf in Resources */,
+				6B187EF14B9044A0A14708DF /* Futura-PT-Heavy.ttf in Resources */,
+				B432399D0C7D47D6A5120419 /* Futura-PT-Light.ttf in Resources */,
+				CC47C3BF075B4AAFAB247A15 /* Futura-PT-Medium.ttf in Resources */,
+				D04810C9DE1D4797A4825735 /* SF-Pro-Text-Bold.otf in Resources */,
+				FF92648684544B64A2A80D85 /* SF-Pro-Text-Medium.otf in Resources */,
+				D50C343F6E7C4202981E9B24 /* SF-Pro-Text-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
