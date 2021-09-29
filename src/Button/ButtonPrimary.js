@@ -13,14 +13,17 @@ const colorSchemes = {
 const ButtonPrimary = ({ children, colorScheme, ...props }) => {
   const resolvedColorScheme = colorSchemes?.[colorScheme];
 
-  // TODO: pass margin props to ButtonBase to be able to add spacing
+  // TODO: Refactor
+  // Pass margin props to ButtonBase to be able to add spacing
+  const { m, mt, mr, mb, ml, mx, my, ...resolvedProps } = props;
+  const marginProps = { m, mx, my, mt, mr, mb, ml };
 
   return (
-    <ButtonBase>
+    <ButtonBase {...marginProps}>
       <LinearGradient colors={resolvedColorScheme} style={{ borderRadius: 45 }}>
         <LinearGradient colors={['rgba(255, 255, 255, 0.5)', 'rgba(255, 255, 255, 0)']}>
           <LinearGradient colors={resolvedColorScheme} style={{ borderRadius: 45, margin: 3 }}>
-            <Box {...props}>{children}</Box>
+            <Box {...resolvedProps}>{children}</Box>
           </LinearGradient>
         </LinearGradient>
       </LinearGradient>
