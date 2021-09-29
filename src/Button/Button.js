@@ -17,7 +17,8 @@ Button.defaultProps = {
   py: 18,
   _text: {
     textAlign: 'center',
-    fontWeight: 'semibold',
+    fontFamily: 'Futura PT Bold',
+    fontWeight: 'bold',
     fontSize: 'xl',
   },
 };
