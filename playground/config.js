@@ -107,6 +107,22 @@ const components = [
       },
     ],
   },
+  {
+    title: 'Gradient Text',
+    description: null,
+    docs: null,
+    stories: [
+      {
+        title: 'Example',
+        description: '',
+        component: (
+          <Cash.GradientText fontSize="2xl" fontWeight="bold">
+            Gradient text example
+          </Cash.GradientText>
+        ),
+      },
+    ],
+  },
 ];
 
 export default components;
