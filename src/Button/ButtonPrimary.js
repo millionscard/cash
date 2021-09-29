@@ -40,7 +40,8 @@ ButtonPrimary.defaultProps = {
   _text: {
     textAlign: 'center',
     color: 'white',
-    fontWeight: 'semibold',
+    fontFamily: 'Futura PT Bold',
+    fontWeight: 'bold',
     fontSize: 'xl',
   },
 };
