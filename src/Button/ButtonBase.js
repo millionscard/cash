@@ -5,7 +5,7 @@ import Box from '@cash/Box';
 
 const StyledPressable = styled.Pressable``;
 
-const ButtonBase = ({ children, ...props }) => {
+const ButtonBase = ({ children, onPress, isDisabled, ...props }) => {
   // TODO: Refactor
   // Pass margin props to ButtonBase to be able to add spacing
   const { m, mt, mr, mb, ml, mx, my, ...resolvedProps } = props;
@@ -13,7 +13,7 @@ const ButtonBase = ({ children, ...props }) => {
 
   return (
     <Box {...marginProps}>
-      <StyledPressable>
+      <StyledPressable onPress={onPress} disabled={isDisabled}>
         {children ? <Box {...resolvedProps}>{children}</Box> : null}
       </StyledPressable>
     </Box>
@@ -22,6 +22,8 @@ const ButtonBase = ({ children, ...props }) => {
 
 ButtonBase.propTypes = {
   children: PropTypes.node,
+  onPress: PropTypes.func,
+  isDisabled: PropTypes.bool,
 };
 
 export default ButtonBase;
