@@ -36,7 +36,7 @@ const components = [
         title: 'Example',
         description: '',
         component: (
-          <Cash.Box bg="gray.100" p={3} _text={{ color: 'gray.300' }}>
+          <Cash.Box bg="black.10" p={3} _text={{ color: 'black.300' }}>
             Box
           </Cash.Box>
         ),
@@ -54,9 +54,11 @@ const components = [
         component: (
           <>
             <Cash.Box alignItems="center" mb={5}>
+              <Cash.Text>default</Cash.Text>
               <Cash.Text fontWeight="bold">bold</Cash.Text>
-              <Cash.Text color="purple">purple color</Cash.Text>
-              <Cash.Text color="danger">danger color</Cash.Text>
+              <Cash.Text color="purple.500">colored</Cash.Text>
+              <Cash.Text color="fuschia.500">colored</Cash.Text>
+              <Cash.Text color="green.500">colored</Cash.Text>
             </Cash.Box>
 
             <Cash.Box alignItems="center">
@@ -86,7 +88,11 @@ const components = [
       {
         title: 'Example',
         description: '',
-        component: <Cash.Heading>Some default heading</Cash.Heading>,
+        component: (
+          <>
+            <Cash.Heading fontSize="3xl">A million ways to win</Cash.Heading>
+          </>
+        ),
       },
     ],
   },
@@ -99,9 +105,11 @@ const components = [
         title: 'Example',
         description: '',
         component: (
-          <Cash.Card height={300} bg="yellow" justifyContent="space-between">
-            <Cash.Heading>Heading</Cash.Heading>
-            <Cash.Button>Some button</Cash.Button>
+          <Cash.Card height={300} bg="yellow.500" justifyContent="space-between">
+            <Cash.Heading fontSize="2xl" mr="8">
+              Link your bank account to add funds
+            </Cash.Heading>
+            <Cash.Button>Link bank account</Cash.Button>
           </Cash.Card>
         ),
       },

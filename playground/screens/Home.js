@@ -15,9 +15,7 @@ const HomeScreen = ({ navigation }) => {
             key={`${name}-${index}`}
             onPress={() => navigation.navigate('Story', { name })}
           >
-            <Box py="2" _text={{ color: 'purple' }}>
-              {name}
-            </Box>
+            <Box py="2">{name}</Box>
           </Pressable>
         ))}
       </Box>

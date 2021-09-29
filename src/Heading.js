@@ -14,6 +14,7 @@ Heading.propTypes = {
 };
 
 Heading.defaultProps = {
+  fontFamily: 'heading',
   fontSize: 'xl',
   fontWeight: 'bold',
 };

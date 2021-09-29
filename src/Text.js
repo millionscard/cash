@@ -19,6 +19,7 @@ Text.propTypes = {
 };
 
 Text.defaultProps = {
+  fontFamily: 'text',
   fontSize: 'md',
 };
 

@@ -43,7 +43,7 @@ ButtonPrimary.defaultProps = {
   _text: {
     textAlign: 'center',
     color: 'white',
-    fontFamily: 'Futura PT Bold',
+    fontFamily: 'button',
     fontWeight: 'bold',
     fontSize: 'xl',
   },
