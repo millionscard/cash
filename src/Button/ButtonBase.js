@@ -6,7 +6,18 @@ import Box from '@cash/Box';
 const StyledPressable = styled.Pressable``;
 
 const ButtonBase = ({ children, ...props }) => {
-  return <StyledPressable>{children ? <Box {...props}>{children}</Box> : null}</StyledPressable>;
+  // TODO: Refactor
+  // Pass margin props to ButtonBase to be able to add spacing
+  const { m, mt, mr, mb, ml, mx, my, ...resolvedProps } = props;
+  const marginProps = { m, mx, my, mt, mr, mb, ml };
+
+  return (
+    <Box {...marginProps}>
+      <StyledPressable>
+        {children ? <Box {...resolvedProps}>{children}</Box> : null}
+      </StyledPressable>
+    </Box>
+  );
 };
 
 ButtonBase.propTypes = {
