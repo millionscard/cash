@@ -17,8 +17,10 @@ const components = [
         description: '',
         component: (
           <>
-            <ButtonPrimary>Button Primary</ButtonPrimary>
-            <ButtonPrimary colorScheme="gold">Button Primary</ButtonPrimary>
+            <ButtonPrimary mb="3">Button Primary</ButtonPrimary>
+            <ButtonPrimary mb="3" colorScheme="gold">
+              Button Primary
+            </ButtonPrimary>
             <ButtonPrimary colorScheme="green">Button Primary</ButtonPrimary>
           </>
         ),
