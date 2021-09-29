@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { color, space, typography } from 'styled-system';
+import { color, space, typography, shadow } from 'styled-system';
 
 const StyledText = styled.Text`
   ${color}
   ${space}
   ${typography}
+  ${shadow}
 `;
 
 const Text = ({ children, ...props }) => {
