@@ -1,5 +1,6 @@
 import React from 'react';
 import * as Cash from '@cash';
+import ModalScene from '@playground/scenes/Modal.scene.js';
 
 const components = [
   {
@@ -143,6 +144,18 @@ const components = [
             Gradient text example
           </Cash.GradientText>
         ),
+      },
+    ],
+  },
+  {
+    title: 'Modal',
+    description: null,
+    docs: null,
+    stories: [
+      {
+        title: 'Example',
+        description: '',
+        component: <ModalScene />,
       },
     ],
   },
