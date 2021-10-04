@@ -159,6 +159,28 @@ const components = [
       },
     ],
   },
+  {
+    title: 'Icon',
+    description: null,
+    docs: null,
+    stories: [
+      {
+        title: 'Examples',
+        description: '',
+        component: (
+          <>
+            <Cash.Box flexDirection="row">
+              {['LeftArrow', 'RightArrow'].map((iconName, idx) => (
+                <Cash.Box m="2" key={`${iconName}-${idx}`}>
+                  <Cash.Icon name={iconName} />
+                </Cash.Box>
+              ))}
+            </Cash.Box>
+          </>
+        ),
+      },
+    ],
+  },
 ];
 
 export default components;
