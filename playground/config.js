@@ -181,6 +181,24 @@ const components = [
       },
     ],
   },
+  {
+    title: 'Activity Indicator',
+    description: null,
+    docs: null,
+    stories: [
+      {
+        title: 'Examples',
+        description: '',
+        component: (
+          <>
+            <Cash.ActivityIndicator mb="5" />
+            <Cash.ActivityIndicator color="black.200" mb="5" />
+            <Cash.ActivityIndicator color="green.200" size={20} />
+          </>
+        ),
+      },
+    ],
+  },
 ];
 
 export default components;
