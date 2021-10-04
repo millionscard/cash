@@ -1,7 +1,7 @@
 import React from 'react';
 import { MaterialIndicator } from 'react-native-indicators';
-import theme from '@cash/theme';
-import Box from '@cash/Box';
+import theme from './theme';
+import Box from './Box';
 
 const ActivityIndicator = ({ color, size, ...props }) => {
   const [colorName, colorShade] = color?.split('.');

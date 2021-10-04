@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LinearGradient from 'react-native-linear-gradient';
 import MaskedView from '@react-native-masked-view/masked-view';
-import Text from '@cash/Text';
+import Text from './Text';
 
 const GradientText = ({ colors, coordinates, ...props }) => {
   return (

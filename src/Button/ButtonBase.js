@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import { css } from 'styled-components';
 import { variant, color, space, border } from 'styled-system';
-import ActivityIndicator from '@cash/ActivityIndicator';
-import Box from '@cash/Box';
+import ActivityIndicator from '../ActivityIndicator';
+import Box from '../Box';
 
 const sizeProps = ['xs', 'sm', 'md', 'lg'];
 const defaultSizeProp = 'lg';

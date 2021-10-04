@@ -1,6 +1,6 @@
 import React from 'react';
 import RNModal from 'react-native-modal';
-import Card from '@cash/Card';
+import Card from '../Card';
 
 const Modal = ({ children, onClose, ...props }) => {
   return (

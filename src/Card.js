@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import Box from '@cash/Box';
+import Box from './Box';
 
 const Card = styled(Box)``;
 
