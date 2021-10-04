@@ -5,8 +5,8 @@ export { default as ThemeProvider } from './ThemeProvider';
 export { default as Box } from './Box';
 
 // Components
-export { default as Button, ButtonPrimary } from './Button';
 export { default as ActivityIndicator } from './ActivityIndicator';
+export { default as Button, ButtonOutline, ButtonPrimary } from './Button';
 export { default as Modal } from './Modal';
 export { default as Card } from './Card';
 export { default as Heading } from './Heading';
