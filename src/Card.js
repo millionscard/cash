@@ -5,7 +5,7 @@ const Card = styled(Box)``;
 
 Card.defaultProps = {
   p: 20,
-  borderRadius: 20,
+  borderRadius: 'lg',
   bg: 'white',
 };
 

@@ -5,7 +5,7 @@ const radius = {
   md: 12,
   lg: 16,
   xl: 24,
-  '2xl': 32,
+  '2xl': 30,
   '3xl': 45,
   full: 9999,
 };
