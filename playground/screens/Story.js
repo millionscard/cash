@@ -9,9 +9,9 @@ const StoryScreen = ({ route, navigation }) => {
 
   return (
     <ScrollView>
-      <Box p="2">
-        {component.stories.map((story, idx) => (
-          <Card bg="white" my="2" key={`${story.title}-${idx}`}>
+      <Box flex={1} p="2">
+        {component?.stories.map((story, idx) => (
+          <Card flex={1} bg="white" my="2" key={`${story.title}-${idx}`}>
             <Heading mb="5">{story.title}</Heading>
             <Box>{story.component}</Box>
           </Card>

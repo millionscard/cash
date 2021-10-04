@@ -7,7 +7,7 @@ import { Box, Heading } from '@cash';
 const HomeScreen = ({ navigation }) => {
   return (
     <ScrollView>
-      <Box p="2">
+      <Box flex={1} p="2">
         <Heading mb="3">Components</Heading>
         {componentMapping.sort(sortByKey('title')).map(({ title: name }, index) => (
           <Pressable

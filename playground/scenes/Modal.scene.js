@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ButtonPrimary, Text, Heading, Modal } from '@cash';
+import { ButtonPrimary, ButtonOutline, Text, Heading, Modal } from '@cash';
 
 function ModalScene() {
   const [isModalVisible, setModalVisible] = useState(false);
@@ -9,7 +9,9 @@ function ModalScene() {
 
   return (
     <>
-      <ButtonPrimary onPress={toggleModal}>Show modal</ButtonPrimary>
+      <ButtonPrimary size="md" onPress={toggleModal}>
+        Show modal
+      </ButtonPrimary>
 
       <Modal isVisible={isModalVisible} onClose={toggleModal}>
         <Heading fontSize="2xl" mb="2">
@@ -19,9 +21,9 @@ function ModalScene() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna.
         </Text>
-        <ButtonPrimary onPress={toggleModal} mt="4">
+        <ButtonOutline size="md" onPress={toggleModal} mt="4" isFullWidth>
           Hide modal
-        </ButtonPrimary>
+        </ButtonOutline>
       </Modal>
     </>
   );

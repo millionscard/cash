@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Linking } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { NavigationContainer } from '@react-navigation/native';
-import RootNavigator from '@playground/components/RootNavigator';
-import { Box } from '@cash';
+import RootNavigator from './RootNavigator';
+import { ActivityIndicator, Box } from '@cash';
 
 const PERSISTENCE_KEY = 'NAVIGATION_STATE';
 
@@ -35,8 +35,8 @@ const RootComponent = () => {
 
   if (!isReady) {
     return (
-      <Box flex={1} alignItems="center" justifyContent="center">
-        Loading...
+      <Box flex={1} flexDirection="row" alignItems="center" justifyContent="center">
+        <ActivityIndicator />
       </Box>
     );
   }
