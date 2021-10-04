@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SvgIcon from 'react-native-svg-icon';
-import { G, Path } from 'react-native-svg';
+import { Path } from 'react-native-svg';
 
 // Each nameValuePair can be:
 // * Name: <Svg />; or
