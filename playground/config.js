@@ -1,4 +1,5 @@
 import React from 'react';
+import { Alert } from 'react-native';
 import * as Cash from '@cash';
 import ModalScene from '@playground/scenes/Modal.scene.js';
 
@@ -12,14 +13,22 @@ const components = [
         title: 'Button',
         description: '',
         component: (
-          <Cash.Button
-            background="white"
-            onPress={() => {
-              alert('👋 from the button');
-            }}
-          >
-            Button text
-          </Cash.Button>
+          <Cash.Card bg="purple.500">
+            <Cash.Button mb="3">Button text</Cash.Button>
+            <Cash.Button leftIcon={<Cash.Icon name="LeftArrow" />} mb="3">
+              Button text
+            </Cash.Button>
+            <Cash.Button rightIcon={<Cash.Icon name="RightArrow" />} mb="3">
+              Button text
+            </Cash.Button>
+            <Cash.Button mb="3" loadingText="Loading..." isLoading>
+              Button text
+            </Cash.Button>
+            <Cash.Button mb="3" isFullWidth isDisabled>
+              Disabled
+            </Cash.Button>
+            <Cash.Button size="md">Button text</Cash.Button>
+          </Cash.Card>
         ),
       },
       {
@@ -27,17 +36,48 @@ const components = [
         description: '',
         component: (
           <>
-            <Cash.ButtonPrimary mb="3">Button text</Cash.ButtonPrimary>
+            <Cash.ButtonPrimary mb="3" isLoading>
+              Button text
+            </Cash.ButtonPrimary>
             <Cash.ButtonPrimary
-              mb="3"
               colorScheme="gold"
+              mb="3"
+              loadingText="Loading Activity..."
+              isLoading
+            >
+              Button text
+            </Cash.ButtonPrimary>
+            <Cash.ButtonPrimary
+              colorScheme="green"
+              mb="3"
               onPress={() => {
-                alert('👋 from the button');
+                Alert.alert('Button pressed');
               }}
             >
               Button text
             </Cash.ButtonPrimary>
-            <Cash.ButtonPrimary colorScheme="green">Button text</Cash.ButtonPrimary>
+            <Cash.ButtonPrimary
+              size="md"
+              onPress={() => {
+                Alert.alert('Button pressed');
+              }}
+              isFullWidth
+              isDisabled
+            >
+              Button text
+            </Cash.ButtonPrimary>
+          </>
+        ),
+      },
+      {
+        title: 'Button Outline',
+        description: '',
+        component: (
+          <>
+            <Cash.ButtonOutline mb="3">Button text</Cash.ButtonOutline>
+            <Cash.ButtonOutline size="md" isFullWidth isDisabled isLoading>
+              Button text
+            </Cash.ButtonOutline>
           </>
         ),
       },
@@ -106,7 +146,36 @@ const components = [
         description: '',
         component: (
           <>
-            <Cash.Heading fontSize="3xl">A million ways to win</Cash.Heading>
+            <Cash.Heading numberOfLines={1} size="xs">
+              A million ways to win
+            </Cash.Heading>
+            <Cash.Heading numberOfLines={1} size="sm">
+              A million ways to win
+            </Cash.Heading>
+            <Cash.Heading numberOfLines={1} size="md">
+              A million ways to win
+            </Cash.Heading>
+            <Cash.Heading numberOfLines={1} size="lg">
+              A million ways to win
+            </Cash.Heading>
+            <Cash.Heading numberOfLines={1} size="xl">
+              A million ways to win
+            </Cash.Heading>
+            <Cash.Heading numberOfLines={1} size="2xl">
+              A million ways to win
+            </Cash.Heading>
+            <Cash.Heading numberOfLines={1} size="3xl">
+              A million ways to win
+            </Cash.Heading>
+            <Cash.Heading numberOfLines={1} size="4xl">
+              A million ways to win
+            </Cash.Heading>
+            <Cash.Heading numberOfLines={1} size="5xl">
+              A million ways to win
+            </Cash.Heading>
+            <Cash.Heading numberOfLines={1} size="6xl">
+              A million ways to win
+            </Cash.Heading>
           </>
         ),
       },
@@ -122,7 +191,7 @@ const components = [
         description: '',
         component: (
           <Cash.Card height={300} bg="yellow.500" justifyContent="space-between">
-            <Cash.Heading fontSize="2xl" mr="8">
+            <Cash.Heading size="lg" mr="8">
               Link your bank account to add funds
             </Cash.Heading>
             <Cash.Button>Link bank account</Cash.Button>
