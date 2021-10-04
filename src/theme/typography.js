@@ -6,17 +6,20 @@ const typography = {
   },
 
   fontSizes: {
-    xxs: 10,
+    '2xs': 10,
     xs: 12,
     sm: 14,
     md: 16,
     lg: 18,
     xl: 20,
-    '2xl': 24,
-    '3xl': 30,
-    '4xl': 36,
-    '5xl': 48,
-    '6xl': 60,
+    '2xl': 22,
+    '3xl': 24,
+    '4xl': 28,
+    '5xl': 36,
+    '6xl': 48,
+    '7xl': 60,
+    '8xl': 80,
+    '9xl': 96,
   },
 
   fontWeights: {
