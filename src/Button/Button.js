@@ -1,28 +1,67 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ButtonBase from './ButtonBase';
+import ButtonBase, { ButtonContent } from './ButtonBase';
 
-const Button = ({ children, ...props }) => {
-  return <ButtonBase {...props}>{children}</ButtonBase>;
+const colorSchemes = {
+  white: {
+    bg: 'white',
+    color: 'black.400',
+  },
+};
+
+const Button = ({
+  children,
+  onPress,
+  isDisabled,
+  isFullWidth,
+  isLoading,
+  loadingText,
+  leftIcon,
+  rightIcon,
+  size,
+  colorScheme,
+  ...props
+}) => {
+  const resolvedColorScheme = colorSchemes?.[colorScheme];
+
+  return (
+    <ButtonBase
+      onPress={onPress}
+      isDisabled={isDisabled}
+      isFullWidth={isFullWidth}
+      bg={resolvedColorScheme?.bg}
+      {...props}
+    >
+      <ButtonContent
+        color={resolvedColorScheme?.color}
+        size={size}
+        isDisabled={isDisabled}
+        isLoading={isLoading}
+        loadingText={loadingText}
+        leftIcon={leftIcon}
+        rightIcon={rightIcon}
+      >
+        {children}
+      </ButtonContent>
+    </ButtonBase>
+  );
 };
 
 Button.propTypes = {
   children: PropTypes.node,
   onPress: PropTypes.func,
   isDisabled: PropTypes.bool,
+  isFullWidth: PropTypes.bool,
+  isLoading: PropTypes.bool,
+  loadingText: PropTypes.string,
+  leftIcon: PropTypes.object,
+  rightIcon: PropTypes.object,
+  size: PropTypes.string,
+  colorScheme: PropTypes.oneOf(Object.keys(colorSchemes)),
 };
 
 Button.defaultProps = {
-  bg: 'white',
-  borderRadius: '2xl',
-  px: 32,
-  py: 18,
-  _text: {
-    textAlign: 'center',
-    fontFamily: 'button',
-    fontWeight: 'bold',
-    fontSize: 'xl',
-  },
+  colorScheme: 'white',
 };
 
 export default Button;

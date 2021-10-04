@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import LinearGradient from 'react-native-linear-gradient';
-import ButtonBase from './ButtonBase';
-import Box from '@cash/Box';
+import ButtonBase, { ButtonGradient, ButtonContent } from './ButtonBase';
 
 const colorSchemes = {
   purple: {
@@ -20,35 +18,39 @@ const colorSchemes = {
   },
 };
 
-const ButtonPrimary = ({ children, onPress, isDisabled, colorScheme, ...props }) => {
+const ButtonPrimary = ({
+  children,
+  onPress,
+  isDisabled,
+  isFullWidth,
+  isLoading,
+  loadingText,
+  size,
+  colorScheme,
+  ...props
+}) => {
   const resolvedColorScheme = colorSchemes?.[colorScheme];
-
-  // TODO: Refactor
-  // Pass margin props to ButtonBase to be able to add spacing
-  const { m, mt, mr, mb, ml, mx, my, _text, ...resolvedProps } = props;
-  const marginProps = { m, mx, my, mt, mr, mb, ml };
   const textProps = {
-    _text: {
-      ..._text,
-      color: resolvedColorScheme.color,
-      textShadow: resolvedColorScheme.textShadow,
-    },
+    color: resolvedColorScheme?.color,
+    textShadow: resolvedColorScheme?.textShadow,
   };
 
   return (
-    <ButtonBase onPress={onPress} disabled={isDisabled} {...marginProps}>
-      <LinearGradient colors={resolvedColorScheme.gradient} style={{ borderRadius: 45 }}>
-        <LinearGradient colors={['rgba(255, 255, 255, 0.5)', 'rgba(255, 255, 255, 0)']}>
-          <LinearGradient
-            colors={resolvedColorScheme.gradient}
-            style={{ borderRadius: 45, margin: 3 }}
-          >
-            <Box {...resolvedProps} {...textProps}>
+    <ButtonBase onPress={onPress} isDisabled={isDisabled} isFullWidth={isFullWidth} {...props}>
+      <ButtonGradient colors={resolvedColorScheme?.gradient} isDisabled={isDisabled}>
+        <ButtonGradient colors={['rgba(255, 255, 255, 0.5)', 'rgba(255, 255, 255, 0)']}>
+          <ButtonGradient colors={resolvedColorScheme?.gradient} m="3px">
+            <ButtonContent
+              size={size}
+              isLoading={isLoading}
+              loadingText={loadingText}
+              {...textProps}
+            >
               {children}
-            </Box>
-          </LinearGradient>
-        </LinearGradient>
-      </LinearGradient>
+            </ButtonContent>
+          </ButtonGradient>
+        </ButtonGradient>
+      </ButtonGradient>
     </ButtonBase>
   );
 };
@@ -57,19 +59,13 @@ ButtonPrimary.propTypes = {
   children: PropTypes.node,
   onPress: PropTypes.func,
   isDisabled: PropTypes.bool,
+  isLoading: PropTypes.bool,
+  loadingText: PropTypes.string,
   colorScheme: PropTypes.oneOf(Object.keys(colorSchemes)),
 };
 
 ButtonPrimary.defaultProps = {
   colorScheme: 'purple',
-  px: 32,
-  py: 18,
-  _text: {
-    textAlign: 'center',
-    fontFamily: 'button',
-    fontWeight: 'bold',
-    fontSize: 'xl',
-  },
 };
 
 export default ButtonPrimary;
