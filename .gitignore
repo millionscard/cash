@@ -2,6 +2,9 @@ node_modules
 \__*
 *.log
 
+# Docs (only as a reference for prettier)
+.cache
+public/
 
 # React Native CLI init
 # 👇
