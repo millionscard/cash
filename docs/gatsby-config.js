@@ -4,6 +4,7 @@ module.exports = {
     shortName: 'Cash',
     description: '💰 Millions Component Library for React Native',
   },
+  pathPrefix: '/cash',
   plugins: [
     {
       resolve: '@primer/gatsby-theme-doctocat',
