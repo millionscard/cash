@@ -12,8 +12,4 @@ import {Props} from '../src/props'
 </Box>
 ```
 
-## Props
-
-<Props of="Box" />
-
-Box also accepts all [styled system props](https://styled-system.com/table/).
+Box accepts all [styled system props](https://styled-system.com/table/).

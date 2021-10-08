@@ -5,7 +5,7 @@ import ModalScene from '@playground/scenes/Modal.scene.js';
 
 const components = [
   {
-    title: 'Button',
+    title: 'Buttons',
     description: 'Primitive Element',
     docs: null,
     stories: [
