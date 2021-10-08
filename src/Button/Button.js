@@ -55,9 +55,11 @@ Button.propTypes = {
   isFullWidth: PropTypes.bool,
   isLoading: PropTypes.bool,
   loadingText: PropTypes.string,
-  leftIcon: PropTypes.object,
-  rightIcon: PropTypes.object,
-  size: PropTypes.string,
+  leftIcon: PropTypes.element,
+  rightIcon: PropTypes.element,
+  /** a value of `lg`, `md`, or `sm` */
+  size: PropTypes.oneOf(['lg', 'md', 'sm']),
+  /** a value of `white` */
   colorScheme: PropTypes.oneOf(Object.keys(colorSchemes)),
 };
 
