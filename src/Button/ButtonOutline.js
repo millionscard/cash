@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ButtonBase, { ButtonBackground, ButtonGradient, ButtonContent } from './ButtonBase';
+import ButtonBase from './ButtonBase';
 
 const colorSchemes = {
   purple: {
@@ -22,21 +22,22 @@ const ButtonOutline = ({
   ...props
 }) => {
   const resolvedColorScheme = colorSchemes?.[colorScheme];
+  const useDisabled = isDisabled || isLoading;
 
   return (
-    <ButtonBase onPress={onPress} isDisabled={isDisabled} isFullWidth={isFullWidth} {...props}>
-      <ButtonGradient colors={resolvedColorScheme?.gradient} isDisabled={isDisabled} p="3px">
-        <ButtonBackground bg={resolvedColorScheme?.bg}>
-          <ButtonContent
+    <ButtonBase onPress={onPress} isDisabled={useDisabled} isFullWidth={isFullWidth} {...props}>
+      <ButtonBase.Gradient colors={resolvedColorScheme?.gradient} isDisabled={useDisabled} p="3px">
+        <ButtonBase.Background bg={resolvedColorScheme?.bg}>
+          <ButtonBase.Content
             size={size}
             color={resolvedColorScheme?.color}
             isLoading={isLoading}
             loadingText={loadingText}
           >
             {children}
-          </ButtonContent>
-        </ButtonBackground>
-      </ButtonGradient>
+          </ButtonBase.Content>
+        </ButtonBase.Background>
+      </ButtonBase.Gradient>
     </ButtonBase>
   );
 };

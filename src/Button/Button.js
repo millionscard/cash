@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ButtonBase, { ButtonContent } from './ButtonBase';
+import ButtonBase from './ButtonBase';
 
 const colorSchemes = {
   white: {
@@ -23,26 +23,27 @@ const Button = ({
   ...props
 }) => {
   const resolvedColorScheme = colorSchemes?.[colorScheme];
+  const useDisabled = isDisabled || isLoading;
 
   return (
     <ButtonBase
       onPress={onPress}
-      isDisabled={isDisabled}
+      isDisabled={useDisabled}
       isFullWidth={isFullWidth}
       bg={resolvedColorScheme?.bg}
       {...props}
     >
-      <ButtonContent
+      <ButtonBase.Content
         color={resolvedColorScheme?.color}
         size={size}
-        isDisabled={isDisabled}
+        isDisabled={useDisabled}
         isLoading={isLoading}
         loadingText={loadingText}
         leftIcon={leftIcon}
         rightIcon={rightIcon}
       >
         {children}
-      </ButtonContent>
+      </ButtonBase.Content>
     </ButtonBase>
   );
 };
