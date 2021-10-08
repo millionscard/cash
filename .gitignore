@@ -3,8 +3,8 @@ node_modules
 *.log
 
 # Docs (only as a reference for prettier)
-.cache
-public/
+docs/.cache/
+docs/public/
 
 # React Native CLI init
 # 👇
