@@ -60,8 +60,14 @@ ButtonPrimary.propTypes = {
   children: PropTypes.node,
   onPress: PropTypes.func,
   isDisabled: PropTypes.bool,
+  isFullWidth: PropTypes.bool,
   isLoading: PropTypes.bool,
   loadingText: PropTypes.string,
+  leftIcon: PropTypes.element,
+  rightIcon: PropTypes.element,
+  /** a value of `lg`, `md`, or `sm` */
+  size: PropTypes.oneOf(['lg', 'md', 'sm']),
+  /** a value of `purple`, `gold`, or `green` */
   colorScheme: PropTypes.oneOf(Object.keys(colorSchemes)),
 };
 

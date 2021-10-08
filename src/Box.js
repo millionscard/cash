@@ -8,6 +8,7 @@ const StyledBox = styled.View(space, color, typography, layout, flexbox, backgro
 const Box = ({ children, _text, ...props }) => {
   return (
     <StyledBox {...props}>
+      {/** shouldRenderChildrenAsText */}
       {React.Children.map(children, child => {
         return typeof child === 'string' ||
           typeof child === 'number' ||
@@ -21,20 +22,6 @@ const Box = ({ children, _text, ...props }) => {
       })}
     </StyledBox>
   );
-};
-
-Box.propTypes = {
-  ...space.propTypes,
-  ...color.propTypes,
-  ...typography.propTypes,
-  ...layout.propTypes,
-  ...flexbox.propTypes,
-  ...background.propTypes,
-  ...border.propTypes,
-};
-
-Box.defaultProps = {
-  bg: 'transparent',
 };
 
 export default Box;
