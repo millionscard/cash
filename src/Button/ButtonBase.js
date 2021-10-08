@@ -76,6 +76,7 @@ ButtonGradient.propTypes = {
 ButtonGradient.defaultProps = {
   borderRadius: '2xl',
 };
+ButtonGradient.displayName = 'ButtonBase.Gradient';
 
 const ButtonBackground = styled.View`
   ${isDisabledStyles}
@@ -91,6 +92,7 @@ ButtonBackground.propTypes = {
 ButtonBackground.defaultProps = {
   borderRadius: '2xl',
 };
+ButtonBackground.displayName = 'ButtonBase.Background';
 
 const StyledButtonView = styled.View`
   flex-direction: row;
@@ -144,6 +146,7 @@ ButtonContent.propTypes = {
 ButtonContent.defaultProps = {
   size: defaultSizeProp,
 };
+ButtonContent.displayName = 'ButtonBase.Content';
 
 const ButtonBase = ({ children, onPress, isDisabled, isFullWidth, isLoading, ...props }) => {
   const [isPressed, setIsPressed] = useState(false);
@@ -160,6 +163,7 @@ const ButtonBase = ({ children, onPress, isDisabled, isFullWidth, isLoading, ...
       isFullWidth={isFullWidth}
       {...props}
     >
+      {/** TODO: forward props to children with speecific displayName */}
       {children}
     </StyledPressable>
   );
@@ -177,5 +181,8 @@ ButtonBase.defaultProps = {
   borderRadius: '2xl',
 };
 
-export default ButtonBase;
-export { ButtonContent, ButtonBackground, ButtonGradient };
+export default Object.assign(ButtonBase, {
+  Content: ButtonContent,
+  Background: ButtonBackground,
+  Gradient: ButtonGradient,
+});

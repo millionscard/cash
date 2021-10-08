@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ButtonBase, { ButtonGradient, ButtonContent } from './ButtonBase';
+import ButtonBase from './ButtonBase';
 
 const colorSchemes = {
   purple: {
@@ -30,27 +30,28 @@ const ButtonPrimary = ({
   ...props
 }) => {
   const resolvedColorScheme = colorSchemes?.[colorScheme];
+  const useDisabled = isDisabled || isLoading;
   const textProps = {
     color: resolvedColorScheme?.color,
     textShadow: resolvedColorScheme?.textShadow,
   };
 
   return (
-    <ButtonBase onPress={onPress} isDisabled={isDisabled} isFullWidth={isFullWidth} {...props}>
-      <ButtonGradient colors={resolvedColorScheme?.gradient} isDisabled={isDisabled}>
-        <ButtonGradient colors={['rgba(255, 255, 255, 0.5)', 'rgba(255, 255, 255, 0)']}>
-          <ButtonGradient colors={resolvedColorScheme?.gradient} m="3px">
-            <ButtonContent
+    <ButtonBase onPress={onPress} isDisabled={useDisabled} isFullWidth={isFullWidth} {...props}>
+      <ButtonBase.Gradient colors={resolvedColorScheme?.gradient} isDisabled={useDisabled}>
+        <ButtonBase.Gradient colors={['rgba(255, 255, 255, 0.5)', 'rgba(255, 255, 255, 0)']}>
+          <ButtonBase.Gradient colors={resolvedColorScheme?.gradient} m="3px">
+            <ButtonBase.Content
               size={size}
               isLoading={isLoading}
               loadingText={loadingText}
               {...textProps}
             >
               {children}
-            </ButtonContent>
-          </ButtonGradient>
-        </ButtonGradient>
-      </ButtonGradient>
+            </ButtonBase.Content>
+          </ButtonBase.Gradient>
+        </ButtonBase.Gradient>
+      </ButtonBase.Gradient>
     </ButtonBase>
   );
 };
