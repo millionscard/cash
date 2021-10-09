@@ -13,6 +13,7 @@ const RootNavigator = () => (
       component={StoryScreen}
       options={({ route }) => ({
         title: route.params?.name,
+        headerTintColor: '#8D34FF',
         headerRight: () => <DocsLink path={route.params?.docs} />,
       })}
     />
