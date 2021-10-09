@@ -1,6 +1,6 @@
 ---
 title: Box
-description: A low-level utility component that accepts Styled System props to enable custom theme-aware styling
+description:
 source: https://github.com/millionscard/cash/blob/main/src/Box.js
 ---
 
@@ -11,5 +11,9 @@ import {Props} from '../src/props'
   Content
 </Box>
 ```
+
+## Props
+
+<Props of="Box" />
 
 Box accepts all [styled system props](https://styled-system.com/table/).

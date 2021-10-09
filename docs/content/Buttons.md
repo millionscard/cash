@@ -1,7 +1,7 @@
 ---
 title: Buttons
 description:
-source: https://github.com/millionscard/cash/blob/main/src/Buttons.js
+source: https://github.com/millionscard/cash/blob/main/src/Button
 ---
 
 import {Props} from '../src/props'

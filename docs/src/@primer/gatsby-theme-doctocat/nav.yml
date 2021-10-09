@@ -5,7 +5,21 @@
       url: /getting-started
 - title: Components
   children:
+    - title: ActivityIndicator
+      url: /ActivityIndicator
     - title: Box
       url: /Box
     - title: Buttons
       url: /Buttons
+    - title: Card
+      url: /Card
+    - title: GradientText
+      url: /GradientText
+    - title: Heading
+      url: /Heading
+    - title: Icon
+      url: /Icon
+    - title: Modal
+      url: /Modal
+    - title: Text
+      url: /Text
