@@ -9,11 +9,11 @@ const HomeScreen = ({ navigation }) => {
     <ScrollView>
       <Box flex={1} p="2">
         <Heading mb="3">Components</Heading>
-        {storyMapping.sort(sortByKey('title')).map(({ title: name }, index) => (
+        {storyMapping.sort(sortByKey('title')).map(({ title: name, docs }, index) => (
           <Pressable
             accessibilityRole="button"
             key={`${name}-${index}`}
-            onPress={() => navigation.navigate('Story', { name })}
+            onPress={() => navigation.navigate('Story', { name, docs })}
           >
             <Box py="2">{name}</Box>
           </Pressable>

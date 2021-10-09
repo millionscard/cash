@@ -24,7 +24,7 @@ export default [
   {
     title: 'Box',
     description: 'Primitive Element',
-    docs: null,
+    docs: '/Box',
     stories: [
       {
         title: 'Example',
@@ -36,7 +36,7 @@ export default [
   {
     title: 'Text',
     description: 'Primitive Element',
-    docs: null,
+    docs: '/Text',
     stories: [
       {
         title: 'Example',
@@ -48,7 +48,7 @@ export default [
   {
     title: 'Heading',
     description: '',
-    docs: null,
+    docs: '/Heading',
     stories: [
       {
         title: 'Example',
@@ -60,7 +60,7 @@ export default [
   {
     title: 'Card',
     description: null,
-    docs: null,
+    docs: '/Card',
     stories: [
       {
         title: 'Example',
@@ -70,9 +70,9 @@ export default [
     ],
   },
   {
-    title: 'Gradient Text',
+    title: 'GradientText',
     description: null,
-    docs: null,
+    docs: '/GradientText',
     stories: [
       {
         title: 'Example',
@@ -84,7 +84,7 @@ export default [
   {
     title: 'Modal',
     description: null,
-    docs: null,
+    docs: '/Modal',
     stories: [
       {
         title: 'Example',
@@ -96,7 +96,7 @@ export default [
   {
     title: 'Icon',
     description: null,
-    docs: null,
+    docs: '/Icon',
     stories: [
       {
         title: 'Examples',
@@ -106,9 +106,9 @@ export default [
     ],
   },
   {
-    title: 'Activity Indicator',
+    title: 'ActivityIndicator',
     description: null,
-    docs: null,
+    docs: '/ActivityIndicator',
     stories: [
       {
         title: 'Examples',
