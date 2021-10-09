@@ -4,7 +4,15 @@ import { MaterialIndicator } from 'react-native-indicators';
 import theme from './theme';
 import Box from './Box';
 
-const ActivityIndicator = ({ color, size, ...props }) => {
+const sizeMap = {
+  sm: 20,
+  md: 30,
+  lg: 50,
+};
+
+const ActivityIndicator = ({ size: sizeKey, color, ...props }) => {
+  const size = sizeMap[sizeKey];
+  // TODO: refactor themeGet()
   const [colorName, colorShade] = color?.split('.');
   const resolvedColor = colorName && colorShade ? theme.colors[colorName][colorShade] : color;
   return (
@@ -15,13 +23,13 @@ const ActivityIndicator = ({ color, size, ...props }) => {
 };
 
 ActivityIndicator.propTypes = {
+  size: PropTypes.oneOf(Object.keys(sizeMap)),
   color: PropTypes.string,
-  size: PropTypes.number,
 };
 
 ActivityIndicator.defaultProps = {
+  size: 'md',
   color: 'purple.500',
-  size: 30,
 };
 
 export default ActivityIndicator;
