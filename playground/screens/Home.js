@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pressable } from 'react-native';
 import { ScrollView } from 'react-native';
-import componentMapping from '@playground/config';
+import storyMapping from '../stories/config';
 import { Box, Heading } from '@cash';
 
 const HomeScreen = ({ navigation }) => {
@@ -9,7 +9,7 @@ const HomeScreen = ({ navigation }) => {
     <ScrollView>
       <Box flex={1} p="2">
         <Heading mb="3">Components</Heading>
-        {componentMapping.sort(sortByKey('title')).map(({ title: name }, index) => (
+        {storyMapping.sort(sortByKey('title')).map(({ title: name }, index) => (
           <Pressable
             accessibilityRole="button"
             key={`${name}-${index}`}
