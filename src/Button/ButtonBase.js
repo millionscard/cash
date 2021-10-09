@@ -3,43 +3,40 @@ import LinearGradient from 'react-native-linear-gradient';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import { css } from 'styled-components';
-import { variant, color, space, border } from 'styled-system';
+import { variant, color, space, border, sizes, shadow } from 'styled-system';
 import ActivityIndicator from '../ActivityIndicator';
 import Box from '../Box';
 
 const sizeProps = ['xs', 'sm', 'md', 'lg'];
 const defaultSizeProp = 'lg';
+
+// Button shell
 const sizeVariants = variant({
   prop: 'size',
   variants: {
-    lg: {
-      px: 4,
-      py: 3,
-    },
-    md: {
-      px: 4,
-      py: 2,
-    },
-    sm: {
-      px: 3,
-      py: 1,
-    },
+    lg: { height: 56 },
+    md: { height: 46 },
+    sm: { height: 30 },
   },
 });
 
+// Button spacing around text
+const spaceSizeVariants = variant({
+  prop: 'size',
+  variants: {
+    lg: { px: 4 },
+    md: { px: 4 },
+    sm: { px: 2 },
+  },
+});
+
+// Button text size
 const textSizeVariants = variant({
   prop: 'size',
   variants: {
-    lg: {
-      fontSize: 'xl',
-    },
-    md: {
-      fontSize: 'md',
-    },
-    sm: {
-      fontSize: 'md',
-      fontWeight: 'semibold',
-    },
+    lg: { fontSize: 'xl' },
+    md: { fontSize: 'md' },
+    sm: { fontSize: 'md', fontWeight: 'semibold' },
   },
 });
 
@@ -53,9 +50,11 @@ const StyledPressable = styled.Pressable.attrs(({ onPress, isDisabled }) => ({
   flex-direction: ${({ isFullWidth }) => (isFullWidth ? 'column' : 'row')};
   align-self: ${({ isFullWidth }) => (isFullWidth ? 'stretch' : 'flex-start')};
   transform: scale(${({ isPressed }) => (isPressed ? '0.99' : '1')});
+  ${sizeVariants}
   ${border}
   ${space}
   ${color}
+  ${sizes}
 `;
 StyledPressable.propTypes = {
   onPress: PropTypes.func,
@@ -95,11 +94,12 @@ ButtonBackground.defaultProps = {
 ButtonBackground.displayName = 'ButtonBase.Background';
 
 const StyledButtonView = styled.View`
+  height: 100%;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   ${isDisabledStyles}
-  ${sizeVariants}
+  ${spaceSizeVariants}
   ${space}
 `;
 
@@ -107,8 +107,11 @@ const StyledButtonText = styled.Text`
   font-family: ${({ theme }) => theme.fonts.heading};
   font-weight: bold;
   line-height: 24px;
+
   ${textSizeVariants}
   ${color}
+  ${space}
+  ${shadow}
 `;
 
 const ButtonContent = ({
@@ -120,12 +123,13 @@ const ButtonContent = ({
   rightIcon,
   ...props
 }) => {
-  const { fontSize, fontWeight, color: textColor } = props;
-  const textProps = { fontSize, fontWeight, color: textColor };
+  const { fontSize, fontWeight, color, textShadow, px, py } = props;
+  const textProps = { fontSize, fontWeight, color, textShadow };
+  const spaceProps = { px, py };
 
   return (
-    <StyledButtonView size={size} {...props}>
-      {isLoading ? <ActivityIndicator mr="3" color={textColor} size={20} /> : null}
+    <StyledButtonView size={size} {...spaceProps} {...props}>
+      {isLoading ? <ActivityIndicator mr="3" color={color} size="sm" /> : null}
       {leftIcon ? <Box mr="3">{leftIcon}</Box> : null}
       <StyledButtonText size={size} {...textProps}>
         {isLoading && loadingText ? loadingText : children}
@@ -179,6 +183,7 @@ ButtonBase.propTypes = {
 };
 ButtonBase.defaultProps = {
   borderRadius: '2xl',
+  size: defaultSizeProp,
 };
 
 export default Object.assign(ButtonBase, {

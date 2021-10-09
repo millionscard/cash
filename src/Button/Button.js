@@ -31,6 +31,7 @@ const Button = ({
       isDisabled={useDisabled}
       isFullWidth={isFullWidth}
       bg={resolvedColorScheme?.bg}
+      size={size}
       {...props}
     >
       <ButtonBase.Content

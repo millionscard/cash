@@ -16,6 +16,9 @@ export default () => (
     <Cash.Button mb="3" isFullWidth isDisabled>
       Disabled
     </Cash.Button>
-    <Cash.Button size="md">Button text</Cash.Button>
+    <Cash.Button size="md" mb="3">
+      Button text
+    </Cash.Button>
+    <Cash.Button size="sm">Button text</Cash.Button>
   </Cash.Card>
 );

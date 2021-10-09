@@ -25,7 +25,13 @@ const ButtonOutline = ({
   const useDisabled = isDisabled || isLoading;
 
   return (
-    <ButtonBase onPress={onPress} isDisabled={useDisabled} isFullWidth={isFullWidth} {...props}>
+    <ButtonBase
+      onPress={onPress}
+      isDisabled={useDisabled}
+      isFullWidth={isFullWidth}
+      size={size}
+      {...props}
+    >
       <ButtonBase.Gradient colors={resolvedColorScheme?.gradient} isDisabled={useDisabled} p="3px">
         <ButtonBase.Background bg={resolvedColorScheme?.bg}>
           <ButtonBase.Content

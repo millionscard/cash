@@ -37,7 +37,13 @@ const ButtonPrimary = ({
   };
 
   return (
-    <ButtonBase onPress={onPress} isDisabled={useDisabled} isFullWidth={isFullWidth} {...props}>
+    <ButtonBase
+      onPress={onPress}
+      isDisabled={useDisabled}
+      isFullWidth={isFullWidth}
+      size={size}
+      {...props}
+    >
       <ButtonBase.Gradient colors={resolvedColorScheme?.gradient} isDisabled={useDisabled}>
         <ButtonBase.Gradient colors={['rgba(255, 255, 255, 0.5)', 'rgba(255, 255, 255, 0)']}>
           <ButtonBase.Gradient colors={resolvedColorScheme?.gradient} m="3px">
