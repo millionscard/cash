@@ -16,4 +16,4 @@ import {Props} from '../src/props'
 
 <Props of="Box" />
 
-Box accepts all [styled system props](https://styled-system.com/table/).
+Box accepts all [styled system props](https://styled-system.com/table/) expect shadow.
