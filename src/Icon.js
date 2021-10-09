@@ -30,6 +30,7 @@ const svgs = {
 const Icon = ({ color, ...props }) => <SvgIcon {...props} fill={color} svgs={svgs} />;
 
 Icon.propTypes = {
+  name: PropTypes.string,
   width: PropTypes.string,
   height: PropTypes.string,
   color: PropTypes.string,

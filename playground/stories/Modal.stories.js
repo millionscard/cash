@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import * as Cash from '@cash';
 
 export default () => {
-  const [isModalVisible, setModalVisible] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
   const toggleModal = () => {
-    setModalVisible(!isModalVisible);
+    setModalOpen(!isModalOpen);
   };
 
   return (
@@ -13,7 +13,7 @@ export default () => {
         Show modal
       </Cash.ButtonPrimary>
 
-      <Cash.Modal isVisible={isModalVisible} onClose={toggleModal}>
+      <Cash.Modal isOpen={isModalOpen} onClose={toggleModal}>
         <Cash.Heading fontSize="2xl" mb="2">
           A million ways to win!
         </Cash.Heading>
