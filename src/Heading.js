@@ -1,8 +1,9 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import { color, space, typography, variant } from 'styled-system';
 
-const Heading = styled.Text(
+const StyledHeading = styled.Text(
   {
     fontFamily: 'Futura PT',
     fontWeight: 'bold',
@@ -26,6 +27,8 @@ const Heading = styled.Text(
     },
   })
 );
+
+const Heading = ({ children, props }) => <StyledHeading {...props}>{children}</StyledHeading>;
 
 Heading.propTypes = {
   size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']),
