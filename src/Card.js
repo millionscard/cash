@@ -4,7 +4,7 @@ import Box from './Box';
 
 const StyledCard = styled(Box)``;
 
-const Card = ({ children, props }) => <StyledCard {...props}>{children}</StyledCard>;
+const Card = props => <StyledCard {...props} />;
 
 Card.defaultProps = {
   p: 20,
