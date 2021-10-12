@@ -25,6 +25,7 @@ const ButtonPrimary = ({
   isFullWidth,
   isLoading,
   loadingText,
+  hasShadow,
   size,
   colorScheme,
   ...props
@@ -41,6 +42,7 @@ const ButtonPrimary = ({
       onPress={onPress}
       isDisabled={useDisabled}
       isFullWidth={isFullWidth}
+      hasShadow={hasShadow}
       size={size}
       {...props}
     >
@@ -69,6 +71,7 @@ ButtonPrimary.propTypes = {
   isFullWidth: PropTypes.bool,
   isLoading: PropTypes.bool,
   loadingText: PropTypes.string,
+  hasShadow: PropTypes.bool,
   leftIcon: PropTypes.element,
   rightIcon: PropTypes.element,
   /** a value of `lg`, `md`, or `sm` */

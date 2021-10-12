@@ -44,12 +44,20 @@ const isDisabledStyles = css`
   opacity: ${({ isDisabled }) => (isDisabled ? '0.3' : '1')};
 `;
 
+const hasShadowStyles = css`
+  shadow-color: black.500;
+  shadow-offset: 0 2px;
+  shadow-opacity: 0.4;
+  shadow-radius: 10px;
+`;
+
 const StyledPressable = styled.Pressable.attrs(({ onPress, isDisabled }) => ({
   onPress: isDisabled ? undefined : onPress,
 }))`
   flex-direction: ${({ isFullWidth }) => (isFullWidth ? 'column' : 'row')};
   align-self: ${({ isFullWidth }) => (isFullWidth ? 'stretch' : 'flex-start')};
   transform: scale(${({ isPressed }) => (isPressed ? '0.99' : '1')});
+  ${({ hasShadow }) => hasShadow && hasShadowStyles}
   ${sizeVariants}
   ${border}
   ${space}
@@ -178,6 +186,7 @@ ButtonBase.propTypes = {
   isDisabled: PropTypes.bool,
   isFullWidth: PropTypes.bool,
   isLoading: PropTypes.bool,
+  hasShadow: PropTypes.bool,
   ...border.propTypes,
   ...space.propTypes,
 };

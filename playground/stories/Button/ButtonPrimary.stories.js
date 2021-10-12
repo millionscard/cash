@@ -26,7 +26,7 @@ export default () => {
       >
         Button text
       </Cash.ButtonPrimary>
-      <Cash.ButtonPrimary colorScheme="gold" mb="3" isFullWidth>
+      <Cash.ButtonPrimary colorScheme="gold" mb="3" isFullWidth hasShadow>
         Button text
       </Cash.ButtonPrimary>
       <Cash.ButtonPrimary colorScheme="green" mb="3" isFullWidth>

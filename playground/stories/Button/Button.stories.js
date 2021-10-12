@@ -4,6 +4,9 @@ import * as Cash from '@cash';
 export default () => (
   <Cash.Card bg="purple.500">
     <Cash.Button mb="3">Button text</Cash.Button>
+    <Cash.Button mb="3" hasShadow>
+      Button text
+    </Cash.Button>
     <Cash.Button leftIcon={<Cash.Icon name="LeftArrow" />} mb="3">
       Button text
     </Cash.Button>

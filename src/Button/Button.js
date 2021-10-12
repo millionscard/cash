@@ -16,6 +16,7 @@ const Button = ({
   isFullWidth,
   isLoading,
   loadingText,
+  hasShadow,
   leftIcon,
   rightIcon,
   size,
@@ -30,6 +31,7 @@ const Button = ({
       onPress={onPress}
       isDisabled={useDisabled}
       isFullWidth={isFullWidth}
+      hasShadow={hasShadow}
       bg={resolvedColorScheme?.bg}
       size={size}
       {...props}
@@ -56,6 +58,7 @@ Button.propTypes = {
   isFullWidth: PropTypes.bool,
   isLoading: PropTypes.bool,
   loadingText: PropTypes.string,
+  hasShadow: PropTypes.bool,
   leftIcon: PropTypes.element,
   rightIcon: PropTypes.element,
   /** a value of `lg`, `md`, or `sm` */
