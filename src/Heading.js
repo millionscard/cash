@@ -28,7 +28,7 @@ const StyledHeading = styled.Text(
   })
 );
 
-const Heading = ({ children, props }) => <StyledHeading {...props}>{children}</StyledHeading>;
+const Heading = props => <StyledHeading {...props} />;
 
 Heading.propTypes = {
   size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']),
