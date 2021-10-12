@@ -1,11 +1,13 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import storyMapping from '../stories/config';
+import storyMap from '../stories/storyMap';
 import { Heading, Box, Card } from '@cash';
 
 const StoryScreen = ({ route, navigation }) => {
+  const storyCategory = route.params.category;
   const storyName = route.params.name;
-  const story = storyMapping.find(({ title }) => title === storyName);
+  const category = storyMap.find(({ title }) => title === storyCategory);
+  const story = category.stories.find(({ title }) => title === storyName);
 
   return (
     <ScrollView>
