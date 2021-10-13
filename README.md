@@ -12,8 +12,23 @@
   </a>
 </p>
 
-## Development
+## Getting Started
+
+### Install dependencies
+
+`npm install`
+
+### Start development environment
 
 ```
-npm start
+npm run ios
+npm run android
 ```
+
+### Start development environment of the docs
+
+`npm run docs`
+
+### Deploy docs
+
+`npm run deploy:docs`
