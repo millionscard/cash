@@ -15,10 +15,12 @@ const Text = ({ children, ...props }) => {
 };
 
 Text.propTypes = {
+  /** will shorten text with an ellipsis */
   numberOfLines: PropTypes.number,
-  ...color.propTypes,
-  ...space.propTypes,
-  ...typography.propTypes,
+  /** `fonts` from the theme */
+  fontFamily: PropTypes.oneOf(['text', 'heading']),
+  /** `fontsize` from the theme */
+  fontSize: PropTypes.string,
 };
 
 Text.defaultProps = {

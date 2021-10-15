@@ -15,13 +15,15 @@ const GradientText = ({ colors, coordinates, ...props }) => {
 };
 
 GradientText.propTypes = {
+  /** array of at least two color values that represent gradient colors */
   colors: PropTypes.array,
+  /** declares the position that the gradient starts at */
   coordinates: PropTypes.object,
 };
 
 GradientText.defaultProps = {
   colors: ['#8D34FF', '#FF006E'],
-  // Horizontal gradient
+  /** Horizontal gradient */
   coordinates: {
     start: { x: 0, y: 0 },
     end: { x: 1, y: 0 },

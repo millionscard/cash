@@ -31,11 +31,10 @@ const StyledHeading = styled.Text(
 const Heading = props => <StyledHeading {...props} />;
 
 Heading.propTypes = {
+  /** results in smaller or larger Heading text size */
   size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']),
+  /** will shorten text with an ellipsis */
   numberOfLines: PropTypes.number,
-  ...color.propTypes,
-  ...space.propTypes,
-  ...typography.propTypes,
 };
 
 Heading.defaultProps = {

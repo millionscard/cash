@@ -12,12 +12,14 @@ const Modal = ({ children, isOpen, onClose, ...props }) => {
 };
 
 Modal.propTypes = {
+  /** Set whether or not the modal is shown */
   isOpen: PropTypes.bool,
+  /** A user-provided function that should close the modal */
   onClose: PropTypes.func,
 };
 
 Modal.defaultProps = {
-  isOpen: true,
+  isOpen: false,
 };
 
 export default Modal;
