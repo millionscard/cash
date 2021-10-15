@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "repository": "millionscard/cash",
   "scripts": {
-    "dev": "gatsby develop",
+    "dev": "gatsby develop --open",
     "build": "gatsby build --prefix-paths",
     "deploy": "npm run build && gh-pages --dist public"
   },
