@@ -24,7 +24,9 @@ npm install
 
 ```bash
 npm run ios
+```
 
+```bash
 npm run android
 ```
 
