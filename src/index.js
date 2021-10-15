@@ -11,5 +11,6 @@ export { default as Modal } from './Modal';
 export { default as Card } from './Card';
 export { default as Heading } from './Heading';
 export { default as Icon } from './Icon';
+export { default as Link } from './Link';
 export { default as Text } from './Text';
 export { default as GradientText } from './GradientText';

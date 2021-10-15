@@ -19,6 +19,8 @@
       url: /Heading
     - title: Icon
       url: /Icon
+    - title: Link
+      url: /Link
     - title: Modal
       url: /Modal
     - title: Text

@@ -120,6 +120,18 @@ export default [
           },
         ],
       },
+      {
+        title: 'Link',
+        description: null,
+        docs: '/Link',
+        stories: [
+          {
+            title: 'Examples',
+            description: '',
+            component: require('./Link.stories').default,
+          },
+        ],
+      },
     ],
   },
 ];
