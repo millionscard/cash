@@ -22,6 +22,10 @@
     "**/*.{js,md}": "prettier --write",
     "**!(docs)/*.js": "eslint"
   },
+  "volta": {
+    "node": "14.17.0",
+    "npm": "7.24.2"
+  },
   "dependencies": {
     "@react-native-async-storage/async-storage": "1.15.9",
     "@react-native-masked-view/masked-view": "0.2.6",
