@@ -2,6 +2,7 @@
 title: GradientText
 description:
 source: https://github.com/millionscard/cash/blob/main/src/GradientText.js
+status: Alpha
 ---
 
 import {Props} from '../src/props'

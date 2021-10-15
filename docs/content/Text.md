@@ -2,6 +2,7 @@
 title: Text
 description:
 source: https://github.com/millionscard/cash/blob/main/src/Text.js
+status: Alpha
 ---
 
 import {Props} from '../src/props'

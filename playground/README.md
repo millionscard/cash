@@ -2,7 +2,9 @@
 
 > A standalone app mostly used as a environment for component development and prototyping 🤞
 
-[Getting Started](../README.md)
+## Getting started
+
+Check out [the getting started guide](../README.md) for everything you need to know about using the playground app.
 
 ## Add/Change stories
 

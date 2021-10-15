@@ -2,6 +2,7 @@
 title: Modal
 description:
 source: https://github.com/millionscard/cash/blob/main/src/Modal.js
+status: Alpha
 ---
 
 import {Props} from '../src/props'

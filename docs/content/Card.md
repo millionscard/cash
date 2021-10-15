@@ -2,6 +2,7 @@
 title: Card
 description:
 source: https://github.com/millionscard/cash/blob/main/src/Card.js
+status: Alpha
 ---
 
 import {Props} from '../src/props'

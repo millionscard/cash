@@ -6,15 +6,21 @@
 
 ### Install dependencies
 
-`npm install`
+```bash
+npm install
+```
 
 ### Build the site
 
-`npm run build`
+```bash
+npm run build
+```
 
 ### Run the development server
 
-`npm run dev`
+```bash
+npm run dev
+```
 
 ## Add/Change content
 
@@ -27,4 +33,6 @@ All documentation files are located in the `/content` directory.
 
 Runs `npm run build` and publishes the `/public` directory to [GitHub Pages](https://millionscard.github.io/cash/)
 
-`npm run deploy`
+```bash
+npm run deploy
+```

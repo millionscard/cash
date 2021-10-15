@@ -2,6 +2,7 @@
 title: Icon
 description:
 source: https://github.com/millionscard/cash/blob/main/src/Icon.js
+status: Alpha
 ---
 
 import {Props} from '../src/props'

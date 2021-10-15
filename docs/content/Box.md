@@ -2,6 +2,7 @@
 title: Box
 description:
 source: https://github.com/millionscard/cash/blob/main/src/Box.js
+status: Alpha
 ---
 
 import {Props} from '../src/props'

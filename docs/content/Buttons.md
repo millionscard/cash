@@ -2,6 +2,7 @@
 title: Buttons
 description:
 source: https://github.com/millionscard/cash/blob/main/src/Button
+status: Alpha
 ---
 
 import {Props} from '../src/props'
