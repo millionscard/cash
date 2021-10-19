@@ -39,5 +39,5 @@ npm run docs
 ### Deploy docs
 
 ```bash
-npm run deploy:docs
+npm run docs:deploy
 ```
