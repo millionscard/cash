@@ -22,6 +22,11 @@ export default [
             description: '',
             component: require('./Button/ButtonOutline.stories').default,
           },
+          {
+            title: 'Button Icon',
+            description: '',
+            component: require('./Button/ButtonIcon.stories').default,
+          },
         ],
       },
       {

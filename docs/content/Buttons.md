@@ -36,3 +36,13 @@ import {Props} from '../src/props'
 ## Props
 
 <Props of="ButtonOutline" />
+
+# ButtonIcon
+
+```jsx
+<ButtonIcon name="LeftArrow" />
+```
+
+## Props
+
+<Props of="ButtonIcon" />
