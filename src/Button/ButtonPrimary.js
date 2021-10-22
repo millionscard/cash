@@ -12,6 +12,10 @@ const colorSchemes = {
     color: '#996E00',
     textShadow: '0px 2px 0px rgba(255, 255, 255, 0.35)',
   },
+  danger: {
+    gradient: ['#FF6666', '#B20000'],
+    color: 'white',
+  },
   green: {
     gradient: ['#4EDB86', '#1BA853'],
     color: 'white',
