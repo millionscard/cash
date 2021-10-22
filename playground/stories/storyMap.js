@@ -27,6 +27,11 @@ export default [
             description: '',
             component: require('./Button/ButtonIcon.stories').default,
           },
+          {
+            title: 'Button Ghost',
+            description: '',
+            component: require('./Button/ButtonGhost.stories').default,
+          },
         ],
       },
       {

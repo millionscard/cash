@@ -6,7 +6,7 @@ export { default as Box } from './Box';
 
 // Components
 export { default as ActivityIndicator } from './ActivityIndicator';
-export { default as Button, ButtonOutline, ButtonPrimary, ButtonIcon } from './Button';
+export { default as Button, ButtonGhost, ButtonIcon, ButtonOutline, ButtonPrimary } from './Button';
 export { default as Modal } from './Modal';
 export { default as Card } from './Card';
 export { default as Heading } from './Heading';

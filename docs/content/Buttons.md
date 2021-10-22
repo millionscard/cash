@@ -46,3 +46,13 @@ import {Props} from '../src/props'
 ## Props
 
 <Props of="ButtonIcon" />
+
+# ButtonGhost
+
+```jsx
+<ButtonGhost>Button text</ButtonGhost>
+```
+
+## Props
+
+<Props of="ButtonGhost" />
