@@ -29,14 +29,16 @@ export default () => {
       <Cash.ButtonPrimary colorScheme="gold" mb="3" isFullWidth hasShadow>
         Button text
       </Cash.ButtonPrimary>
-      <Cash.ButtonPrimary colorScheme="green" mb="3" isFullWidth>
-        <Cash.ButtonPrimary colorScheme="danger" mb="3" isFullWidth>
-          Button text
-        </Cash.ButtonPrimary>
+      <Cash.ButtonPrimary colorScheme="danger" mb="3" isFullWidth>
+        Button text
+      </Cash.ButtonPrimary>
+      <Cash.ButtonPrimary colorScheme="success" mb="3" isFullWidth>
         Button text
       </Cash.ButtonPrimary>
       <Cash.ButtonPrimary mb="3">Button text</Cash.ButtonPrimary>
-      <Cash.ButtonPrimary isDisabled>Disabled</Cash.ButtonPrimary>
+      <Cash.ButtonPrimary mb="3" size="md">
+        Button text
+      </Cash.ButtonPrimary>
     </>
   );
 };

@@ -16,8 +16,8 @@ const colorSchemes = {
     gradient: ['#FF6666', '#B20000'],
     color: 'white',
   },
-  green: {
-    gradient: ['#4EDB86', '#1BA853'],
+  success: {
+    gradient: ['#2FE979', '#0B9D45'],
     color: 'white',
   },
 };
@@ -80,7 +80,7 @@ ButtonPrimary.propTypes = {
   rightIcon: PropTypes.element,
   /** a value of `lg`, `md`, or `sm` */
   size: PropTypes.oneOf(['lg', 'md', 'sm']),
-  /** a value of `purple`, `gold`, or `green` */
+  /** a value of `purple`, `gold`, `danger`, `success` */
   colorScheme: PropTypes.oneOf(Object.keys(colorSchemes)),
 };
 
