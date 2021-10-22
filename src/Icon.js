@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SvgIcon from 'react-native-svg-icon';
 import { Path } from 'react-native-svg';
+import theme from './theme';
 
 // Each nameValuePair can be:
 // * Name: <Svg />; or
@@ -27,7 +28,13 @@ const svgs = {
   },
 };
 
-const Icon = ({ color, ...props }) => <SvgIcon {...props} fill={color} svgs={svgs} />;
+const Icon = ({ color, ...props }) => {
+  // TODO: refactor themeGet()
+  const [colorName, colorShade] = color?.split('.') || [];
+  const resolvedColor = colorName && colorShade ? theme.colors[colorName][colorShade] : color;
+  console.log({ resolvedColor });
+  return <SvgIcon {...props} fill={resolvedColor} svgs={svgs} />;
+};
 
 Icon.propTypes = {
   /** name of the icon */

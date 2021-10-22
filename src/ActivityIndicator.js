@@ -13,7 +13,7 @@ const sizeMap = {
 const ActivityIndicator = ({ size: sizeKey, color, ...props }) => {
   const size = sizeMap[sizeKey];
   // TODO: refactor themeGet()
-  const [colorName, colorShade] = color?.split('.');
+  const [colorName, colorShade] = color?.split('.') || [];
   const resolvedColor = colorName && colorShade ? theme.colors[colorName][colorShade] : color;
   return (
     <Box {...props}>
