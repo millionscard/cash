@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ButtonBase from './ButtonBase';
+import theme from '../theme';
 
 const colorSchemes = {
   purple: {
-    gradient: ['#8D34FF', '#5C00D0'],
+    gradient: theme.gradients.purple,
     bg: 'white',
     color: 'purple.600',
   },
@@ -32,7 +33,12 @@ const ButtonOutline = ({
       size={size}
       {...props}
     >
-      <ButtonBase.Gradient colors={resolvedColorScheme?.gradient} isDisabled={useDisabled} p="3px">
+      <ButtonBase.Gradient
+        colors={resolvedColorScheme?.gradient.colors}
+        locations={resolvedColorScheme?.gradient?.locations}
+        isDisabled={useDisabled}
+        p="3px"
+      >
         <ButtonBase.Background bg={resolvedColorScheme?.bg}>
           <ButtonBase.Content
             size={size}

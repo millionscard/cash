@@ -1,23 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ButtonBase from './ButtonBase';
+import theme from '../theme';
 
 const colorSchemes = {
   purple: {
-    gradient: ['#8D34FF', '#5C00D0'],
+    gradient: theme.gradients.purple,
     color: 'white',
   },
   gold: {
-    gradient: ['#FFDF32', '#FC8D39'],
+    gradient: theme.gradients.gold,
     color: '#996E00',
     textShadow: '0px 2px 0px rgba(255, 255, 255, 0.35)',
   },
   danger: {
-    gradient: ['#FF6666', '#B20000'],
+    gradient: theme.gradients.red,
     color: 'white',
   },
   success: {
-    gradient: ['#2FE979', '#0B9D45'],
+    gradient: theme.gradients.green,
     color: 'white',
   },
 };
@@ -50,9 +51,17 @@ const ButtonPrimary = ({
       size={size}
       {...props}
     >
-      <ButtonBase.Gradient colors={resolvedColorScheme?.gradient} isDisabled={useDisabled}>
+      <ButtonBase.Gradient
+        colors={resolvedColorScheme?.gradient.colors}
+        locations={resolvedColorScheme?.gradient?.locations}
+        isDisabled={useDisabled}
+      >
         <ButtonBase.Gradient colors={['rgba(255, 255, 255, 0.5)', 'rgba(255, 255, 255, 0)']}>
-          <ButtonBase.Gradient colors={resolvedColorScheme?.gradient} m="3px">
+          <ButtonBase.Gradient
+            colors={resolvedColorScheme?.gradient.colors}
+            locations={resolvedColorScheme?.gradient?.locations}
+            m="3px"
+          >
             <ButtonBase.Content
               size={size}
               isLoading={isLoading}
