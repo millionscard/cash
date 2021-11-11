@@ -5,7 +5,7 @@ import { variant } from 'styled-system';
 import sx from '../sx';
 import Icon from '../Icon';
 
-const iconSizes = { lg: 12, md: 10, sm: 8 };
+const iconSizes = { lg: '12', md: '10', sm: '8' };
 const sizeVariants = variant({
   prop: 'size',
   variants: {
