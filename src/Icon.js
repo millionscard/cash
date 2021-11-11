@@ -32,7 +32,6 @@ const Icon = ({ color, ...props }) => {
   // TODO: refactor themeGet()
   const [colorName, colorShade] = color?.split('.') || [];
   const resolvedColor = colorName && colorShade ? theme.colors[colorName][colorShade] : color;
-  console.log({ resolvedColor });
   return <SvgIcon {...props} fill={resolvedColor} svgs={svgs} />;
 };
 
