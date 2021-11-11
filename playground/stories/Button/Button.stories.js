@@ -2,7 +2,7 @@ import React from 'react';
 import * as Cash from '@cash';
 
 export default () => (
-  <Cash.Card bg="purple.500">
+  <Cash.Card bg="black.25">
     <Cash.Button mb="3">Button text</Cash.Button>
     <Cash.Button mb="3" hasShadow>
       Button text

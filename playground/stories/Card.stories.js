@@ -14,7 +14,9 @@ export default () => (
       <Cash.Heading size="lg" mr="8">
         Link your bank account to add funds
       </Cash.Heading>
-      <Cash.ButtonPrimary mt="4">Link bank account</Cash.ButtonPrimary>
+      <Cash.ButtonPrimary mt="4" isFullWidth>
+        Link bank account
+      </Cash.ButtonPrimary>
     </Cash.Card>
   </>
 );
