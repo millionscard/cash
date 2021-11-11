@@ -142,6 +142,18 @@ export default [
           },
         ],
       },
+      {
+        title: 'Stack',
+        description: null,
+        docs: '/Stack',
+        stories: [
+          {
+            title: 'Examples',
+            description: '',
+            component: require('./Stack.stories').default,
+          },
+        ],
+      },
     ],
   },
 ];
