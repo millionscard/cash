@@ -51,8 +51,8 @@ const hasShadowStyles = css`
   shadow-radius: 10px;
 `;
 
-const StyledPressable = styled.Pressable.attrs(({ onPress, isDisabled }) => ({
-  onPress: isDisabled ? undefined : onPress,
+const StyledPressable = styled.Pressable.attrs(({ onPress, disabled }) => ({
+  onPress: disabled ? undefined : onPress,
 }))`
   flex-direction: ${({ isFullWidth }) => (isFullWidth ? 'column' : 'row')};
   align-self: ${({ isFullWidth }) => (isFullWidth ? 'stretch' : 'flex-start')};
