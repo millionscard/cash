@@ -45,10 +45,7 @@ const isDisabledStyles = css`
 `;
 
 const hasShadowStyles = css`
-  shadow-color: black.500;
-  shadow-offset: 0 2px;
-  shadow-opacity: 0.4;
-  shadow-radius: 10px;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
 `;
 
 const StyledPressable = styled.Pressable.attrs(({ onPress, disabled }) => ({
