@@ -18,11 +18,6 @@ export default [
             component: require('./Button/ButtonPrimary.stories').default,
           },
           {
-            title: 'Button Outline',
-            description: '',
-            component: require('./Button/ButtonOutline.stories').default,
-          },
-          {
             title: 'Button Icon',
             description: '',
             component: require('./Button/ButtonIcon.stories').default,

@@ -27,16 +27,6 @@ import {Props} from '../src/props'
 
 <Props of="ButtonPrimary" />
 
-# ButtonOutline
-
-```jsx
-<ButtonOutline>Button text</ButtonOutline>
-```
-
-## Props
-
-<Props of="ButtonOutline" />
-
 # ButtonIcon
 
 ```jsx
