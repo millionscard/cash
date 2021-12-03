@@ -18,7 +18,8 @@
     "lint": "eslint --ignore-path ./.gitignore --ignore-pattern './docs/**' **/*.js",
     "format": "prettier --write '**/[!__]*.{js,md,json}' --ignore-path ./.gitignore",
     "precommit": "lint-staged",
-    "prepare": "husky install && npx pod-install"
+    "prepare": "husky install && npx pod-install",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
   },
   "lint-staged": {
     "**/*.{js,md}": "prettier --write",
@@ -47,6 +48,7 @@
     "@babel/runtime": "7.15.4",
     "@react-native-community/eslint-config": "3.0.1",
     "babel-plugin-module-resolver": "4.1.0",
+    "conventional-changelog-cli": "2.1.1",
     "eslint": "7.32.0",
     "husky": "7.0.4",
     "lint-staged": "11.2.3",
