@@ -2,6 +2,8 @@
   "name": "@millionscard/cash",
   "version": "1.0.0-alpha",
   "description": "Millions Component Library for React Native",
+  "author": "MyCard Inc.",
+  "license": "MIT",
   "main": "src/index.js",
   "files": [
     "src"
