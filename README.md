@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="150" height="150" src="assets/logo-mark.svg">
+  <img width="600" src="assets/cover.png" alt="Millions Design System">
 </p>
 
 <h1 align="center">Cash</h1>
