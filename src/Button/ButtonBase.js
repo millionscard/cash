@@ -14,8 +14,8 @@ const defaultSizeProp = 'lg';
 const sizeVariants = variant({
   prop: 'size',
   variants: {
-    md: { height: 46 },
     lg: { height: 60 },
+    md: { height: 48 },
     sm: { height: 30 },
   },
 });
