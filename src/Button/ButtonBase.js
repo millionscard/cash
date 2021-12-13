@@ -26,7 +26,7 @@ const spaceSizeVariants = variant({
   variants: {
     lg: { px: 4 },
     md: { px: 4 },
-    sm: { px: 2 },
+    sm: { px: 3 },
   },
 });
 
@@ -36,7 +36,7 @@ const textSizeVariants = variant({
   variants: {
     lg: { fontSize: 'xl' },
     md: { fontSize: 'md' },
-    sm: { fontSize: 'md', fontWeight: 'semibold' },
+    sm: { fontSize: 'md' },
   },
 });
 
@@ -109,8 +109,7 @@ const StyledButtonView = styled.View`
 `;
 
 const StyledButtonText = styled.Text`
-  font-family: ${({ theme }) => theme.fonts.heading};
-  font-weight: bold;
+  ${({ theme }) => theme.fonts.FuturaPT.bold};
   line-height: 24px;
 
   ${textSizeVariants}
