@@ -16,9 +16,8 @@ const StyledPressable = styled.Pressable.attrs(({ onPress, disabled }) => ({
 `;
 
 const StyledText = styled.Text`
-  font-family: ${({ theme }) => theme.fonts.button};
+  ${({ theme }) => theme.fonts.FuturaPT.semibold};
   font-size: ${({ theme }) => theme.fontSizes.xl};
-  font-weight: ${({ theme }) => theme.fontWeights.semibold};
   color: ${({ theme }) => theme.colors.purple['500']};
   opacity: ${({ disabled }) => (disabled ? '0.3' : '1')};
 `;
