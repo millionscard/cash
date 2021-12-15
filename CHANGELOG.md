@@ -1,3 +1,10 @@
+# [1.0.0-alpha.3](https://github.com/millionscard/cash/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2021-12-15)
+
+### Features
+
+- **ButtonBase:** add Android specific drop shadow ([9b5137e](https://github.com/millionscard/cash/commit/9b5137e22fe5c7efd528d9a2a36e4fb5ba15ad79))
+- redefine cross platform fonts ([d4c94f6](https://github.com/millionscard/cash/commit/d4c94f6b826554786cda417caf5c91e7f8cd7024))
+
 # [1.0.0-alpha.2](https://github.com/millionscard/cash/compare/v1.0.0-alpha.1...v1.0.0-alpha.2) (2021-12-13)
 
 ### Features
