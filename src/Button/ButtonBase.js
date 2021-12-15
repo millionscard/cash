@@ -46,6 +46,12 @@ const isDisabledStyles = css`
 
 const hasShadowStyles = css`
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+
+  /**
+   * Android specific drop shadow
+   * https://reactnative.dev/docs/view-style-props#elevation-android
+   */
+  elevation: 3;
 `;
 
 const StyledPressable = styled.Pressable.attrs(({ onPress, disabled }) => ({
