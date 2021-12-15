@@ -12,18 +12,18 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		17FFFC68C9B06B3B6D8D2318 /* libPods-Cash-CashTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B964E01C73F6F68B1CCF95D8 /* libPods-Cash-CashTests.a */; };
-		22E143FC52D74FF99419969F /* Futura-PT-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5A3E54F2F4B40498355BDCD /* Futura-PT-Bold.ttf */; };
-		279A5FAE22F94C12B70B1474 /* Futura-PT-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD517EE025E84DCEA78F78A4 /* Futura-PT-ExtraBold.ttf */; };
-		6B187EF14B9044A0A14708DF /* Futura-PT-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EBD57B8860424D1B992B0E3A /* Futura-PT-Heavy.ttf */; };
+		5803921E33A345AABF9640D5 /* FuturaPT-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 086FB18F9E1E408D962663F5 /* FuturaPT-Book.ttf */; };
+		666EB8D1F62E487F8C7DEEF8 /* SFProText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5343D3E76F234BCEA8D3336E /* SFProText-Medium.otf */; };
+		6D6DBC96788841C1B1F351D7 /* FuturaPT-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2841E055607B4256BA45CEBC /* FuturaPT-Heavy.ttf */; };
 		71F4031E2A140A5A06AD90A8 /* libPods-Cash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F416762FFD22D2636CC5D68 /* libPods-Cash.a */; };
+		727E555028BF432B882866C8 /* FuturaPT-Demi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F08D904C75A4C3485C24995 /* FuturaPT-Demi.ttf */; };
+		818D63D5FAA3491A914191FC /* FuturaPT-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27706335D33243E396A49066 /* FuturaPT-ExtraBold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		9CAE122CFC8A4785A7824319 /* Futura-PT-Demi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A705D62D28BC4005A0CD13B4 /* Futura-PT-Demi.ttf */; };
-		A5472CDD8D4F46D6BC06F1A0 /* Futura-PT-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55C78D80DB7E40B5B54C25C7 /* Futura-PT-Book.ttf */; };
-		B432399D0C7D47D6A5120419 /* Futura-PT-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B1F7BEB9D0EF4E7C8629943A /* Futura-PT-Light.ttf */; };
-		CC47C3BF075B4AAFAB247A15 /* Futura-PT-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5FBC98C958442DB8BB2C7C1 /* Futura-PT-Medium.ttf */; };
-		D04810C9DE1D4797A4825735 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4139D09A30CB4C4AB62DA3D7 /* SF-Pro-Text-Bold.otf */; };
-		D50C343F6E7C4202981E9B24 /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 697305591DDC490DAD9A266C /* SF-Pro-Text-Regular.otf */; };
-		FF92648684544B64A2A80D85 /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FFC820C2E4E2484F8DBC9A8F /* SF-Pro-Text-Medium.otf */; };
+		893795F218A94DE0B7E14235 /* SFProText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 32CFCF2D4CE449B3A1C82FF2 /* SFProText-Bold.otf */; };
+		8B2C2E85C4F34C9D8D8D205F /* SFProText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B41D7CC709CF4855829BA397 /* SFProText-Regular.otf */; };
+		AB8F18D345224EF3AD2590C3 /* FuturaPT-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5210124A01944E7EBA26E007 /* FuturaPT-Bold.ttf */; };
+		CED9E91B3BD946ABAB8028EC /* FuturaPT-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2307E2D8615446FA6A62D7B /* FuturaPT-Medium.ttf */; };
+		D1A6A05A127343AF9314B2BE /* FuturaPT-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 631FF784C38D440CA0ED5321 /* FuturaPT-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,23 +40,33 @@
 		00E356EE1AD99517003FC87E /* CashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* CashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashTests.m; sourceTree = "<group>"; };
+		086FB18F9E1E408D962663F5 /* FuturaPT-Book.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FuturaPT-Book.ttf"; path = "../assets/fonts/FuturaPT-Book.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Cash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Cash/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Cash/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Cash/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Cash/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Cash/main.m; sourceTree = "<group>"; };
+		27706335D33243E396A49066 /* FuturaPT-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FuturaPT-ExtraBold.ttf"; path = "../assets/fonts/FuturaPT-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2841E055607B4256BA45CEBC /* FuturaPT-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FuturaPT-Heavy.ttf"; path = "../assets/fonts/FuturaPT-Heavy.ttf"; sourceTree = "<group>"; };
 		2F416762FFD22D2636CC5D68 /* libPods-Cash.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cash.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32CFCF2D4CE449B3A1C82FF2 /* SFProText-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Bold.otf"; path = "../assets/fonts/SFProText-Bold.otf"; sourceTree = "<group>"; };
 		4139D09A30CB4C4AB62DA3D7 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Bold.otf"; path = "../assets/fonts/SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
 		4A70F1C87EDBE35FC504D7F9 /* Pods-Cash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cash.release.xcconfig"; path = "Target Support Files/Pods-Cash/Pods-Cash.release.xcconfig"; sourceTree = "<group>"; };
+		5210124A01944E7EBA26E007 /* FuturaPT-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FuturaPT-Bold.ttf"; path = "../assets/fonts/FuturaPT-Bold.ttf"; sourceTree = "<group>"; };
+		5343D3E76F234BCEA8D3336E /* SFProText-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Medium.otf"; path = "../assets/fonts/SFProText-Medium.otf"; sourceTree = "<group>"; };
 		53B4EC8EE9E7ABF4A95BE91D /* Pods-Cash-CashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cash-CashTests.release.xcconfig"; path = "Target Support Files/Pods-Cash-CashTests/Pods-Cash-CashTests.release.xcconfig"; sourceTree = "<group>"; };
 		55C78D80DB7E40B5B54C25C7 /* Futura-PT-Book.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Futura-PT-Book.ttf"; path = "../assets/fonts/Futura-PT-Book.ttf"; sourceTree = "<group>"; };
+		5F08D904C75A4C3485C24995 /* FuturaPT-Demi.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FuturaPT-Demi.ttf"; path = "../assets/fonts/FuturaPT-Demi.ttf"; sourceTree = "<group>"; };
 		62CAB88D76F98CC238BC09B4 /* Pods-Cash-CashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cash-CashTests.debug.xcconfig"; path = "Target Support Files/Pods-Cash-CashTests/Pods-Cash-CashTests.debug.xcconfig"; sourceTree = "<group>"; };
+		631FF784C38D440CA0ED5321 /* FuturaPT-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FuturaPT-Light.ttf"; path = "../assets/fonts/FuturaPT-Light.ttf"; sourceTree = "<group>"; };
 		697305591DDC490DAD9A266C /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SF-Pro-Text-Regular.otf"; path = "../assets/fonts/SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Cash/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93FE03CB5DEE52B88A14E6B0 /* Pods-Cash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cash.debug.xcconfig"; path = "Target Support Files/Pods-Cash/Pods-Cash.debug.xcconfig"; sourceTree = "<group>"; };
+		A2307E2D8615446FA6A62D7B /* FuturaPT-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "FuturaPT-Medium.ttf"; path = "../assets/fonts/FuturaPT-Medium.ttf"; sourceTree = "<group>"; };
 		A705D62D28BC4005A0CD13B4 /* Futura-PT-Demi.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Futura-PT-Demi.ttf"; path = "../assets/fonts/Futura-PT-Demi.ttf"; sourceTree = "<group>"; };
 		B1F7BEB9D0EF4E7C8629943A /* Futura-PT-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Futura-PT-Light.ttf"; path = "../assets/fonts/Futura-PT-Light.ttf"; sourceTree = "<group>"; };
+		B41D7CC709CF4855829BA397 /* SFProText-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProText-Regular.otf"; path = "../assets/fonts/SFProText-Regular.otf"; sourceTree = "<group>"; };
 		B964E01C73F6F68B1CCF95D8 /* libPods-Cash-CashTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Cash-CashTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD517EE025E84DCEA78F78A4 /* Futura-PT-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Futura-PT-ExtraBold.ttf"; path = "../assets/fonts/Futura-PT-ExtraBold.ttf"; sourceTree = "<group>"; };
 		EBD57B8860424D1B992B0E3A /* Futura-PT-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Futura-PT-Heavy.ttf"; path = "../assets/fonts/Futura-PT-Heavy.ttf"; sourceTree = "<group>"; };
@@ -182,6 +192,16 @@
 				4139D09A30CB4C4AB62DA3D7 /* SF-Pro-Text-Bold.otf */,
 				FFC820C2E4E2484F8DBC9A8F /* SF-Pro-Text-Medium.otf */,
 				697305591DDC490DAD9A266C /* SF-Pro-Text-Regular.otf */,
+				5210124A01944E7EBA26E007 /* FuturaPT-Bold.ttf */,
+				086FB18F9E1E408D962663F5 /* FuturaPT-Book.ttf */,
+				5F08D904C75A4C3485C24995 /* FuturaPT-Demi.ttf */,
+				27706335D33243E396A49066 /* FuturaPT-ExtraBold.ttf */,
+				2841E055607B4256BA45CEBC /* FuturaPT-Heavy.ttf */,
+				631FF784C38D440CA0ED5321 /* FuturaPT-Light.ttf */,
+				A2307E2D8615446FA6A62D7B /* FuturaPT-Medium.ttf */,
+				32CFCF2D4CE449B3A1C82FF2 /* SFProText-Bold.otf */,
+				5343D3E76F234BCEA8D3336E /* SFProText-Medium.otf */,
+				B41D7CC709CF4855829BA397 /* SFProText-Regular.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -282,16 +302,16 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				22E143FC52D74FF99419969F /* Futura-PT-Bold.ttf in Resources */,
-				A5472CDD8D4F46D6BC06F1A0 /* Futura-PT-Book.ttf in Resources */,
-				9CAE122CFC8A4785A7824319 /* Futura-PT-Demi.ttf in Resources */,
-				279A5FAE22F94C12B70B1474 /* Futura-PT-ExtraBold.ttf in Resources */,
-				6B187EF14B9044A0A14708DF /* Futura-PT-Heavy.ttf in Resources */,
-				B432399D0C7D47D6A5120419 /* Futura-PT-Light.ttf in Resources */,
-				CC47C3BF075B4AAFAB247A15 /* Futura-PT-Medium.ttf in Resources */,
-				D04810C9DE1D4797A4825735 /* SF-Pro-Text-Bold.otf in Resources */,
-				FF92648684544B64A2A80D85 /* SF-Pro-Text-Medium.otf in Resources */,
-				D50C343F6E7C4202981E9B24 /* SF-Pro-Text-Regular.otf in Resources */,
+				AB8F18D345224EF3AD2590C3 /* FuturaPT-Bold.ttf in Resources */,
+				5803921E33A345AABF9640D5 /* FuturaPT-Book.ttf in Resources */,
+				727E555028BF432B882866C8 /* FuturaPT-Demi.ttf in Resources */,
+				818D63D5FAA3491A914191FC /* FuturaPT-ExtraBold.ttf in Resources */,
+				6D6DBC96788841C1B1F351D7 /* FuturaPT-Heavy.ttf in Resources */,
+				D1A6A05A127343AF9314B2BE /* FuturaPT-Light.ttf in Resources */,
+				CED9E91B3BD946ABAB8028EC /* FuturaPT-Medium.ttf in Resources */,
+				893795F218A94DE0B7E14235 /* SFProText-Bold.otf in Resources */,
+				666EB8D1F62E487F8C7DEEF8 /* SFProText-Medium.otf in Resources */,
+				8B2C2E85C4F34C9D8D8D205F /* SFProText-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

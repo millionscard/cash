@@ -53,16 +53,16 @@
 	<false/>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Futura-PT-Bold.ttf</string>
-		<string>Futura-PT-Book.ttf</string>
-		<string>Futura-PT-Demi.ttf</string>
-		<string>Futura-PT-ExtraBold.ttf</string>
-		<string>Futura-PT-Heavy.ttf</string>
-		<string>Futura-PT-Light.ttf</string>
-		<string>Futura-PT-Medium.ttf</string>
-		<string>SF-Pro-Text-Bold.otf</string>
-		<string>SF-Pro-Text-Medium.otf</string>
-		<string>SF-Pro-Text-Regular.otf</string>
+		<string>FuturaPT-Bold.ttf</string>
+		<string>FuturaPT-Book.ttf</string>
+		<string>FuturaPT-Demi.ttf</string>
+		<string>FuturaPT-ExtraBold.ttf</string>
+		<string>FuturaPT-Heavy.ttf</string>
+		<string>FuturaPT-Light.ttf</string>
+		<string>FuturaPT-Medium.ttf</string>
+		<string>SFProText-Bold.otf</string>
+		<string>SFProText-Medium.otf</string>
+		<string>SFProText-Regular.otf</string>
 	</array>
 </dict>
 </plist>

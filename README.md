@@ -30,6 +30,35 @@ npm run ios
 npm run android
 ```
 
+### Custom Fonts
+
+iOS uses the "PostScript name" of the font, while Android uses the "font file name".  
+To prevent platform specific conditions our font file name is the same as the PostScript name.
+
+Currently these are the fonts available:
+
+```
+FuturaPT-Bold
+FuturaPT-Book
+FuturaPT-Demi
+FuturaPT-ExtraBold
+FuturaPT-Heavy
+FuturaPT-Light
+FuturaPT-Medium
+
+SFProText-Bold
+SFProText-Medium
+SFProText-Regular
+```
+
+To get the PostScript name of a font, use the following command:
+
+```bash
+(cd assets/fonts && for file in "$arg"*.{ttf,otf}; do fc-scan --format "%{postscriptname}\n" $file; done)
+```
+
+_Note: `fontconfig` is available via homebrew `brew cask install fontconfig`._
+
 ### Start development environment of the docs
 
 ```bash

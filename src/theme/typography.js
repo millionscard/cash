@@ -1,7 +1,3 @@
-import { Platform } from 'react-native';
-
-const ios = Platform.OS === 'ios';
-
 const fontSizes = {
   '2xs': '10px',
   xs: '12px',
@@ -19,64 +15,42 @@ const fontSizes = {
   '9xl': '96px',
 };
 
-const fontWeights = {
-  hairline: 100,
-  thin: 200,
-  light: 300,
-  regular: 400,
-  medium: 500,
-  semibold: 600,
-  bold: 700,
-  heavy: 800,
-  black: 900,
-};
-
 // TODO:
 const lineHeights = {};
 
 const fonts = {
   SFProText: {
     regular: {
-      fontFamily: ios ? 'SF Pro Text' : 'SF-Pro-Text-Regular',
-      fontWeight: ios ? fontWeights.regular : 'normal',
+      fontFamily: 'SFProText-Regular',
     },
     medium: {
-      fontFamily: ios ? 'SF Pro Text' : 'SF-Pro-Text-Medium',
-      fontWeight: ios ? fontWeights.medium : 'normal',
-    },
-    semibold: {
-      fontFamily: ios ? 'SF Pro Text' : 'SF-Pro-Text-Medium',
-      fontWeight: ios ? fontWeights.semibold : 'normal',
+      fontFamily: 'SFProText-Medium',
     },
     bold: {
-      fontFamily: ios ? 'SF Pro Text' : 'SF-Pro-Text-Bold',
-      fontWeight: ios ? fontWeights.bold : 'normal',
+      fontFamily: 'SFProText-Bold',
     },
   },
   FuturaPT: {
-    regular: {
-      fontFamily: ios ? 'Futura PT Medium' : 'Futura-PT-Medium',
-      fontWeight: ios ? fontWeights.regular : 'normal',
+    light: {
+      fontFamily: 'FuturaPT-Light',
+    },
+    book: {
+      fontFamily: 'FuturaPT-Book',
     },
     medium: {
-      fontFamily: ios ? 'Futura PT Medium' : 'Futura-PT-Medium',
-      fontWeight: ios ? fontWeights.medium : 'normal',
+      fontFamily: 'FuturaPT-Medium',
     },
-    semibold: {
-      fontFamily: ios ? 'Futura PT Medium' : 'Futura-PT-Demi',
-      fontWeight: ios ? fontWeights.semibold : 'normal',
+    demi: {
+      fontFamily: 'FuturaPT-Demi',
     },
     bold: {
-      fontFamily: ios ? 'Futura PT Medium' : 'Futura-PT-Bold',
-      fontWeight: ios ? fontWeights.bold : 'normal',
+      fontFamily: 'FuturaPT-Bold',
     },
     heavy: {
-      fontFamily: ios ? 'Futura PT Medium' : 'Futura-PT-Heavy',
-      fontWeight: ios ? fontWeights.heavy : 'normal',
+      fontFamily: 'FuturaPT-Heavy',
     },
-    black: {
-      fontFamily: ios ? 'Futura PT Medium' : 'Futura-PT-ExtraBold',
-      fontWeight: ios ? fontWeights.black : 'normal',
+    extrabold: {
+      fontFamily: 'FuturaPT-ExtraBold',
     },
   },
 
@@ -87,7 +61,6 @@ const fonts = {
 
 const typography = {
   fontSizes,
-  fontWeights,
   lineHeights,
   fonts,
 };
