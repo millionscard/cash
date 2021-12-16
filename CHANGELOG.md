@@ -1,3 +1,14 @@
+# [1.0.0-alpha.4](https://github.com/millionscard/cash/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2021-12-16)
+
+### Bug Fixes
+
+- **ButtonPrimary:** icon support ([2d2ea4a](https://github.com/millionscard/cash/commit/2d2ea4ab04b8362d8111d70a0f36400084766141))
+
+### Features
+
+- **Button:** default `isFullWidth: true` prop ([a19f559](https://github.com/millionscard/cash/commit/a19f55931e5628c1e198ddc57a5417265fed78dd))
+- **ButtonPrimary:** default `isFullWidth: true` prop ([fee5f6c](https://github.com/millionscard/cash/commit/fee5f6c8f94b17b262dd287c2e17abf769c3cd39))
+
 # [1.0.0-alpha.3](https://github.com/millionscard/cash/compare/v1.0.0-alpha.2...v1.0.0-alpha.3) (2021-12-15)
 
 ### Features
