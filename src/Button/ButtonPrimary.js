@@ -99,6 +99,7 @@ ButtonPrimary.propTypes = {
 
 ButtonPrimary.defaultProps = {
   colorScheme: 'purple',
+  isFullWidth: true,
 };
 
 export default ButtonPrimary;
