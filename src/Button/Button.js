@@ -69,6 +69,7 @@ Button.propTypes = {
 
 Button.defaultProps = {
   colorScheme: 'white',
+  isFullWidth: true,
 };
 
 export default Button;
