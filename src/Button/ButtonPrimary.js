@@ -31,6 +31,8 @@ const ButtonPrimary = ({
   isLoading,
   loadingText,
   hasShadow,
+  leftIcon,
+  rightIcon,
   size,
   colorScheme,
   ...props
@@ -66,6 +68,8 @@ const ButtonPrimary = ({
               size={size}
               isLoading={isLoading}
               loadingText={loadingText}
+              leftIcon={leftIcon}
+              rightIcon={rightIcon}
               {...textProps}
             >
               {children}
