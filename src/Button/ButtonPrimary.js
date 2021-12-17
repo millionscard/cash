@@ -29,7 +29,6 @@ const ButtonPrimary = ({
   isDisabled,
   isFullWidth,
   isLoading,
-  loadingText,
   hasShadow,
   leftIcon,
   rightIcon,
@@ -67,7 +66,6 @@ const ButtonPrimary = ({
             <ButtonBase.Content
               size={size}
               isLoading={isLoading}
-              loadingText={loadingText}
               leftIcon={leftIcon}
               rightIcon={rightIcon}
               {...textProps}
@@ -87,7 +85,6 @@ ButtonPrimary.propTypes = {
   isDisabled: PropTypes.bool,
   isFullWidth: PropTypes.bool,
   isLoading: PropTypes.bool,
-  loadingText: PropTypes.string,
   hasShadow: PropTypes.bool,
   leftIcon: PropTypes.element,
   rightIcon: PropTypes.element,
