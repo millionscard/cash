@@ -139,12 +139,17 @@ const ButtonContent = ({
 
   return (
     <StyledButtonView size={size} {...spaceProps} {...props}>
-      {isLoading ? <ActivityIndicator mr="3" color={color} size="sm" /> : null}
-      {leftIcon ? <Box mr="3">{leftIcon}</Box> : null}
-      <StyledButtonText size={size} {...textProps}>
-        {isLoading && loadingText ? loadingText : children}
-      </StyledButtonText>
-      {rightIcon ? <Box ml="3">{rightIcon}</Box> : null}
+      {isLoading ? (
+        <ActivityIndicator color={color} size="sm" />
+      ) : (
+        <>
+          {leftIcon ? <Box mr="2">{leftIcon}</Box> : null}
+          <StyledButtonText size={size} {...textProps}>
+            {children}
+          </StyledButtonText>
+          {rightIcon ? <Box ml="2">{rightIcon}</Box> : null}
+        </>
+      )}
     </StyledButtonView>
   );
 };
