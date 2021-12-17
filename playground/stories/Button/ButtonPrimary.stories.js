@@ -17,13 +17,7 @@ export default () => {
 
   return (
     <>
-      <Cash.ButtonPrimary
-        mb="3"
-        loadingText="Loading Activity..."
-        isLoading={isLoading}
-        onPress={triggerLoadingState}
-        isFullWidth
-      >
+      <Cash.ButtonPrimary mb="3" isLoading={isLoading} onPress={triggerLoadingState} isFullWidth>
         Button text
       </Cash.ButtonPrimary>
       <Cash.ButtonPrimary colorScheme="gold" mb="3" isFullWidth hasShadow>
