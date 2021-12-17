@@ -124,15 +124,7 @@ const StyledButtonText = styled.Text`
   ${shadow}
 `;
 
-const ButtonContent = ({
-  children,
-  size,
-  isLoading,
-  loadingText,
-  leftIcon,
-  rightIcon,
-  ...props
-}) => {
+const ButtonContent = ({ children, size, isLoading, leftIcon, rightIcon, ...props }) => {
   const { fontSize, fontWeight, color, textShadow, px, py } = props;
   const textProps = { fontSize, fontWeight, color, textShadow };
   const spaceProps = { px, py };
@@ -156,7 +148,6 @@ const ButtonContent = ({
 ButtonContent.propTypes = {
   size: PropTypes.oneOf(sizeProps),
   isLoading: PropTypes.bool,
-  loadingText: PropTypes.string,
   leftIcon: PropTypes.object,
   rightIcon: PropTypes.object,
   ...color.propTypes,
