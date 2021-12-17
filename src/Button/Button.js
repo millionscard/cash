@@ -15,7 +15,6 @@ const Button = ({
   isDisabled,
   isFullWidth,
   isLoading,
-  loadingText,
   hasShadow,
   leftIcon,
   rightIcon,
@@ -41,7 +40,6 @@ const Button = ({
         size={size}
         isDisabled={useDisabled}
         isLoading={isLoading}
-        loadingText={loadingText}
         leftIcon={leftIcon}
         rightIcon={rightIcon}
       >
@@ -57,7 +55,6 @@ Button.propTypes = {
   isDisabled: PropTypes.bool,
   isFullWidth: PropTypes.bool,
   isLoading: PropTypes.bool,
-  loadingText: PropTypes.string,
   hasShadow: PropTypes.bool,
   leftIcon: PropTypes.element,
   rightIcon: PropTypes.element,
