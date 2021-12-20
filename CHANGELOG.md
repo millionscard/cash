@@ -1,3 +1,12 @@
+# [1.0.0-alpha.5](https://github.com/millionscard/cash/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2021-12-20)
+
+### Features
+
+- **ButtonBase:** deprecate "loadingText" prop ([3bb8854](https://github.com/millionscard/cash/commit/3bb8854bc52ceedbeb4a96f33f9b269f4286aefe))
+- **ButtonBase:** hide button text for loading state ([a5d624c](https://github.com/millionscard/cash/commit/a5d624c9c072d7e1208ee24c79fa6d60e5a25911))
+- **Button:** deprecate "loadingText" prop ([575809a](https://github.com/millionscard/cash/commit/575809a9aee96a075cf4afee3f19309335f2ee06))
+- **ButtonPrimary:** deprecate "loadingText" prop ([7ac6eed](https://github.com/millionscard/cash/commit/7ac6eedcfa260234f45e6b918a8fe7c59d399c08))
+
 # [1.0.0-alpha.4](https://github.com/millionscard/cash/compare/v1.0.0-alpha.3...v1.0.0-alpha.4) (2021-12-16)
 
 ### Bug Fixes
