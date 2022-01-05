@@ -31,7 +31,7 @@ Cash React Native ships with a few libraries labeled as peer dependencies. These
 Cash React Native requires the following libraries to be installed along with it:
 
 - `react` version 17.x
-- `react-native` version 0.65.x
+- `react-native` version 0.66.x
 - `react-native-svg` version 12.x
 - `styled-components` version 5.x
 - `styled-system` version 5.x
