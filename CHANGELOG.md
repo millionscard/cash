@@ -1,3 +1,9 @@
+# [1.0.0-alpha.6](https://github.com/millionscard/cash/compare/v1.0.0-alpha.5...v1.0.0-alpha.6) (2022-01-07)
+
+### Features
+
+- introduce "useTheme" ([ea6b5c9](https://github.com/millionscard/cash/commit/ea6b5c9d358587aeb971ebd86e543332099018e4))
+
 # [1.0.0-alpha.5](https://github.com/millionscard/cash/compare/v1.0.0-alpha.4...v1.0.0-alpha.5) (2021-12-20)
 
 ### Features
