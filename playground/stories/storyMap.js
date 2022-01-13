@@ -149,6 +149,18 @@ export default [
           },
         ],
       },
+      {
+        title: 'Avatar',
+        description: null,
+        docs: '/Avatar',
+        stories: [
+          {
+            title: 'Examples',
+            description: '',
+            component: require('./Avatar.stories').default,
+          },
+        ],
+      },
     ],
   },
 ];
