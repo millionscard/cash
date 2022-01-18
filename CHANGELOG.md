@@ -1,3 +1,11 @@
+# [1.0.0-alpha.7](https://github.com/millionscard/cash/compare/v1.0.0-alpha.6...v1.0.0-alpha.7) (2022-01-18)
+
+### Features
+
+- **Button:** add disabled background opacity ([0598a4b](https://github.com/millionscard/cash/commit/0598a4b8d35adb2a99f5ef8a12985fab8c1611c9))
+- introduce "Avatar" component ([0f0092b](https://github.com/millionscard/cash/commit/0f0092becc69c422d958245ba64e0d9775ed5e7e))
+- **theme:** change `radius.lg` from 16px to 20px ([4e3fdd5](https://github.com/millionscard/cash/commit/4e3fdd5ab6c350866fc007f2b200d69d20f77f50))
+
 # [1.0.0-alpha.6](https://github.com/millionscard/cash/compare/v1.0.0-alpha.5...v1.0.0-alpha.6) (2022-01-07)
 
 ### Features
