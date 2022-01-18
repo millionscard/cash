@@ -31,20 +31,20 @@ const Button = ({
       isDisabled={useDisabled}
       isFullWidth={isFullWidth}
       hasShadow={hasShadow}
-      bg={resolvedColorScheme?.bg}
       size={size}
       {...props}
     >
-      <ButtonBase.Content
-        color={resolvedColorScheme?.color}
-        size={size}
-        isDisabled={useDisabled}
-        isLoading={isLoading}
-        leftIcon={leftIcon}
-        rightIcon={rightIcon}
-      >
-        {children}
-      </ButtonBase.Content>
+      <ButtonBase.Background bg={resolvedColorScheme?.bg} isDisabled={useDisabled}>
+        <ButtonBase.Content
+          color={resolvedColorScheme?.color}
+          size={size}
+          isLoading={isLoading}
+          leftIcon={leftIcon}
+          rightIcon={rightIcon}
+        >
+          {children}
+        </ButtonBase.Content>
+      </ButtonBase.Background>
     </ButtonBase>
   );
 };
