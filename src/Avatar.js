@@ -1,7 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
+import { css } from 'styled-components';
 import { variant } from 'styled-system';
+
+const borderSizes = {
+  sm: '2px',
+  md: '3px',
+  lg: '3px',
+  xl: '6px',
+};
 
 const sizeVariants = variant({
   prop: 'size',
@@ -13,22 +21,32 @@ const sizeVariants = variant({
   },
 });
 
+const withBorderStyles = css`
+  border-width: ${({ size }) => borderSizes[size]};
+  border-color: ${({ borderColor }) => borderColor};
+`;
+
 const StyledImage = styled.Image`
   border-radius: ${props => props.theme.radii.full};
+  ${({ showBorder }) => showBorder && withBorderStyles}
   ${sizeVariants}
 `;
 
-const Avatar = ({ size, src }) => {
-  return <StyledImage size={size} source={src} />;
+const Avatar = ({ src, ...props }) => {
+  return <StyledImage source={src} {...props} />;
 };
 
 Avatar.propTypes = {
   src: PropTypes.object,
   size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
+  showBorder: PropTypes.bool,
+  borderColor: PropTypes.string,
 };
 
 Avatar.defaultProps = {
   size: 'md',
+  showBorder: false,
+  borderColor: 'black',
 };
 
 export default Avatar;
