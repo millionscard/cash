@@ -1,3 +1,9 @@
+# [1.0.0-alpha.9](https://github.com/millionscard/cash/compare/v1.0.0-alpha.8...v1.0.0-alpha.9) (2022-01-19)
+
+### Features
+
+- **Avatar:** add optional border support ([9ce98f9](https://github.com/millionscard/cash/commit/9ce98f901d09d4759a56211bd621d9fc620cbda0))
+
 # [1.0.0-alpha.8](https://github.com/millionscard/cash/compare/v1.0.0-alpha.7...v1.0.0-alpha.8) (2022-01-18)
 
 # [1.0.0-alpha.7](https://github.com/millionscard/cash/compare/v1.0.0-alpha.6...v1.0.0-alpha.7) (2022-01-18)
