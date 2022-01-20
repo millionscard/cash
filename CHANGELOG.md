@@ -1,3 +1,10 @@
+# [1.0.0-alpha.10](https://github.com/millionscard/cash/compare/v1.0.0-alpha.9...v1.0.0-alpha.10) (2022-01-20)
+
+### Features
+
+- **Button:** introduce "translucent" color scheme ([711da2c](https://github.com/millionscard/cash/commit/711da2c01ef9620c15c0acae5325088727f517a4))
+- **Card:** introduce space "none" variant ([69ac818](https://github.com/millionscard/cash/commit/69ac818f9df3d630ee12e212c4797f0b6fea4af0))
+
 # [1.0.0-alpha.9](https://github.com/millionscard/cash/compare/v1.0.0-alpha.8...v1.0.0-alpha.9) (2022-01-19)
 
 ### Features
