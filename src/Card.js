@@ -7,6 +7,7 @@ import Box from './Box';
 const spaceVariants = variant({
   prop: 'space',
   variants: {
+    none: { p: 0 },
     sm: { p: 8 },
     md: { p: 20 },
     lg: { p: 30 },
@@ -22,7 +23,7 @@ const Card = props => <StyledCard {...props} />;
 Card.propTypes = {
   borderRadius: PropTypes.oneOf(['none', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'full']),
   bg: PropTypes.string,
-  space: PropTypes.oneOf(['sm', 'md', 'lg']),
+  space: PropTypes.oneOf(['none', 'sm', 'md', 'lg']),
 };
 
 Card.defaultProps = {
