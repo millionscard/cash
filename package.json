@@ -15,7 +15,7 @@
     "docs": "(cd ./docs && npm run dev)",
     "docs:deploy": "(cd ./docs && npm run deploy)",
     "test": "echo \"No test specified\" && exit 0",
-    "lint": "eslint --ignore-path ./.gitignore --ignore-pattern './docs/**' **/*.js",
+    "lint": "eslint --ignore-path ./.gitignore --ignore-pattern './docs/**' '**/*.js'",
     "format": "prettier --write '**/[!__]*.{js,md,json}' --ignore-path ./.gitignore",
     "precommit": "lint-staged",
     "prepare": "husky install && npx pod-install",
