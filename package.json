@@ -15,7 +15,7 @@
     "docs": "(cd ./docs && npm run dev)",
     "docs:deploy": "(cd ./docs && npm run deploy)",
     "test": "echo \"No test specified\" && exit 0",
-    "lint": "eslint --ignore-path ./.gitignore --ignore-pattern './docs/**' --ignore-pattern './e2e/**' '**/*.js'",
+    "lint": "eslint '**/*.js'",
     "detox:ios": "detox build -c ios.sim.debug && detox test -R 1 -c ios.sim.debug --bail",
     "detox:ios:release": "detox build -c ios.sim.release && detox test -R 1 -c ios.sim.release --bail",
     "format": "prettier --write '**/[!__]*.{js,md,json}' --ignore-path ./.gitignore",
