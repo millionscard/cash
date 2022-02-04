@@ -1,4 +1,4 @@
-import css, { SystemStyleObject } from '@styled-system/css';
+import css from '@styled-system/css';
 
 const sx = props => css(props.sx);
 
