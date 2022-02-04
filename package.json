@@ -32,7 +32,7 @@
   "dependencies": {
     "@react-native-async-storage/async-storage": "1.15.15",
     "@react-native-masked-view/masked-view": "0.2.6",
-    "@react-navigation/native": "6.0.6",
+    "@react-navigation/native": "6.0.8",
     "@react-navigation/native-stack": "6.2.5",
     "@styled-system/css": "5.1.5",
     "@styled-system/theme-get": "5.1.2",
@@ -55,7 +55,7 @@
     "metro-react-native-babel-preset": "0.66.2",
     "prettier": "2.5.1",
     "react": "17.0.2",
-    "react-native": "0.67.1",
+    "react-native": "0.67.2",
     "react-native-codegen": "0.0.12",
     "react-native-svg": "12.1.1",
     "styled-components": "5.3.3",
