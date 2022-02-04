@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
-import { color, space, shadow } from 'styled-system';
+import { color as colorSystemProp, space, shadow } from 'styled-system';
 import {
   sizeProps,
   defaultSizeProp,
@@ -26,7 +26,7 @@ const StyledButtonText = styled.Text`
   ${({ theme }) => theme.fonts.FuturaPT.bold};
   line-height: 24px;
   ${textSizeVariants}
-  ${color}
+  ${colorSystemProp}
   ${space}
   ${shadow}
 `;
@@ -58,7 +58,7 @@ ButtonContent.propTypes = {
   isLoading: PropTypes.bool,
   leftIcon: PropTypes.object,
   rightIcon: PropTypes.object,
-  ...color.propTypes,
+  ...colorSystemProp.propTypes,
   ...space.propTypes,
 };
 
