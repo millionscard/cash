@@ -161,6 +161,18 @@ export default [
           },
         ],
       },
+      {
+        title: 'Numpad',
+        description: null,
+        docs: '/Numpad',
+        stories: [
+          {
+            title: 'Examples',
+            description: '',
+            component: require('./Numpad.stories').default,
+          },
+        ],
+      },
     ],
   },
 ];
