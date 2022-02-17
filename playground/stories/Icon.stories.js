@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Cash from '@cash';
 
-const icons = ['LeftArrow', 'RightArrow'];
+const icons = ['LeftArrow', 'RightArrow', 'Backspace'];
 
 export default () => (
   <>
