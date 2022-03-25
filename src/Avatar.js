@@ -4,13 +4,6 @@ import styled from 'styled-components/native';
 import { css } from 'styled-components';
 import { variant } from 'styled-system';
 
-const borderSizes = {
-  sm: '2px',
-  md: '3px',
-  lg: '3px',
-  xl: '6px',
-};
-
 const sizeVariants = variant({
   prop: 'size',
   variants: {
@@ -22,7 +15,7 @@ const sizeVariants = variant({
 });
 
 const withBorderStyles = css`
-  border-width: ${({ size }) => borderSizes[size]};
+  border-width: 3px;
   border-color: ${({ borderColor }) => borderColor};
 `;
 
