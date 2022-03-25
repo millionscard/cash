@@ -1,3 +1,9 @@
+# [1.0.0-alpha.11](https://github.com/millionscard/cash/compare/v1.0.0-alpha.10...v1.0.0-alpha.11) (2022-03-25)
+
+### Features
+
+- **Avatar:** unify border width ([3c685f7](https://github.com/millionscard/cash/commit/3c685f75f2c701695379c57198f1d37f75af2ce0))
+
 # [1.0.0-alpha.10](https://github.com/millionscard/cash/compare/v1.0.0-alpha.9...v1.0.0-alpha.10) (2022-01-20)
 
 ### Features
