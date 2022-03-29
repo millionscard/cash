@@ -1,3 +1,10 @@
+# [1.0.0-alpha.12](https://github.com/millionscard/cash/compare/v1.0.0-alpha.11...v1.0.0-alpha.12) (2022-03-29)
+
+### Features
+
+- introduce "Backspace" icon ([0afa1a8](https://github.com/millionscard/cash/commit/0afa1a8a91f2c26c5f6c891994f4f4d689bcaa1d))
+- introduce basic "Numpad" component ([3b79ffb](https://github.com/millionscard/cash/commit/3b79ffb70f76d2fcf206a173b54877ec96633b3c))
+
 # [1.0.0-alpha.11](https://github.com/millionscard/cash/compare/v1.0.0-alpha.10...v1.0.0-alpha.11) (2022-03-25)
 
 ### Features
