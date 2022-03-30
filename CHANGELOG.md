@@ -1,3 +1,10 @@
+# [1.0.0-alpha.13](https://github.com/millionscard/cash/compare/v1.0.0-alpha.12...v1.0.0-alpha.13) (2022-03-30)
+
+### Features
+
+- **numpad:** forward props for styling ([d4bebae](https://github.com/millionscard/cash/commit/d4bebae0dd3a67d588099b280fac46043637b32f))
+- **numpad:** introduce output value + passcode ([dedb3fb](https://github.com/millionscard/cash/commit/dedb3fbc580773dd2758c879b87b7597154a2415))
+
 # [1.0.0-alpha.12](https://github.com/millionscard/cash/compare/v1.0.0-alpha.11...v1.0.0-alpha.12) (2022-03-29)
 
 ### Features
