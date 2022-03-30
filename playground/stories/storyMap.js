@@ -167,9 +167,14 @@ export default [
         docs: '/Numpad',
         stories: [
           {
-            title: 'Examples',
+            title: 'Value',
             description: '',
-            component: require('./Numpad.stories').default,
+            component: require('./Numpad/NumpadValue.stories').default,
+          },
+          {
+            title: 'Passcode',
+            description: '',
+            component: require('./Numpad/NumpadPasscode.stories').default,
           },
         ],
       },

@@ -1,2 +1,3 @@
 export { default } from './Numpad';
-export { default as NumpadOutput } from './NumpadOutput';
+export { default as OutputValue } from './OutputValue';
+export { default as OutputPasscode } from './OutputPasscode';

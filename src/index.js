@@ -9,7 +9,7 @@ export { default as ActivityIndicator } from './ActivityIndicator';
 export { default as Avatar } from './Avatar';
 export { default as Button, ButtonGhost, ButtonIcon, ButtonOutline, ButtonPrimary } from './Button';
 export { default as Modal } from './Modal';
-export { default as Numpad, NumpadOutput } from './Numpad';
+export { default as Numpad, OutputValue, OutputPasscode } from './Numpad';
 export { default as Stack } from './Stack';
 export { default as Card } from './Card';
 export { default as Heading } from './Heading';

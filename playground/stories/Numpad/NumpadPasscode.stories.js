@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from 'react';
 import * as Cash from '@cash';
 
-const NumpadExample = () => {
+const NumpadPasscodeExample = () => {
   const [value, setValue] = useState('');
   const numpadPressHandler = useCallback(newValue => {
     setValue(prevValue => {
@@ -10,7 +10,7 @@ const NumpadExample = () => {
         nextValue = newValue;
       } else if (newValue === 'back') {
         nextValue = prevValue.slice(0, -1);
-      } else {
+      } else if (nextValue.length <= 3) {
         nextValue += newValue;
       }
       return nextValue;
@@ -19,14 +19,14 @@ const NumpadExample = () => {
 
   return (
     <Cash.Box>
-      <Cash.NumpadOutput value={value} />
-      <Cash.Numpad onPress={numpadPressHandler} />
+      <Cash.OutputPasscode value={value} my="20px" />
+      <Cash.Numpad onPress={numpadPressHandler} decimal={false} />
     </Cash.Box>
   );
 };
 
 export default () => (
   <>
-    <NumpadExample />
+    <NumpadPasscodeExample />
   </>
 );
