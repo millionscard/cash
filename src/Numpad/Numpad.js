@@ -22,7 +22,7 @@ const KeyboardRow = styled(Box).attrs({
   width: '100%',
 });
 
-const Numpad = ({ onPress, decimal }) => {
+const Numpad = ({ onPress, decimal, ...props }) => {
   const renderCell = useCallback(
     symbol => (
       <KeyboardButton
@@ -44,7 +44,7 @@ const Numpad = ({ onPress, decimal }) => {
   );
 
   return (
-    <>
+    <Box {...props}>
       {renderRow([1, 2, 3])}
       {renderRow([4, 5, 6])}
       {renderRow([7, 8, 9])}
@@ -55,7 +55,7 @@ const Numpad = ({ onPress, decimal }) => {
           <Icon name="Backspace" width="20" height="14" />
         </KeyboardButton>
       </KeyboardRow>
-    </>
+    </Box>
   );
 };
 
