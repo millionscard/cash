@@ -1,3 +1,10 @@
+# [1.0.0-alpha.14](https://github.com/millionscard/cash/compare/v1.0.0-alpha.13...v1.0.0-alpha.14) (2022-04-05)
+
+### Bug Fixes
+
+- **heading/android:** add default text color ([782ef72](https://github.com/millionscard/cash/commit/782ef72ac0d9cae0ac038bd191044baeb748b1c1))
+- **text/android:** add default text color ([1cfc979](https://github.com/millionscard/cash/commit/1cfc979fda146b1e8c63f6a79e7d2a143db98ae4))
+
 # [1.0.0-alpha.13](https://github.com/millionscard/cash/compare/v1.0.0-alpha.12...v1.0.0-alpha.13) (2022-03-30)
 
 ### Features
