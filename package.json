@@ -56,7 +56,7 @@
     "react-native": "0.67.2",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "3.10.2",
-    "react-native-codegen": "0.0.12",
+    "react-native-codegen": "0.0.14",
     "react-native-svg": "12.1.1",
     "styled-components": "5.3.3",
     "styled-system": "5.1.5"
