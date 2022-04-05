@@ -19,7 +19,8 @@ const sizeVariants = variant({
 });
 
 const Heading = styled.Text`
-  ${({ theme }) => theme.fonts.FuturaPT.bold};
+  color: ${props => props.theme.colors.black['500']};
+  ${({ theme }) => theme.fonts.FuturaPT.bold}
   ${color}
   ${space}
   ${typography}
