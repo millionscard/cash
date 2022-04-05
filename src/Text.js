@@ -4,6 +4,7 @@ import styled from 'styled-components/native';
 import { color, space, typography, shadow } from 'styled-system';
 
 const StyledText = styled.Text`
+  color: ${props => props.theme.colors.black['500']};
   ${color}
   ${space}
   ${typography}
