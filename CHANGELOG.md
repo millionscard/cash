@@ -1,3 +1,10 @@
+# [1.0.0-alpha.15](https://github.com/millionscard/cash/compare/v1.0.0-alpha.14...v1.0.0-alpha.15) (2022-04-07)
+
+### Features
+
+- **a11y:** disallow font scaling for "Heading" ([26d0233](https://github.com/millionscard/cash/commit/26d0233e124483a40fc74ec489b2f33bcf00d183))
+- **a11y:** disallow font scaling for "Text" ([eef9411](https://github.com/millionscard/cash/commit/eef941110cbbd2a53b598b1f1ac55ef2b785cf44))
+
 # [1.0.0-alpha.14](https://github.com/millionscard/cash/compare/v1.0.0-alpha.13...v1.0.0-alpha.14) (2022-04-05)
 
 ### Bug Fixes
