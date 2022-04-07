@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
-import { color, space, typography, variant } from 'styled-system';
+import { variant } from 'styled-system';
+import Text from './Text';
 
 const sizeVariants = variant({
   prop: 'size',
@@ -18,12 +19,8 @@ const sizeVariants = variant({
   },
 });
 
-const Heading = styled.Text`
-  color: ${props => props.theme.colors.black['500']};
+const Heading = styled(Text)`
   ${({ theme }) => theme.fonts.FuturaPT.bold}
-  ${color}
-  ${space}
-  ${typography}
   ${sizeVariants}
 `;
 
@@ -37,5 +34,7 @@ Heading.propTypes = {
 Heading.defaultProps = {
   size: 'md',
 };
+
+Heading.displayName = 'Heading';
 
 export default Heading;
