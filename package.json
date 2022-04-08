@@ -40,10 +40,10 @@
   "devDependencies": {
     "@babel/core": "7.17.0",
     "@babel/runtime": "7.16.7",
-    "@react-navigation/native": "6.0.8",
-    "@react-navigation/native-stack": "6.6.1",
     "@react-native-async-storage/async-storage": "1.15.17",
     "@react-native-community/eslint-config": "3.0.1",
+    "@react-navigation/native": "6.0.8",
+    "@react-navigation/native-stack": "6.6.1",
     "babel-plugin-module-resolver": "4.1.0",
     "conventional-changelog-cli": "2.2.2",
     "eslint": "7.32.0",
@@ -52,17 +52,17 @@
     "metro-react-native-babel-preset": "0.70.0",
     "prettier": "2.5.1",
     "react": "17.0.2",
-    "react-native": "0.68.0",
+    "react-native": "0.67.2",
+    "react-native-codegen": "0.0.14",
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "3.10.2",
-    "react-native-codegen": "0.0.14",
     "react-native-svg": "12.1.1",
     "styled-components": "5.3.3",
     "styled-system": "5.1.5"
   },
   "peerDependencies": {
     "react": "17.x",
-    "react-native": "0.66.x",
+    "react-native": "0.67.2",
     "react-native-svg": "12.x",
     "styled-components": "5.x",
     "styled-system": "5.x"
