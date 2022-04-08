@@ -26,8 +26,7 @@
     "**/*.js": "eslint"
   },
   "volta": {
-    "node": "14.17.0",
-    "npm": "7.24.2"
+    "node": "16.14.2"
   },
   "dependencies": {
     "@react-native-masked-view/masked-view": "0.2.6",
