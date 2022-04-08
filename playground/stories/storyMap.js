@@ -1,5 +1,22 @@
 export default [
   {
+    title: 'Animations',
+    stories: [
+      {
+        title: 'useAnimation',
+        description: null,
+        docs: null,
+        stories: [
+          {
+            title: 'Animations',
+            description: '',
+            component: require('./animations/useAnimation.stories').default,
+          },
+        ],
+      },
+    ],
+  },
+  {
     title: 'Components',
     stories: [
       {
