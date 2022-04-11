@@ -66,6 +66,7 @@ const colors = {
   },
 
   purple: {
+    25: '#F6F0FF',
     50: '#F1E5FF',
     100: '#E8D6FF',
     200: '#D2AEFF',
