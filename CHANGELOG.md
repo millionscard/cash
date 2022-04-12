@@ -1,3 +1,17 @@
+# [1.0.0-alpha.16](https://github.com/millionscard/cash/compare/v1.0.0-alpha.15...v1.0.0-alpha.16) (2022-04-12)
+
+### Features
+
+- **a11y:** disallow font scaling for ButtonContent ([1171f19](https://github.com/millionscard/cash/commit/1171f1998476b855ef26264a6b8c8a8bb9dade19))
+- **a11y:** disallow font scaling for ButtonGhost ([cdea6e0](https://github.com/millionscard/cash/commit/cdea6e0e16483d0a3b49a92d790749de266aa3c8))
+- **ButtonBase:** slightly adjust variants ([109fa87](https://github.com/millionscard/cash/commit/109fa878138ad6e04bbcd0c5bdfc94441b6ecdd7))
+- **ButtonPrimary:** update gold scheme text color ([b4ae04c](https://github.com/millionscard/cash/commit/b4ae04cd70cbdc893300fa22567da069cfd59e84))
+- introduce useAnimation hook ([0df821e](https://github.com/millionscard/cash/commit/0df821e671f3fa81776cb8b115c763d3b7db7bf3))
+- **playground:** add "ButtonPrimary" sizes ([876f729](https://github.com/millionscard/cash/commit/876f72985057c2b3ae4fbcb8268c2c40f03b61ee))
+- **playground:** update Button stories ([14e11f4](https://github.com/millionscard/cash/commit/14e11f492f42988320e131fc834473c3d65544fa))
+- **theme:** add "yellow.900" to colors ([7aaa964](https://github.com/millionscard/cash/commit/7aaa96481b9e262e24617a3276ef98fe0de5df10))
+- **theme:** add colors "purple.25" ([1e41be3](https://github.com/millionscard/cash/commit/1e41be3ce746265a25061fcb0f89e25380f12a0e))
+
 # [1.0.0-alpha.15](https://github.com/millionscard/cash/compare/v1.0.0-alpha.14...v1.0.0-alpha.15) (2022-04-07)
 
 ### Features
