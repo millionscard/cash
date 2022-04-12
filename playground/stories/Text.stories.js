@@ -1,29 +1,41 @@
 import React from 'react';
 import * as Cash from '@cash';
 
+const sizes = ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl'];
+const weights = ['regular', 'medium', 'bold'];
+
 export default () => (
   <>
-    <Cash.Box alignItems="center" mb={5}>
-      <Cash.Text>default</Cash.Text>
-      <Cash.Text fontWeight="bold">bold</Cash.Text>
-      <Cash.Text color="purple.500">colored</Cash.Text>
-      <Cash.Text color="fuschia.500">colored</Cash.Text>
-      <Cash.Text color="green.500">colored</Cash.Text>
-    </Cash.Box>
-
-    <Cash.Box alignItems="center">
+    <Cash.Card bg="black.10" mb={3}>
       <Cash.Heading mb={2}>Sizes</Cash.Heading>
+      {sizes.map(size => (
+        <Cash.Text size={size} key={size}>
+          {size}
+        </Cash.Text>
+      ))}
+    </Cash.Card>
 
-      <Cash.Text fontSize="xs">xs</Cash.Text>
-      <Cash.Text fontSize="sm">sm</Cash.Text>
-      <Cash.Text fontSize="md">md</Cash.Text>
-      <Cash.Text fontSize="lg">lg</Cash.Text>
-      <Cash.Text fontSize="xl">xl</Cash.Text>
-      <Cash.Text fontSize="2xl">2xl</Cash.Text>
-      <Cash.Text fontSize="3xl">3xl</Cash.Text>
-      <Cash.Text fontSize="4xl">4xl</Cash.Text>
-      <Cash.Text fontSize="5xl">5xl</Cash.Text>
-      <Cash.Text fontSize="6xl">6xl</Cash.Text>
-    </Cash.Box>
+    <Cash.Card bg="black.10" mb={3}>
+      <Cash.Heading mb={2}>Weights</Cash.Heading>
+      {weights.map(weight => (
+        <Cash.Text weight={weight} key={weight}>
+          {weight}
+        </Cash.Text>
+      ))}
+    </Cash.Card>
+
+    <Cash.Card bg="black.10" mb={3}>
+      <Cash.Heading mb={2}>Colored</Cash.Heading>
+      <Cash.Text color="purple.500">purple.500</Cash.Text>
+      <Cash.Text color="fuschia.500">fuschia.500</Cash.Text>
+      <Cash.Text color="green.500">green.500</Cash.Text>
+    </Cash.Card>
+
+    <Cash.Card bg="black.10" mb={3}>
+      <Cash.Heading mb={2}>Align</Cash.Heading>
+      <Cash.Text align="left">left</Cash.Text>
+      <Cash.Text align="center">center</Cash.Text>
+      <Cash.Text align="right">right</Cash.Text>
+    </Cash.Card>
   </>
 );
