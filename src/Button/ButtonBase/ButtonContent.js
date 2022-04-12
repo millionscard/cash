@@ -22,8 +22,8 @@ const StyledButtonView = styled.View`
   ${space}
 `;
 
-const StyledButtonText = styled.Text.attrs({ allowFontScaling: false })`
-  ${({ theme }) => theme.fonts.FuturaPT.bold};
+const StyledButtonText = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.FuturaPT.bold};
   line-height: 24px;
   ${textSizeVariants}
   ${colorSystemProp}
