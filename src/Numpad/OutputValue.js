@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 
 const TextValue = styled.Text(({ theme }) => ({
-  ...theme.fonts.FuturaPT.demi,
+  fontFamily: theme.fonts.FuturaPT.demi,
   fontSize: '60px',
   textAlign: 'center',
 }));

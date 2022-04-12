@@ -20,43 +20,19 @@ const lineHeights = {};
 
 const fonts = {
   SFProText: {
-    regular: {
-      fontFamily: 'SFProText-Regular',
-    },
-    medium: {
-      fontFamily: 'SFProText-Medium',
-    },
-    bold: {
-      fontFamily: 'SFProText-Bold',
-    },
+    regular: 'SFProText-Regular',
+    medium: 'SFProText-Medium',
+    bold: 'SFProText-Bold',
   },
   FuturaPT: {
-    light: {
-      fontFamily: 'FuturaPT-Light',
-    },
-    book: {
-      fontFamily: 'FuturaPT-Book',
-    },
-    medium: {
-      fontFamily: 'FuturaPT-Medium',
-    },
-    demi: {
-      fontFamily: 'FuturaPT-Demi',
-    },
-    bold: {
-      fontFamily: 'FuturaPT-Bold',
-    },
-    heavy: {
-      fontFamily: 'FuturaPT-Heavy',
-    },
-    extrabold: {
-      fontFamily: 'FuturaPT-ExtraBold',
-    },
+    light: 'FuturaPT-Light',
+    book: 'FuturaPT-Book',
+    medium: 'FuturaPT-Medium',
+    demi: 'FuturaPT-Demi',
+    bold: 'FuturaPT-Bold',
+    heavy: 'FuturaPT-Heavy',
+    extrabold: 'FuturaPT-ExtraBold',
   },
-
-  // Deprecated
-  heading: 'Futura PT',
-  text: 'SF Pro Text',
 };
 
 const typography = {
