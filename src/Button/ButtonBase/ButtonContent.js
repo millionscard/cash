@@ -22,7 +22,7 @@ const StyledButtonView = styled.View`
   ${space}
 `;
 
-const StyledButtonText = styled.Text`
+const StyledButtonText = styled.Text.attrs({ allowFontScaling: false })`
   ${({ theme }) => theme.fonts.FuturaPT.bold};
   line-height: 24px;
   ${textSizeVariants}
