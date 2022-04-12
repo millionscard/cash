@@ -10,7 +10,7 @@ const colorSchemes = {
   },
   gold: {
     gradient: theme.gradients.gold,
-    color: '#996E00',
+    color: 'yellow.900',
     textShadow: '0px 2px 0px rgba(255, 255, 255, 0.35)',
   },
   danger: {
