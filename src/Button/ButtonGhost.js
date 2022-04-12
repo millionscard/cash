@@ -14,7 +14,7 @@ const StyledPressable = styled.Pressable.attrs(({ onPress, disabled }) => ({
   ${sx}
 `;
 
-const StyledText = styled.Text`
+const StyledText = styled.Text.attrs({ allowFontScaling: false })`
   ${({ theme }) => theme.fonts.FuturaPT.medium};
   font-size: ${({ theme }) => theme.fontSizes.xl};
   color: ${({ theme }) => theme.colors.purple['500']};
