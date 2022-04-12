@@ -9,7 +9,8 @@ import {Props} from '../src/props'
 
 ```jsx
 <Text>default</Text>
-<Text fontWeight="bold">bold</Text>
+<Text weight="medium">medium</Text>
+<Text weight="bold">bold</Text>
 <Text color="purple.500">color</Text>
 ```
 
