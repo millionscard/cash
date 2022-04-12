@@ -1,7 +1,7 @@
 import { css } from 'styled-components';
 import { variant } from 'styled-system';
 
-export const sizeProps = ['xs', 'sm', 'md', 'lg'];
+export const sizeProps = ['sm', 'md', 'lg'];
 export const defaultSizeProp = 'lg';
 
 // Button shell
@@ -18,9 +18,9 @@ export const sizeVariants = variant({
 export const spaceSizeVariants = variant({
   prop: 'size',
   variants: {
-    lg: { px: 4 },
-    md: { px: 4 },
-    sm: { px: 3 },
+    lg: { px: '24px' },
+    md: { px: '20px' },
+    sm: { px: '12px' },
   },
 });
 
@@ -30,7 +30,7 @@ export const textSizeVariants = variant({
   variants: {
     lg: { fontSize: 'xl' },
     md: { fontSize: 'md' },
-    sm: { fontSize: 'md' },
+    sm: { fontSize: 'sm' },
   },
 });
 
