@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import Box from '../Box';
-import Text from '../Text';
+import Heading from '../Heading';
 import Icon from '../Icon';
 
 const KEYBOARD_BUTTON_SIZE = 80;
@@ -13,6 +13,13 @@ const KeyboardButton = styled.Pressable({
   alignItems: 'center',
   justifyContent: 'center',
 });
+
+const KeyboardButtonText = styled.Text.attrs({ allowFontScaling: false })(({ theme }) => ({
+  color: theme.colors.black[500],
+  fontFamily: theme.fonts.FuturaPT.bold,
+  fontSize: '24px',
+  textAlign: 'center',
+}));
 
 const KeyboardRow = styled(Box).attrs({
   flexDirection: 'row',
@@ -30,9 +37,7 @@ const Numpad = ({ onPress, decimal, ...props }) => {
         onPress={() => onPress(symbol.toString())}
         testID={`numpad-button-${symbol}`}
       >
-        <Text align="center" fontFamily="heading" fontSize="24px" fontWeight="700">
-          {symbol}
-        </Text>
+        <KeyboardButtonText>{symbol}</KeyboardButtonText>
       </KeyboardButton>
     ),
     [onPress]
