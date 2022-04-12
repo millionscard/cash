@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
-import { variant } from 'styled-system';
-import Text from './Text';
+import { variant, color, space } from 'styled-system';
 
 const sizeVariants = variant({
   prop: 'size',
@@ -19,20 +18,32 @@ const sizeVariants = variant({
   },
 });
 
-const Heading = styled(Text)`
-  ${({ theme }) => theme.fonts.FuturaPT.bold}
+const Heading = styled.Text.attrs({ allowFontScaling: false })`
+  font-family: ${({ theme, weight }) => theme.fonts.FuturaPT[weight]};
+  text-align: ${({ align }) => align};
   ${sizeVariants}
+  ${color}
+  ${space}
 `;
 
 Heading.propTypes = {
+  /** a value of `center`, `left` or `right` */
+  align: PropTypes.oneOf(['center', 'left', 'right']),
+  /** `color` from the theme */
+  color: PropTypes.string,
   /** results in smaller or larger Heading text size */
   size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']),
+  /** a value of `light`, `book`, `medium`, `demi`, `bold`, `heavy` or `extrabold` */
+  weight: PropTypes.oneOf(['light', 'book', 'medium', 'demi', 'bold', 'heavy', 'extrabold']),
   /** will shorten text with an ellipsis */
   numberOfLines: PropTypes.number,
 };
 
 Heading.defaultProps = {
+  align: 'left',
+  color: 'black.500',
   size: 'md',
+  weight: 'bold',
 };
 
 Heading.displayName = 'Heading';
