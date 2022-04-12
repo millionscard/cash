@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Alert } from 'react-native';
 import * as Cash from '@cash';
 
 export default () => {
