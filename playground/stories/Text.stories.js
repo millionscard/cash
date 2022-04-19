@@ -2,15 +2,28 @@ import React from 'react';
 import * as Cash from '@cash';
 
 const sizes = ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl'];
-const weights = ['regular', 'medium', 'bold'];
+const weights = [
+  'thin',
+  'extralight',
+  'light',
+  'regular',
+  'medium',
+  'semibold',
+  'bold',
+  'extrabold',
+  'black',
+];
 
 export default () => (
   <>
     <Cash.Card bg="black.10" mb={3}>
       <Cash.Heading mb={2}>Sizes</Cash.Heading>
       {sizes.map(size => (
-        <Cash.Text size={size} key={size}>
-          {size}
+        <Cash.Text size={size} key={size} mb="20px">
+          <Cash.Text size={size} weight="bold">
+            {size}
+          </Cash.Text>{' '}
+          lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quisquam quidem...
         </Cash.Text>
       ))}
     </Cash.Card>
