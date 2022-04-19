@@ -55,10 +55,6 @@ FuturaPT-ExtraBold
 FuturaPT-Heavy
 FuturaPT-Light
 FuturaPT-Medium
-
-SFProText-Bold
-SFProText-Medium
-SFProText-Regular
 ```
 
 To get the PostScript name of a font, use the following command:

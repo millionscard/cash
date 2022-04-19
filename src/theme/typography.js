@@ -16,28 +16,52 @@ const fontSizes = {
 };
 
 // TODO:
-const lineHeights = {};
+// const lineHeights = {};
 
 const fonts = {
-  SFProText: {
-    regular: 'SFProText-Regular',
-    medium: 'SFProText-Medium',
-    bold: 'SFProText-Bold',
+  Inter: {
+    100: 'Inter-Thin',
+    200: 'Inter-ExtraLight',
+    300: 'Inter-Light',
+    400: 'Inter-Regular',
+    500: 'Inter-Medium',
+    600: 'Inter-SemiBold',
+    700: 'Inter-Bold',
+    800: 'Inter-ExtraBold',
+    900: 'Inter-Black',
   },
   FuturaPT: {
-    light: 'FuturaPT-Light',
-    book: 'FuturaPT-Book',
-    medium: 'FuturaPT-Medium',
-    demi: 'FuturaPT-Demi',
-    bold: 'FuturaPT-Bold',
-    heavy: 'FuturaPT-Heavy',
-    extrabold: 'FuturaPT-ExtraBold',
+    300: 'FuturaPT-Light',
+    400: 'FuturaPT-Book',
+    500: 'FuturaPT-Medium',
+    600: 'FuturaPT-Demi',
+    700: 'FuturaPT-Bold',
+    800: 'FuturaPT-Heavy',
+    900: 'FuturaPT-ExtraBold',
   },
 };
 
+fonts.Inter.thin = fonts.Inter[100];
+fonts.Inter.extralight = fonts.Inter[200];
+fonts.Inter.light = fonts.Inter[300];
+fonts.Inter.regular = fonts.Inter[400];
+fonts.Inter.medium = fonts.Inter[500];
+fonts.Inter.semibold = fonts.Inter[600];
+fonts.Inter.bold = fonts.Inter[700];
+fonts.Inter.extrabold = fonts.Inter[800];
+fonts.Inter.black = fonts.Inter[900];
+
+fonts.FuturaPT.light = fonts.FuturaPT[300];
+fonts.FuturaPT.book = fonts.FuturaPT[400];
+fonts.FuturaPT.medium = fonts.FuturaPT[500];
+fonts.FuturaPT.demi = fonts.FuturaPT[600];
+fonts.FuturaPT.bold = fonts.FuturaPT[700];
+fonts.FuturaPT.heavy = fonts.FuturaPT[800];
+fonts.FuturaPT.extrabold = fonts.FuturaPT[900];
+
 const typography = {
   fontSizes,
-  lineHeights,
+  // lineHeights,
   fonts,
 };
 
