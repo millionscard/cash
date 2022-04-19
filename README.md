@@ -38,6 +38,16 @@ To prevent platform specific conditions our font file name is the same as the Po
 Currently these are the fonts available:
 
 ```
+Inter-Thin
+Inter-ExtraLight
+Inter-Light
+Inter-Medium
+Inter-Regular
+Inter-SemiBold
+Inter-Bold
+Inter-ExtraBold
+Inter-Black
+
 FuturaPT-Bold
 FuturaPT-Book
 FuturaPT-Demi
