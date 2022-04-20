@@ -1,7 +1,7 @@
-import { version } from '../package.json';
+import pkg from '../package.json';
 
 const BASE_PATH = process.env.BASE_PATH || '';
-const CASH_VERSION = version;
+const CASH_VERSION = pkg.version;
 
 export default {
   projectLink: 'https://github.com/millionscard/cash', // GitHub link in the navbar
