@@ -1,3 +1,14 @@
+# [1.0.0-alpha.17](https://github.com/millionscard/cash/compare/v1.0.0-alpha.16...v1.0.0-alpha.17) (2022-04-20)
+
+### Features
+
+- **Heading:** add "lineHeight" prop support ([2b55f7a](https://github.com/millionscard/cash/commit/2b55f7ac4866c7a970583c2bb9813d8b2454321c))
+- **Heading:** adjust size variants line heights ([9162058](https://github.com/millionscard/cash/commit/9162058d62e96bf139c87b64ca1847ff9b1ec19b))
+- **Heading:** default "demi" 600 font weight ([a87ffda](https://github.com/millionscard/cash/commit/a87ffdab477aedaf5d2aed202ab9fc1219de4560))
+- **Numpad:** disallow font scaling (a11y) ([b6e64ea](https://github.com/millionscard/cash/commit/b6e64eaa8f6142993360222eb5dae63e8f8facf4))
+- **playground:** add "Inter" custom font ([5dec979](https://github.com/millionscard/cash/commit/5dec97928a4c92dba152128382991de3a5a1bf5a))
+- replace "SFProText" with "Inter" ([a643233](https://github.com/millionscard/cash/commit/a64323357e240fc1b0e37a94935eea257b5a7a4a))
+
 # [1.0.0-alpha.16](https://github.com/millionscard/cash/compare/v1.0.0-alpha.15...v1.0.0-alpha.16) (2022-04-12)
 
 ### Features
