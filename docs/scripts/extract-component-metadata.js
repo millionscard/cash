@@ -1,10 +1,8 @@
-const { readFile } = require('fs/promises');
+const { readFile, writeFile } = require('fs/promises');
 const docgen = require('react-docgen');
 const globby = require('globby');
 
-exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => {
-  const { createNode } = actions;
-
+(async () => {
   // Extract compontent metadata from source files
   const files = globby.sync(['../src/**/*.js'], { absolute: true });
   const fileContents = await Promise.all(files.map(filePath => readFile(filePath)));
@@ -17,6 +15,7 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => 
       }
     })
     .filter(Boolean);
+
   const components = data.map(component => {
     return {
       name: component.displayName,
@@ -48,21 +47,9 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => 
     };
   });
 
-  // Add component metadata to GraphQL API
-  for (const component of components) {
-    const nodeContent = JSON.stringify(component);
-    const nodeMeta = {
-      id: createNodeId(component.name),
-      parent: null,
-      children: [],
-      internal: {
-        type: 'ComponentMetadata',
-        mediaType: 'text/html',
-        content: nodeContent,
-        contentDigest: createContentDigest(component),
-      },
-    };
-    const node = Object.assign({}, component, nodeMeta);
-    createNode(node);
-  }
-};
+  // Write to file
+  const componentJsonArray = JSON.stringify(components, null, 2);
+  await writeFile('./metadata.json', componentJsonArray, 'utf8');
+
+  console.log({ components });
+})();

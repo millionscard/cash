@@ -18,7 +18,7 @@ const sizeVariants = variant({
   },
 });
 
-const Heading = styled.Text.attrs({ allowFontScaling: false })`
+const StyledHeading = styled.Text.attrs({ allowFontScaling: false })`
   font-family: ${({ theme, weight }) =>
     theme.fonts.FuturaPT?.[weight] || theme.fonts.FuturaPT.demi};
   ${system({
@@ -31,6 +31,8 @@ const Heading = styled.Text.attrs({ allowFontScaling: false })`
   ${lineHeight}
   ${space}
 `;
+
+const Heading = ({ children, ...props }) => <StyledHeading {...props}>{children}</StyledHeading>;
 
 Heading.propTypes = {
   /** a value of `center`, `left` or `right` */
@@ -51,7 +53,5 @@ Heading.defaultProps = {
   size: 'md',
   weight: 'demi',
 };
-
-Heading.displayName = 'Heading';
 
 export default Heading;

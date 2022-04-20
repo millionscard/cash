@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import { color, space, system, lineHeight } from 'styled-system';
 
-const Text = styled.Text.attrs({ allowFontScaling: false })`
+const StyledText = styled.Text.attrs({ allowFontScaling: false })`
   font-family: ${({ theme, weight }) => theme.fonts.Inter?.[weight] || theme.fonts.Inter.regular};
   ${system({
     size: {
@@ -17,6 +17,8 @@ const Text = styled.Text.attrs({ allowFontScaling: false })`
   ${lineHeight}
   ${space}
 `;
+
+const Text = ({ children, ...props }) => <StyledText {...props}>{children}</StyledText>;
 
 Text.propTypes = {
   /** a value of `center`, `left` or `right` */
@@ -47,7 +49,5 @@ Text.defaultProps = {
   size: 'md',
   weight: 'medium',
 };
-
-Text.displayName = 'Text';
 
 export default Text;
