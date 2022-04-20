@@ -1,3 +1,0 @@
-# Tell the robots to stay away from our docs
-User-agent: *
-Disallow: /
