@@ -47,10 +47,9 @@ Heading.propTypes = {
 };
 
 Heading.defaultProps = {
-  align: 'left',
   color: 'black.500',
   size: 'md',
-  weight: 'bold',
+  weight: 'demi',
 };
 
 Heading.displayName = 'Heading';

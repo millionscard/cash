@@ -15,13 +15,27 @@ export default () => (
       ))}
     </Cash.Card>
 
-    <Cash.Card bg="black.10">
+    <Cash.Card bg="black.10" mb={3}>
       <Cash.Heading mb={2}>Weights</Cash.Heading>
       {weights.map(weight => (
         <Cash.Heading weight={weight} key={weight}>
           {weight}
         </Cash.Heading>
       ))}
+    </Cash.Card>
+
+    <Cash.Card bg="black.10" mb={3}>
+      <Cash.Heading mb={2}>Colored</Cash.Heading>
+      <Cash.Heading color="purple.500">purple.500</Cash.Heading>
+      <Cash.Heading color="fuschia.500">fuschia.500</Cash.Heading>
+      <Cash.Heading color="green.500">green.500</Cash.Heading>
+    </Cash.Card>
+
+    <Cash.Card bg="black.10" mb={3}>
+      <Cash.Heading mb={2}>Align</Cash.Heading>
+      <Cash.Heading align="left">left</Cash.Heading>
+      <Cash.Heading align="center">center</Cash.Heading>
+      <Cash.Heading align="right">right</Cash.Heading>
     </Cash.Card>
   </>
 );
