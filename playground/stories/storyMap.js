@@ -17,6 +17,35 @@ export default [
     ],
   },
   {
+    title: 'Typography',
+    stories: [
+      {
+        title: 'Text',
+        description: 'Primitive Element',
+        docs: '/Text',
+        stories: [
+          {
+            title: 'Example',
+            description: '',
+            component: require('./typography/Text.stories').default,
+          },
+        ],
+      },
+      {
+        title: 'Heading',
+        description: '',
+        docs: '/Heading',
+        stories: [
+          {
+            title: 'Example',
+            description: '',
+            component: require('./typography/Heading.stories').default,
+          },
+        ],
+      },
+    ],
+  },
+  {
     title: 'Components',
     stories: [
       {
@@ -55,30 +84,6 @@ export default [
             title: 'Example',
             description: '',
             component: require('./Box.stories').default,
-          },
-        ],
-      },
-      {
-        title: 'Text',
-        description: 'Primitive Element',
-        docs: '/Text',
-        stories: [
-          {
-            title: 'Example',
-            description: '',
-            component: require('./Text.stories').default,
-          },
-        ],
-      },
-      {
-        title: 'Heading',
-        description: '',
-        docs: '/Heading',
-        stories: [
-          {
-            title: 'Example',
-            description: '',
-            component: require('./Heading.stories').default,
           },
         ],
       },
