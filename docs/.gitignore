@@ -1,3 +1,2 @@
-# Gatsby
-.cache/
-public/
+.next
+out
