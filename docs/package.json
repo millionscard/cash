@@ -3,22 +3,21 @@
   "version": "1.0.0",
   "repository": "millionscard/cash",
   "scripts": {
-    "dev": "gatsby develop --open",
-    "build": "gatsby build --prefix-paths",
-    "deploy": "npm run build && gh-pages --dist public"
+    "dev": "next",
+    "build": "BASE_PATH=/cash next build && next export",
+    "prebuild": "rm -rf out && node scripts/extract-component-metadata.js",
+    "deploy": "npm run build && touch out/.nojekyll && gh-pages --dist out --dotfiles"
   },
   "dependencies": {
-    "@primer/gatsby-theme-doctocat": "1.7.0",
-    "@primer/octicons-react": "16.0.0",
-    "deepmerge": "4.2.2",
-    "gatsby": "^2.x",
-    "gatsby-plugin-mdx": "2.14.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.0.0"
+    "next": "12.1.5",
+    "nextra": "2.0.0-alpha.49",
+    "nextra-theme-docs": "2.0.0-alpha.50",
+    "react": "18.0.0",
+    "react-dom": "18.0.0"
   },
   "devDependencies": {
     "gh-pages": "3.2.3",
-    "globby": "^11.0.2",
-    "react-docgen": "^5.4.0"
+    "globby": "11.0.2",
+    "react-docgen": "5.4.0"
   }
 }
