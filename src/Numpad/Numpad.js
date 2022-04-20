@@ -2,7 +2,6 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import Box from '../Box';
-import Heading from '../Heading';
 import Icon from '../Icon';
 
 const KEYBOARD_BUTTON_SIZE = 80;
