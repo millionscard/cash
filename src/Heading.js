@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
-import { variant, color, space } from 'styled-system';
+import { variant, color, space, system, lineHeight } from 'styled-system';
 
 const sizeVariants = variant({
   prop: 'size',
@@ -19,10 +19,16 @@ const sizeVariants = variant({
 });
 
 const Heading = styled.Text.attrs({ allowFontScaling: false })`
-  font-family: ${({ theme, weight }) => theme.fonts.FuturaPT[weight]};
-  text-align: ${({ align }) => align};
+  font-family: ${({ theme, weight }) =>
+    theme.fonts.FuturaPT?.[weight] || theme.fonts.FuturaPT.demi};
+  ${system({
+    align: {
+      property: 'textAlign',
+    },
+  })}
   ${sizeVariants}
   ${color}
+  ${lineHeight}
   ${space}
 `;
 
@@ -31,6 +37,7 @@ Heading.propTypes = {
   align: PropTypes.oneOf(['center', 'left', 'right']),
   /** `color` from the theme */
   color: PropTypes.string,
+  lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   /** results in smaller or larger Heading text size */
   size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']),
   /** a value of `light`, `book`, `medium`, `demi`, `bold`, `heavy` or `extrabold` */
