@@ -1,0 +1,23 @@
+name: Deploy docs
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - docs
+      - src
+jobs:
+  deploy-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3.1.0
+        with:
+          node-version: 16
+          cache: 'npm'
+      - run: npm install
+      - run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run docs:deploy -- -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
