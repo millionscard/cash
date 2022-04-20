@@ -1,8 +1,11 @@
+import { version } from '../package.json';
+
 const BASE_PATH = process.env.BASE_PATH || '';
+const CASH_VERSION = version;
 
 export default {
   projectLink: 'https://github.com/millionscard/cash', // GitHub link in the navbar
-  docsRepositoryBase: 'https://github.com/millionscard/cash/blob/main/docs', // base URL for the docs repository
+  docsRepositoryBase: 'https://github.com/millionscard/cash/blob/main/docs/pages', // base URL for the docs repository
   titleSuffix: ' – Cash',
   nextLinks: true,
   prevLinks: true,
@@ -11,8 +14,8 @@ export default {
   darkMode: true,
   floatTOC: true,
   footer: true,
-  footerText: null,
-  footerEditLink: `Edit this page on GitHub`,
+  footerText: () => `v${CASH_VERSION}`,
+  footerEditLink: 'Edit this page on GitHub',
   logo: (
     <>
       <svg
