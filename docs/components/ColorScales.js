@@ -18,7 +18,7 @@ const ColorCard = ({ color, name }) => (
 );
 
 const ColorScales = () => (
-  <div className="grid  gap-6">
+  <div className="grid gap-6">
     {Object.entries(colors).map(([scaleName, scale]) =>
       typeof scale === 'object' ? (
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
