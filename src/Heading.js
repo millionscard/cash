@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import { variant, color, space, system, lineHeight } from 'styled-system';
