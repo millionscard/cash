@@ -17,6 +17,23 @@ export default [
     ],
   },
   {
+    title: 'Forms',
+    stories: [
+      {
+        title: 'Radio',
+        description: null,
+        docs: null,
+        stories: [
+          {
+            title: 'Radio',
+            description: '',
+            component: require('./forms/Radio.stories').default,
+          },
+        ],
+      },
+    ],
+  },
+  {
     title: 'Typography',
     stories: [
       {
