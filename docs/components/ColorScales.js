@@ -4,19 +4,22 @@ import theme from '../../src/theme';
 const { colors } = theme;
 const { transparent, ...filteredColors } = colors;
 
-const ColorCard = ({ color, name }) => (
-  <div
-    className="flex flex-col justify-end h-52 rounded-2xl shadow-2xl shadow-slate-300/60 overflow-hidden"
-    style={{ background: color }}
-  >
-    <div className="py-1 px-3">
-      <span className={`text-xl font-bold text-${getContrast(color)}`}>{name}</span>
+const ColorCard = ({ color, name }) => {
+  const contrastColor = getContrast(color);
+  return (
+    <div
+      className="flex flex-col justify-end h-52 rounded-2xl shadow-2xl shadow-slate-300/60 overflow-hidden"
+      style={{ background: color }}
+    >
+      <div className="py-1 px-3">
+        <span className={`text-xl font-bold text-${contrastColor}`}>{name}</span>
+      </div>
+      <div className="py-2 px-3 bg-white">
+        <small className="text-sm text-gray-500">{color}</small>
+      </div>
     </div>
-    <div className="py-2 px-3 bg-white">
-      <small className="text-sm text-gray-500">{color}</small>
-    </div>
-  </div>
-);
+  );
+};
 
 const ColorScales = () => (
   <div className="grid gap-6 mt-10">

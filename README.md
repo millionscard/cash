@@ -70,9 +70,3 @@ _Note: `fontconfig` is available via homebrew `brew cask install fontconfig`._
 ```bash
 npm run docs
 ```
-
-### Deploy docs
-
-```bash
-npm run docs:deploy
-```

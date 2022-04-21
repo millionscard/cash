@@ -5,25 +5,24 @@ const { gradients } = theme;
 
 const GradientCard = ({ gradient, name }) => {
   const { colors, locations } = gradient;
-  const gradientSet = colors.map(
-    (color, index) => `${color}${locations?.[index] ? ` ${locations[index] * 100}%` : ''}`
-  );
-  const linearGradient = `linear-gradient(180deg, ${gradientSet.join(', ')})`;
-  console.log({ name, linearGradient });
+  const gradientValues = colors.map((color, index) => {
+    const location = locations?.[index] ? ` ${locations[index] * 100}%` : '';
+    return `${color}${location}`;
+  });
 
   return (
     <div>
       <div
         className="h-52 rounded-2xl shadow-2xl shadow-slate-300/60"
-        style={{ background: linearGradient }}
+        style={{ background: `linear-gradient(180deg, ${gradientValues.join(', ')})` }}
       />
-
       <div className="px-3">
         <small className="text-sm text-gray-500 text-right">{name}</small>
       </div>
     </div>
   );
 };
+
 const GradientScales = () => (
   <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
     {Object.entries(gradients).map(([gradientName, gradient]) => (
