@@ -13,7 +13,6 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "docs": "(cd ./docs && npm run dev)",
-    "docs:deploy": "(cd ./docs && npm run deploy)",
     "test": "echo \"No test specified\" && exit 0",
     "lint": "eslint '**/*.js'",
     "format": "prettier --write '**/[!__]*.{js,md,json}' --ignore-path ./.gitignore",

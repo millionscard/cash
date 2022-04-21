@@ -29,8 +29,4 @@ All documentation files are located in the `/pages` directory.
 
 ## Deploy to Github Pages
 
-Runs `npm run build` and publishes the `/out` directory to [GitHub Pages](https://millionscard.github.io/cash/)
-
-```bash
-npm run deploy
-```
+The documentation page gets automatically deployed to [GitHub Pages](https://millionscard.github.io/cash/) via [GitHub Actions](../.github/workflows/deploy-docs.yml).
