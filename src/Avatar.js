@@ -26,7 +26,7 @@ const StyledImage = styled.Image`
 `;
 
 const Avatar = ({ src, ...props }) => {
-  return <StyledImage source={src} {...props} />;
+  return <StyledImage source={src} accessibilityRole="image" {...props} />;
 };
 
 Avatar.propTypes = {
