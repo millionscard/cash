@@ -38,7 +38,7 @@ const StyledPressable = styled.Pressable.attrs(({ onPress, disabled }) => ({
 
 const ButtonIcon = ({ icon, isDisabled, ...props }) => {
   return (
-    <StyledPressable disabled={isDisabled} {...props}>
+    <StyledPressable accessibilityRole="button" disabled={isDisabled} {...props}>
       <Icon name={icon} width={iconSizes[props.size]} height={iconSizes[props.size]} />
     </StyledPressable>
   );
