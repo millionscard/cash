@@ -26,6 +26,10 @@ const StyledHeading = styled.Text.attrs({ allowFontScaling: false })`
     align: {
       property: 'textAlign',
     },
+    shadow: {
+      property: 'textShadow',
+      scale: 'shadows',
+    },
   })}
   ${sizeVariants}
   ${color}
@@ -45,6 +49,8 @@ Heading.propTypes = {
   size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']),
   /** a value of `light`, `book`, `medium`, `demi`, `bold`, `heavy` or `extrabold` */
   weight: PropTypes.oneOf(['light', 'book', 'medium', 'demi', 'bold', 'heavy', 'extrabold']),
+  /** `shadows` from the theme */
+  shadow: PropTypes.string,
   /** will shorten text with an ellipsis */
   numberOfLines: PropTypes.number,
 };
