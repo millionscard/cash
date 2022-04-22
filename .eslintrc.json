@@ -1,4 +1,4 @@
 {
   "root": true,
-  "extends": ["@react-native-community"]
+  "extends": ["@react-native-community", "plugin:react-native-a11y/all"]
 }
