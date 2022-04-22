@@ -5,6 +5,10 @@
   "author": "MyCard Inc.",
   "license": "MIT",
   "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./hooks": "./src/hooks"
+  },
   "files": [
     "src"
   ],
