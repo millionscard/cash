@@ -1,3 +1,21 @@
+# [1.0.0-alpha.18](https://github.com/millionscard/cash/compare/v1.0.0-alpha.17...v1.0.0-alpha.18) (2022-04-22)
+
+### Bug Fixes
+
+- ReferenceError: Property 'React' doesn't exist ([c908e3e](https://github.com/millionscard/cash/commit/c908e3e31cb9a435c5c6bfa3bb32522abacc6010))
+
+### Features
+
+- **ButtonBase:** improve a11y ([c72f9e7](https://github.com/millionscard/cash/commit/c72f9e7a513dee06d29d341533d131e3c403d100))
+- **ButtonGhost:** improve a11y ([2319140](https://github.com/millionscard/cash/commit/2319140d6c4517cb2ce5993580a44f3fe5d4ac14))
+- **ButtonIcon:** improve a11y ([c9f7c0a](https://github.com/millionscard/cash/commit/c9f7c0a6c2c8cc0dce8826c980b9d34cc6242df1))
+- **Heading:** introduce shadow support ([f1d3a54](https://github.com/millionscard/cash/commit/f1d3a54b06a0879541a09b559956ff4775d93710))
+- **Link:** improve a11y ([0c14af5](https://github.com/millionscard/cash/commit/0c14af500cd9ff09f598c1edcdc3f38bca68da9f))
+- **Numpad:** improve a11y ([882e016](https://github.com/millionscard/cash/commit/882e0163edf6d080bc053c96498dac07d590c623))
+- **Text:** introduce shadow support ([07d4c0e](https://github.com/millionscard/cash/commit/07d4c0e4573e39fa498733082e3de151f7fc62cd))
+- **theme:** introduce shadows ([1fb9d5f](https://github.com/millionscard/cash/commit/1fb9d5f5f7487ff12a1f16b6856b1a1eef47baa3))
+- **theme:** slightly adjust gradient locations ([c25a7f5](https://github.com/millionscard/cash/commit/c25a7f59029d0420f8fd6f5fbc07be7acf249a3a))
+
 # [1.0.0-alpha.17](https://github.com/millionscard/cash/compare/v1.0.0-alpha.16...v1.0.0-alpha.17) (2022-04-20)
 
 ### Features
