@@ -9,6 +9,15 @@ export default () => {
       <Cash.Box bg="black.10" p={3} _text={{ color: 'black.300' }} sx={{ bg: 'purple.100' }}>
         Box
       </Cash.Box>
+      <Cash.Box
+        shadow="md"
+        bg="white"
+        borderBottomLeftRadius="md"
+        borderBottomRightRadius="md"
+        p={3}
+      >
+        Box with shadow
+      </Cash.Box>
       <Cash.Box bgGradient={gradients.purple} p={3} _text={{ color: 'white' }}>
         Box with bgGradient
       </Cash.Box>

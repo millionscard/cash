@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import LinearGradient from 'react-native-linear-gradient';
 import {
+  system,
   space,
   color,
   typography,
@@ -10,15 +11,19 @@ import {
   flexbox,
   background,
   border,
+  borderRadius,
   position,
 } from 'styled-system';
 import Text from './Text';
 import sx from './sx';
 
 const StyledBox = styled.View(
-  {
-    overflow: 'hidden',
-  },
+  system({
+    shadow: {
+      property: 'boxShadow',
+      scale: 'shadows',
+    },
+  }),
   space,
   color,
   typography,
@@ -31,19 +36,22 @@ const StyledBox = styled.View(
 );
 
 const BgGradient = React.memo(
-  styled(LinearGradient)({
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-  })
+  styled(LinearGradient)(
+    {
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+    },
+    borderRadius
+  )
 );
 
 const Box = ({ children, _text, bgGradient, ...props }) => {
   return (
     <StyledBox {...props}>
-      {bgGradient && <BgGradient {...bgGradient} />}
+      {bgGradient && <BgGradient borderRadius={props.borderRadius} {...bgGradient} />}
       {/** check for should render children as text */}
       {React.Children.map(children, child => {
         return typeof child === 'string' ||
@@ -66,6 +74,8 @@ Box.propTypes = {
     colors: PropTypes.arrayOf(PropTypes.string),
     locations: PropTypes.arrayOf(PropTypes.number),
   }),
+  /** `shadows` from the theme */
+  shadow: PropTypes.string,
   sx: PropTypes.object,
 };
 
