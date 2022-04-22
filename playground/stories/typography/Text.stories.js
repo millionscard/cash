@@ -50,5 +50,15 @@ export default () => (
       <Cash.Text align="center">center</Cash.Text>
       <Cash.Text align="right">right</Cash.Text>
     </Cash.Card>
+
+    <Cash.Card bg="black.10" mb={3}>
+      <Cash.Heading mb={2}>Shadow</Cash.Heading>
+      <Cash.Text bg="white" shadow="text.md">
+        text.md
+      </Cash.Text>
+      <Cash.Text color="purple.500" shadow="0px 2px 2px rgba(141, 52, 255, 0.5)">
+        custom
+      </Cash.Text>
+    </Cash.Card>
   </>
 );
