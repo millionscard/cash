@@ -8,7 +8,7 @@ export default [
         docs: null,
         stories: [
           {
-            title: 'Animations',
+            title: 'Example',
             description: '',
             component: require('./animations/useAnimation.stories').default,
           },
@@ -25,7 +25,7 @@ export default [
         docs: null,
         stories: [
           {
-            title: 'Radio',
+            title: 'Example',
             description: '',
             component: require('./forms/Radio.stories').default,
           },
