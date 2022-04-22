@@ -39,6 +39,7 @@ const ButtonBase = ({ children, onPress, isDisabled, isFullWidth, isLoading, ...
       isPressed={isPressed}
       disabled={isDisabled}
       isFullWidth={isFullWidth}
+      accessibilityRole="button"
       {...props}
     >
       {/** TODO: forward props to children with speecific displayName */}
