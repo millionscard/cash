@@ -8,7 +8,7 @@ const Link = ({ children, url, color, ...props }) => {
   const handlePress = useCallback(() => Linking.openURL(url), [url]);
 
   return (
-    <Pressable onPress={handlePress}>
+    <Pressable onPress={handlePress} accessibilityRole="link">
       <Box {...props}>
         <Text color={color}>{children}</Text>
       </Box>
