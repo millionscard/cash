@@ -6,7 +6,7 @@ import Icon from '../Icon';
 
 const KEYBOARD_BUTTON_SIZE = 80;
 
-const KeyboardButton = styled.Pressable({
+const KeyboardButton = styled.Pressable.attrs({ accessibilityRole: 'keyboardkey' })({
   width: KEYBOARD_BUTTON_SIZE,
   height: KEYBOARD_BUTTON_SIZE,
   alignItems: 'center',
@@ -30,11 +30,12 @@ const KeyboardRow = styled(Box).attrs({
 
 const Numpad = ({ onPress, decimal, ...props }) => {
   const renderCell = useCallback(
-    symbol => (
+    (symbol, buttonProps = {}) => (
       <KeyboardButton
         key={symbol}
         onPress={() => onPress(symbol.toString())}
         testID={`numpad-button-${symbol}`}
+        {...buttonProps}
       >
         <KeyboardButtonText>{symbol}</KeyboardButtonText>
       </KeyboardButton>
@@ -53,9 +54,18 @@ const Numpad = ({ onPress, decimal, ...props }) => {
       {renderRow([4, 5, 6])}
       {renderRow([7, 8, 9])}
       <KeyboardRow>
-        {decimal ? renderCell('.') : <Box width={KEYBOARD_BUTTON_SIZE} />}
+        {decimal ? (
+          renderCell('.', { testID: 'numpad-button-period', accessibilityLabel: 'Period' })
+        ) : (
+          <Box width={KEYBOARD_BUTTON_SIZE} />
+        )}
         {renderCell(0)}
-        <KeyboardButton onPress={() => onPress('back')}>
+        <KeyboardButton
+          onPress={() => onPress('back')}
+          testID="numpad-button-backspace"
+          accessibilityLabel="Backspace"
+          accessibilityHint="Delete the last digit"
+        >
           <Icon name="Backspace" width="20" height="14" />
         </KeyboardButton>
       </KeyboardRow>

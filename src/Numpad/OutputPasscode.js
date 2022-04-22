@@ -16,7 +16,16 @@ const PasscodeValue = styled(Box)({
 
 const OutputPasscode = ({ value, ...props }) => {
   return (
-    <Box flexDirection="row" justifyContent="center" {...props}>
+    <Box
+      flexDirection="row"
+      justifyContent="center"
+      accessible={true}
+      accessibilityRole="adjustable"
+      accessibilityLabel="Passcode"
+      accessibilityHint="Enter passcode"
+      accessibilityValue={{ text: value }}
+      {...props}
+    >
       <PasscodeValue isEmpty={!value || !value.length} />
       <PasscodeValue isEmpty={!value || !(value.length > 1)} />
       <PasscodeValue isEmpty={!value || !(value.length > 2)} />
