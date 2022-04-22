@@ -6,6 +6,8 @@ on:
     paths:
       - 'docs/**'
       - 'src/**'
+    tags:
+      - 'v*'
 jobs:
   deploy-docs:
     runs-on: ubuntu-latest
