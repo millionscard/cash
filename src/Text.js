@@ -10,6 +10,10 @@ const StyledText = styled.Text.attrs({ allowFontScaling: false })`
       property: 'fontSize',
       scale: 'fontSizes',
     },
+    shadow: {
+      property: 'textShadow',
+      scale: 'shadows',
+    },
     align: {
       property: 'textAlign',
     },
@@ -41,6 +45,8 @@ Text.propTypes = {
     'extrabold',
     'black',
   ]),
+  /** `shadows` from the theme */
+  shadow: PropTypes.string,
   /** will shorten text with an ellipsis */
   numberOfLines: PropTypes.number,
 };
