@@ -23,7 +23,7 @@ const StyledText = styled.Text`
 
 const ButtonGhost = ({ children, leftIcon, rightIcon, isDisabled, ...props }) => {
   return (
-    <StyledPressable disabled={isDisabled} {...props}>
+    <StyledPressable accessibilityRole="button" disabled={isDisabled} {...props}>
       {leftIcon ? <Box mr="2">{leftIcon}</Box> : null}
       <StyledText>{children}</StyledText>
       {rightIcon ? <Box ml="2">{rightIcon}</Box> : null}
