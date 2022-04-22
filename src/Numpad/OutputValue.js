@@ -9,7 +9,15 @@ const TextValue = styled.Text(({ theme }) => ({
 }));
 
 const OutputValue = ({ value }) => {
-  return <TextValue numberOfLines={1}>{value ? value : '0'}</TextValue>;
+  return (
+    <TextValue
+      numberOfLines={1}
+      accessibilityRole="adjustable"
+      accessibilityValue={{ text: value }}
+    >
+      {value ? value : '0'}
+    </TextValue>
+  );
 };
 
 OutputValue.propTypes = {
