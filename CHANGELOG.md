@@ -1,3 +1,13 @@
+# [1.0.0-alpha.19](https://github.com/millionscard/cash/compare/v1.0.0-alpha.18...v1.0.0-alpha.19) (2022-04-25)
+
+### Features
+
+- **Avatar:** add accessibilityRole ([0b6bc85](https://github.com/millionscard/cash/commit/0b6bc853f6a5fc3defe8f9f37c0e323e95f42c0b))
+- **Box:** add bg gradient support ([590579e](https://github.com/millionscard/cash/commit/590579e0c1cb42b14c7ecd7b92743f6311e1e6b0))
+- **Box:** introduce iOS shadow support ([803b36e](https://github.com/millionscard/cash/commit/803b36ed459347d6389657512e587d76dbfeaf3f))
+- export "/hooks" subpath ([ce5c569](https://github.com/millionscard/cash/commit/ce5c569d4587af3b3b1e9866dadf820d2deb2d89))
+- **theme:** add shadow text.sm ([d549926](https://github.com/millionscard/cash/commit/d54992640ff3a6c16b28f61a097f249a7fb08323))
+
 # [1.0.0-alpha.18](https://github.com/millionscard/cash/compare/v1.0.0-alpha.17...v1.0.0-alpha.18) (2022-04-22)
 
 ### Bug Fixes
