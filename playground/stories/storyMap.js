@@ -17,6 +17,23 @@ export default [
     ],
   },
   {
+    title: 'Forms',
+    stories: [
+      {
+        title: 'Switch',
+        description: null,
+        docs: null,
+        stories: [
+          {
+            title: 'Example',
+            description: '',
+            component: require('./forms/Switch.stories').default,
+          },
+        ],
+      },
+    ],
+  },
+  {
     title: 'Typography',
     stories: [
       {
