@@ -2,16 +2,23 @@ import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import Box from '../Box';
+import Stack from '../Stack';
 import Icon from '../Icon';
+import theme from '../theme';
 
-const KEYBOARD_BUTTON_SIZE = 80;
+const KEYBOARD_BUTTON_HEIGHT = 48;
+const KEYBOARD_BUTTON_GAP = '5px';
 
-const KeyboardButton = styled.Pressable.attrs({ accessibilityRole: 'keyboardkey' })({
-  width: KEYBOARD_BUTTON_SIZE,
-  height: KEYBOARD_BUTTON_SIZE,
-  alignItems: 'center',
-  justifyContent: 'center',
-});
+const KeyboardButton = styled.Pressable.attrs({ accessibilityRole: 'keyboardkey' })(
+  ({ theme }) => ({
+    flex: 1,
+    height: KEYBOARD_BUTTON_HEIGHT,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: theme.colors.black['5'],
+    borderRadius: '4px',
+  })
+);
 
 const KeyboardButtonText = styled.Text.attrs({ allowFontScaling: false })(({ theme }) => ({
   color: theme.colors.black[500],
@@ -20,10 +27,9 @@ const KeyboardButtonText = styled.Text.attrs({ allowFontScaling: false })(({ the
   textAlign: 'center',
 }));
 
-const KeyboardRow = styled(Box).attrs({
-  flexDirection: 'row',
-  alignItems: 'center',
-  justifyContent: 'space-between',
+const KeyboardRow = styled(Stack).attrs({
+  direction: 'row',
+  gap: KEYBOARD_BUTTON_GAP,
 })({
   width: '100%',
 });
@@ -49,7 +55,7 @@ const Numpad = ({ onPress, decimal, ...props }) => {
   );
 
   return (
-    <Box {...props}>
+    <Stack direction="column" gap={KEYBOARD_BUTTON_GAP} {...props}>
       {renderRow([1, 2, 3])}
       {renderRow([4, 5, 6])}
       {renderRow([7, 8, 9])}
@@ -57,7 +63,7 @@ const Numpad = ({ onPress, decimal, ...props }) => {
         {decimal ? (
           renderCell('.', { testID: 'numpad-button-period', accessibilityLabel: 'Period' })
         ) : (
-          <Box width={KEYBOARD_BUTTON_SIZE} />
+          <Box flex={1} />
         )}
         {renderCell(0)}
         <KeyboardButton
@@ -69,7 +75,7 @@ const Numpad = ({ onPress, decimal, ...props }) => {
           <Icon name="Backspace" width="20" height="14" />
         </KeyboardButton>
       </KeyboardRow>
-    </Box>
+    </Stack>
   );
 };
 
