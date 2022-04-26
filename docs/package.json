@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "repository": "millionscard/cash",
   "scripts": {
-    "dev": "next",
+    "dev": "npm run metadata && next",
     "build": "BASE_PATH=/cash next build && next export",
-    "prebuild": "rm -rf out && node scripts/extract-component-metadata.js",
-    "deploy": "npm run build && touch out/.nojekyll && gh-pages --dist out --dotfiles"
+    "prebuild": "rm -rf out && npm run metadata",
+    "deploy": "npm run build && touch out/.nojekyll && gh-pages --dist out --dotfiles",
+    "metadata": "node scripts/extract-component-metadata.js"
   },
   "dependencies": {
     "next": "12.1.5",
