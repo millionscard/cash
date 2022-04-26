@@ -13,6 +13,7 @@ export { default as Numpad, OutputValue, OutputPasscode } from './Numpad';
 export { default as Radio, RadioGroup } from './Radio';
 export { default as Stack } from './Stack';
 export { default as Card } from './Card';
+export { default as Checkbox } from './Checkbox/Checkbox';
 export { default as Heading } from './Heading';
 export { default as Icon } from './Icon';
 export { default as Link } from './Link';
