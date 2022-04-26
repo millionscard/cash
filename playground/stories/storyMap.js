@@ -20,6 +20,18 @@ export default [
     title: 'Forms',
     stories: [
       {
+        title: 'Checkbox',
+        description: null,
+        docs: null,
+        stories: [
+          {
+            title: 'Example',
+            description: '',
+            component: require('./forms/Checkbox.stories').default,
+          },
+        ],
+      },
+      {
         title: 'Radio',
         description: null,
         docs: null,
