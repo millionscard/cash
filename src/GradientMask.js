@@ -2,26 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import LinearGradient from 'react-native-linear-gradient';
 import MaskedView from '@react-native-masked-view/masked-view';
-import Text from './Text';
+import Box from './Box';
 
-const GradientText = ({ colors, coordinates, ...props }) => {
+const GradientMask = ({ colors, coordinates, children }) => {
   return (
-    <MaskedView maskElement={<Text {...props} />}>
+    <MaskedView maskElement={<Box>{children}</Box>}>
       <LinearGradient colors={colors} {...coordinates}>
-        <Text opacity="0" {...props} />
+        <Box opacity="0">{children}</Box>
       </LinearGradient>
     </MaskedView>
   );
 };
 
-GradientText.propTypes = {
+GradientMask.propTypes = {
   /** array of at least two color values that represent gradient colors */
   colors: PropTypes.array,
   /** declares the position that the gradient starts at */
   coordinates: PropTypes.object,
+  /** children of the component */
+  children: PropTypes.node,
 };
 
-GradientText.defaultProps = {
+GradientMask.defaultProps = {
   colors: ['#8D34FF', '#FF006E'],
   /** Horizontal gradient */
   coordinates: {
@@ -30,4 +32,4 @@ GradientText.defaultProps = {
   },
 };
 
-export default GradientText;
+export default GradientMask;

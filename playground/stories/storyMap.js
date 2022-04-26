@@ -117,14 +117,14 @@ export default [
         ],
       },
       {
-        title: 'GradientText',
+        title: 'GradientMask',
         description: null,
-        docs: '/GradientText',
+        docs: '/GradientMask',
         stories: [
           {
             title: 'Example',
             description: '',
-            component: require('./GradientText.stories').default,
+            component: require('./GradientMask.stories').default,
           },
         ],
       },
