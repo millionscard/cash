@@ -1,3 +1,9 @@
+# [1.0.0-alpha.21](https://github.com/millionscard/cash/compare/v1.0.0-alpha.20...v1.0.0-alpha.21) (2022-04-26)
+
+### Features
+
+- **Numpad:** update UI (elevated buttons) ([26312d3](https://github.com/millionscard/cash/commit/26312d3ecfd74b822b1cf437839cce987a0b31a3))
+
 # [1.0.0-alpha.20](https://github.com/millionscard/cash/compare/v1.0.0-alpha.19...v1.0.0-alpha.20) (2022-04-26)
 
 ### Features
