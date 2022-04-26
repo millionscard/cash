@@ -50,6 +50,15 @@ export default () => {
           </Cash.Button>
         </Cash.Stack>
       </Cash.Card>
+
+      <Cash.Card mt={3}>
+        <Cash.Stack direction="column" gap="16px">
+          <Cash.Button colorScheme="purple">Purple</Cash.Button>
+          <Cash.Button colorScheme="purple" isDisabled>
+            Purple disabled
+          </Cash.Button>
+        </Cash.Stack>
+      </Cash.Card>
     </>
   );
 };

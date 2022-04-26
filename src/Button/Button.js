@@ -11,6 +11,10 @@ const colorSchemes = {
     bg: 'rgba(255, 255, 255, 0.25)',
     color: 'white',
   },
+  purple: {
+    bg: 'purple.25',
+    color: 'purple.500',
+  },
 };
 
 const Button = ({
@@ -64,8 +68,8 @@ Button.propTypes = {
   rightIcon: PropTypes.element,
   /** a value of `lg`, `md`, or `sm` */
   size: PropTypes.oneOf(['lg', 'md', 'sm']),
-  /** a value of `white` or `translucent` */
-  colorScheme: PropTypes.oneOf(['white', 'translucent']),
+  /** a value of `white`, `translucent` or `purple` */
+  colorScheme: PropTypes.oneOf(['white', 'translucent', 'purple']),
 };
 
 Button.defaultProps = {
