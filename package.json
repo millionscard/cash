@@ -7,7 +7,8 @@
   "main": "src/index.js",
   "exports": {
     ".": "./src/index.js",
-    "./hooks": "./src/hooks"
+    "./hooks": "./src/hooks/index.js",
+    "./package.json": "./package.json"
   },
   "files": [
     "src"
