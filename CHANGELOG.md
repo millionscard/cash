@@ -1,3 +1,13 @@
+# [1.0.0-alpha.22](https://github.com/millionscard/cash/compare/v1.0.0-alpha.21...v1.0.0-alpha.22) (2022-04-28)
+
+### Features
+
+- **GradientMask:** introduce start & end props ([3509adb](https://github.com/millionscard/cash/commit/3509adb604a344d8afe1dbd4942af6286a1f50b9))
+
+### BREAKING CHANGES
+
+- **GradientMask:** Replaces the `coordinates` prop with `start` & `end`.
+
 # [1.0.0-alpha.21](https://github.com/millionscard/cash/compare/v1.0.0-alpha.20...v1.0.0-alpha.21) (2022-04-26)
 
 ### Features
