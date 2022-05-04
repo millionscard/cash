@@ -4,7 +4,6 @@ import styled from 'styled-components/native';
 import Box from '../Box';
 import Stack from '../Stack';
 import Icon from '../Icon';
-import theme from '../theme';
 
 const KEYBOARD_BUTTON_HEIGHT = 48;
 const KEYBOARD_BUTTON_GAP = '5px';
