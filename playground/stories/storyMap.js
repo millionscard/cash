@@ -217,6 +217,18 @@ export default [
           },
         ],
       },
+      {
+        title: 'TextDivider',
+        description: null,
+        docs: null,
+        stories: [
+          {
+            title: 'Examples',
+            description: '',
+            component: require('./TextDivider.stories').default,
+          },
+        ],
+      },
     ],
   },
 ];
