@@ -1,3 +1,10 @@
+# [1.0.0-alpha.23](https://github.com/millionscard/cash/compare/v1.0.0-alpha.22...v1.0.0-alpha.23) (2022-05-05)
+
+### Features
+
+- introduce TextDivider ([26991c1](https://github.com/millionscard/cash/commit/26991c15ef2b77074321736f716d38e6c49bad9e))
+- **Link:** accept Text props ([1d8283a](https://github.com/millionscard/cash/commit/1d8283ab827726b2b89af638c1f02522db60404d))
+
 # [1.0.0-alpha.22](https://github.com/millionscard/cash/compare/v1.0.0-alpha.21...v1.0.0-alpha.22) (2022-04-28)
 
 ### Features
