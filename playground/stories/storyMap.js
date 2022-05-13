@@ -39,7 +39,7 @@ export default [
       {
         title: 'Text',
         description: 'Primitive Element',
-        docs: '/Text',
+        docs: '/components/typography/Text',
         stories: [
           {
             title: 'Example',
@@ -51,7 +51,7 @@ export default [
       {
         title: 'Heading',
         description: '',
-        docs: '/Heading',
+        docs: '/components/typography/Heading',
         stories: [
           {
             title: 'Example',
@@ -68,7 +68,7 @@ export default [
       {
         title: 'Buttons',
         description: 'Primitive Element',
-        docs: '/Buttons',
+        docs: '/components/Buttons',
         stories: [
           {
             title: 'Button',
@@ -95,7 +95,7 @@ export default [
       {
         title: 'Box',
         description: 'Primitive Element',
-        docs: '/Box',
+        docs: '/components/Box',
         stories: [
           {
             title: 'Example',
@@ -107,7 +107,7 @@ export default [
       {
         title: 'Card',
         description: null,
-        docs: '/Card',
+        docs: '/components/Card',
         stories: [
           {
             title: 'Example',
@@ -119,7 +119,7 @@ export default [
       {
         title: 'GradientMask',
         description: null,
-        docs: '/GradientMask',
+        docs: '/components/GradientMask',
         stories: [
           {
             title: 'Example',
@@ -131,7 +131,7 @@ export default [
       {
         title: 'Icon',
         description: null,
-        docs: '/Icon',
+        docs: '/components/Icon',
         stories: [
           {
             title: 'Examples',
@@ -143,7 +143,7 @@ export default [
       {
         title: 'ActivityIndicator',
         description: null,
-        docs: '/ActivityIndicator',
+        docs: '/components/ActivityIndicator',
         stories: [
           {
             title: 'Examples',
@@ -155,7 +155,7 @@ export default [
       {
         title: 'Link',
         description: null,
-        docs: '/Link',
+        docs: '/components/Link',
         stories: [
           {
             title: 'Examples',
@@ -167,7 +167,7 @@ export default [
       {
         title: 'Stack',
         description: null,
-        docs: '/Stack',
+        docs: '/components/Stack',
         stories: [
           {
             title: 'Examples',
@@ -179,7 +179,7 @@ export default [
       {
         title: 'Avatar',
         description: null,
-        docs: '/Avatar',
+        docs: null,
         stories: [
           {
             title: 'Examples',
@@ -191,7 +191,7 @@ export default [
       {
         title: 'Numpad',
         description: null,
-        docs: '/Numpad',
+        docs: '/components/Numpad',
         stories: [
           {
             title: 'Value',
@@ -208,7 +208,7 @@ export default [
       {
         title: 'TextDivider',
         description: null,
-        docs: null,
+        docs: '/components/TextDivider',
         stories: [
           {
             title: 'Examples',
