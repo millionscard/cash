@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.17.10",
-    "@babel/runtime": "7.16.7",
+    "@babel/runtime": "7.17.9",
     "@react-native-async-storage/async-storage": "1.15.17",
     "@react-native-community/eslint-config": "3.0.1",
     "@react-navigation/native": "6.0.8",
