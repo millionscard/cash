@@ -129,18 +129,6 @@ export default [
         ],
       },
       {
-        title: 'Modal',
-        description: null,
-        docs: '/Modal',
-        stories: [
-          {
-            title: 'Example',
-            description: '',
-            component: require('./Modal.stories').default,
-          },
-        ],
-      },
-      {
         title: 'Icon',
         description: null,
         docs: '/Icon',
