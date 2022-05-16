@@ -1,3 +1,9 @@
+# [1.0.0-alpha.24](https://github.com/millionscard/cash/compare/v1.0.0-alpha.23...v1.0.0-alpha.24) (2022-05-16)
+
+### Bug Fixes
+
+- **theme:** "deepsea" gradient name typo ([193c60f](https://github.com/millionscard/cash/commit/193c60f8f906ef49c8225988fc0cd7ffc203be91))
+
 # [1.0.0-alpha.23](https://github.com/millionscard/cash/compare/v1.0.0-alpha.22...v1.0.0-alpha.23) (2022-05-05)
 
 ### Features
