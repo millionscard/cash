@@ -11,7 +11,7 @@ const gradients = {
   sunset: { colors: ['#FFD700', '#EB6352', '#6900F0'], locations: [0, 0.4844, 1] },
   fire: { colors: ['#FFE666', '#FC9B37', '#E92D07'], locations: [0, 0.5318, 1] },
   ice: { colors: ['#9EE2FF', '#3AC4FF', '#3A86FF'], locations: [0, 0.5104, 1] },
-  deapsea: { colors: ['#3AC4FF', '#790FFF'] },
+  deepsea: { colors: ['#3AC4FF', '#790FFF'] },
   moonlight: {
     colors: ['#790FFF', '#007AF5'],
     locations: [0, 0.6875],
