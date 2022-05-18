@@ -13,7 +13,8 @@ jobs:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3.1.1
         with:
-          node-version: 14
+          node-version: 16
+          cache: 'npm'
           # Setup .npmrc file to publish to GitHub Packages
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
