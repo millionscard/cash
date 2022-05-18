@@ -51,7 +51,16 @@ const BgGradient = React.memo(
 const Box = ({ children, _text, bgGradient, ...props }) => {
   return (
     <StyledBox {...props}>
-      {bgGradient && <BgGradient borderRadius={props.borderRadius} {...bgGradient} />}
+      {bgGradient && (
+        <BgGradient
+          borderRadius={props.borderRadius}
+          borderTopLeftRadius={props.borderTopLeftRadius}
+          borderTopRightRadius={props.borderTopRightRadius}
+          borderBottomLeftRadius={props.borderBottomLeftRadius}
+          borderBottomRightRadius={props.borderBottomRightRadius}
+          {...bgGradient}
+        />
+      )}
       {/** check for should render children as text */}
       {React.Children.map(children, child => {
         return typeof child === 'string' ||

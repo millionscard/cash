@@ -24,6 +24,15 @@ export default () => {
       <Cash.Box bgGradient={gradients.pink} p={3} _text={{ color: 'white' }} borderRadius="md">
         Box rounded with bgGradient
       </Cash.Box>
+      <Cash.Box
+        bgGradient={gradients.pink}
+        p={3}
+        _text={{ color: 'white' }}
+        borderTopLeftRadius="md"
+        borderBottomRightRadius="md"
+      >
+        Box partly rounded with bgGradient
+      </Cash.Box>
     </Cash.Stack>
   );
 };
