@@ -1,3 +1,9 @@
+# [1.0.0-alpha.25](https://github.com/millionscard/cash/compare/v1.0.0-alpha.24...v1.0.0-alpha.25) (2022-05-18)
+
+### Bug Fixes
+
+- **Box:** pass all border radius props to bgGradient ([7f66cd5](https://github.com/millionscard/cash/commit/7f66cd58fe406a6fe8550012f0c2c1374f951de1))
+
 # [1.0.0-alpha.24](https://github.com/millionscard/cash/compare/v1.0.0-alpha.23...v1.0.0-alpha.24) (2022-05-16)
 
 ### Bug Fixes
