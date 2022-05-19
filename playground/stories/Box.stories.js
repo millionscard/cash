@@ -29,7 +29,7 @@ export default () => {
         p={3}
         _text={{ color: 'white' }}
         borderTopLeftRadius="md"
-        borderBottomRightRadius="md"
+        borderBottomRightRadius={20}
       >
         Box partly rounded with bgGradient
       </Cash.Box>

@@ -2,20 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
 import LinearGradient from 'react-native-linear-gradient';
-import {
-  system,
-  space,
-  color,
-  typography,
-  layout,
-  flexbox,
-  background,
-  border,
-  borderRadius,
-  position,
-} from 'styled-system';
+import * as styledSystem from 'styled-system';
 import Text from './Text';
 import sx from './sx';
+
+const { compose, system } = styledSystem;
 
 const StyledBox = styled.View(
   system({
@@ -24,14 +15,16 @@ const StyledBox = styled.View(
       scale: 'shadows',
     },
   }),
-  space,
-  color,
-  typography,
-  layout,
-  flexbox,
-  background,
-  border,
-  position,
+  compose(
+    styledSystem.space,
+    styledSystem.color,
+    styledSystem.typography,
+    styledSystem.layout,
+    styledSystem.flexbox,
+    styledSystem.background,
+    styledSystem.border,
+    styledSystem.position
+  ),
   sx
 );
 
@@ -44,7 +37,13 @@ const BgGradient = React.memo(
       right: 0,
       bottom: 0,
     },
-    borderRadius
+    compose(
+      styledSystem.border.borderRadius,
+      styledSystem.border.borderTopLeftRadius,
+      styledSystem.border.borderTopRightRadius,
+      styledSystem.border.borderBottomLeftRadius,
+      styledSystem.border.borderBottomRightRadius
+    )
   )
 );
 
