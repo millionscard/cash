@@ -1,3 +1,11 @@
+# [1.0.0-alpha.26](https://github.com/millionscard/cash/compare/v1.0.0-alpha.25...v1.0.0-alpha.26) (2022-05-19)
+
+### Performance Improvements
+
+- **Box:** compose system props ([fb09f8c](https://github.com/millionscard/cash/commit/fb09f8c5203c723642c4a312ebbaf66b15ed6438))
+- **Heading:** compose system props ([66cf3da](https://github.com/millionscard/cash/commit/66cf3da56910d1cca2dc49ca11a808ed4d24648c))
+- **Text:** compose system props ([daeec44](https://github.com/millionscard/cash/commit/daeec44e01c186d2ce3f29b72aafbfe0c50a58a5))
+
 # [1.0.0-alpha.25](https://github.com/millionscard/cash/compare/v1.0.0-alpha.24...v1.0.0-alpha.25) (2022-05-18)
 
 ### Bug Fixes
