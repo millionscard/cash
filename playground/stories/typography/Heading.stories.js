@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Cash from '@cash';
 
-const sizes = ['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl'];
+const sizes = ['3xs', '2xs', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl'];
 const weights = ['light', 'book', 'medium', 'demi', 'bold', 'heavy', 'extrabold'];
 
 export default () => (

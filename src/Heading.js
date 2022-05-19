@@ -23,6 +23,8 @@ const StyledHeading = styled.Text.attrs({ allowFontScaling: false })(
     variant({
       prop: 'size',
       variants: {
+        '3xs': { fontSize: 'xs', lineHeight: '14px' },
+        '2xs': { fontSize: 'sm', lineHeight: '16px' },
         xs: { fontSize: 'md', lineHeight: '20px', letterSpacing: '-0.25px' },
         sm: { fontSize: 'xl', lineHeight: '24px', letterSpacing: '-0.25px' },
         md: { fontSize: '2xl', lineHeight: '24px', letterSpacing: '-0.5px' },
@@ -47,7 +49,20 @@ Heading.propTypes = {
   color: PropTypes.string,
   lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   /** results in smaller or larger Heading text size */
-  size: PropTypes.oneOf(['xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl']),
+  size: PropTypes.oneOf([
+    '3xs',
+    '2xs',
+    'xs',
+    'sm',
+    'md',
+    'lg',
+    'xl',
+    '2xl',
+    '3xl',
+    '4xl',
+    '5xl',
+    '6xl',
+  ]),
   /** a value of `light`, `book`, `medium`, `demi`, `bold`, `heavy` or `extrabold` */
   weight: PropTypes.oneOf(['light', 'book', 'medium', 'demi', 'bold', 'heavy', 'extrabold']),
   /** `shadows` from the theme */
