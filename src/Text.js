@@ -1,27 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components/native';
-import { color, space, system, lineHeight } from 'styled-system';
+import { color, space, lineHeight, system, compose } from 'styled-system';
 
-const StyledText = styled.Text.attrs({ allowFontScaling: false })`
-  font-family: ${({ theme, weight }) => theme.fonts.Inter?.[weight] || theme.fonts.Inter.regular};
-  ${system({
-    size: {
-      property: 'fontSize',
-      scale: 'fontSizes',
-    },
-    shadow: {
-      property: 'textShadow',
-      scale: 'shadows',
-    },
-    align: {
-      property: 'textAlign',
-    },
-  })}
-  ${color}
-  ${lineHeight}
-  ${space}
-`;
+const StyledText = styled.Text.attrs({ allowFontScaling: false })(
+  ({ theme, weight }) => ({
+    fontFamily: theme.fonts.Inter?.[weight] || theme.fonts.Inter.regular,
+  }),
+  compose(
+    color,
+    space,
+    lineHeight,
+    system({
+      size: {
+        property: 'fontSize',
+        scale: 'fontSizes',
+      },
+      shadow: {
+        property: 'textShadow',
+        scale: 'shadows',
+      },
+      align: {
+        property: 'textAlign',
+      },
+    })
+  )
+);
 
 const Text = ({ children, ...props }) => <StyledText {...props}>{children}</StyledText>;
 
