@@ -1,3 +1,9 @@
+# [1.0.0-alpha.27](https://github.com/millionscard/cash/compare/v1.0.0-alpha.26...v1.0.0-alpha.27) (2022-05-19)
+
+### Features
+
+- **Heading:** add "3xs" & "2xs" to size variants ([20e139a](https://github.com/millionscard/cash/commit/20e139a7b8e8c3e07009eadd73b7975a1e9a5f8a))
+
 # [1.0.0-alpha.26](https://github.com/millionscard/cash/compare/v1.0.0-alpha.25...v1.0.0-alpha.26) (2022-05-19)
 
 ### Performance Improvements
