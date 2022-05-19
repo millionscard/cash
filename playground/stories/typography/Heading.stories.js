@@ -9,9 +9,14 @@ export default () => (
     <Cash.Card mb={3} bg="black.10">
       <Cash.Heading mb={2}>Sizes</Cash.Heading>
       {sizes.map(size => (
-        <Cash.Heading numberOfLines={1} size={size} key={size}>
-          A million ways to win
-        </Cash.Heading>
+        <>
+          <Cash.Text size="2xs" align="right">
+            {size}
+          </Cash.Text>
+          <Cash.Heading numberOfLines={1} size={size} key={size}>
+            A million ways to win
+          </Cash.Heading>
+        </>
       ))}
     </Cash.Card>
 
