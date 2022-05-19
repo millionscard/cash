@@ -4,19 +4,17 @@ import styled from 'styled-components/native';
 import { variant } from 'styled-system';
 import Box from './Box';
 
-const spaceVariants = variant({
-  prop: 'space',
-  variants: {
-    none: { p: 0 },
-    sm: { p: 8 },
-    md: { p: 20 },
-    lg: { p: 30 },
-  },
-});
-
-const StyledCard = styled(Box)`
-  ${spaceVariants}
-`;
+const StyledCard = styled(Box)(
+  variant({
+    prop: 'space',
+    variants: {
+      none: { p: 0 },
+      sm: { p: 8 },
+      md: { p: 20 },
+      lg: { p: 30 },
+    },
+  })
+);
 
 const Card = props => <StyledCard {...props} />;
 
