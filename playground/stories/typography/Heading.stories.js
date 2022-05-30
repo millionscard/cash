@@ -44,6 +44,11 @@ export default () => (
     </Cash.Card>
 
     <Cash.Card bg="black.10" mb={3}>
+      <Cash.Heading mb={2}>Uppercase</Cash.Heading>
+      <Cash.Heading uppercase>Uppercase</Cash.Heading>
+    </Cash.Card>
+
+    <Cash.Card bg="black.10" mb={3}>
       <Cash.Heading mb={2}>Colored</Cash.Heading>
       <Cash.Heading color="purple.500">purple.500</Cash.Heading>
       <Cash.Heading color="fuschia.500">fuschia.500</Cash.Heading>

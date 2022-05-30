@@ -4,8 +4,9 @@ import styled from 'styled-components/native';
 import { variant, color, space, lineHeight, system, compose } from 'styled-system';
 
 const StyledHeading = styled.Text.attrs({ allowFontScaling: false })(
-  ({ theme, weight }) => ({
+  ({ theme, weight, uppercase }) => ({
     fontFamily: theme.fonts.FuturaPT?.[weight] || theme.fonts.FuturaPT.demi,
+    textTransform: uppercase ? 'uppercase' : 'none',
   }),
   compose(
     color,
@@ -71,6 +72,8 @@ Heading.propTypes = {
   shadow: PropTypes.string,
   /** will shorten text with an ellipsis */
   numberOfLines: PropTypes.number,
+  /** converts all characters to uppercase */
+  uppercase: PropTypes.bool,
 };
 
 Heading.defaultProps = {
