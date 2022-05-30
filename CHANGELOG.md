@@ -1,3 +1,11 @@
+# [1.0.0-alpha.28](https://github.com/millionscard/cash/compare/v1.0.0-alpha.27...v1.0.0-alpha.28) (2022-05-30)
+
+### Features
+
+- **Heading:** add "4xs" to size variant ([e563f27](https://github.com/millionscard/cash/commit/e563f2720bc52b1677eaca83066218e68731a24e))
+- **Heading:** add uppercase bool prop ([4c7041e](https://github.com/millionscard/cash/commit/4c7041e76f68b8d0430485625de0efb42e18dcdc))
+- **Text:** add uppercase bool prop ([55e1765](https://github.com/millionscard/cash/commit/55e17652a607efccfe20810daefee850c9d9fb8a))
+
 # [1.0.0-alpha.27](https://github.com/millionscard/cash/compare/v1.0.0-alpha.26...v1.0.0-alpha.27) (2022-05-19)
 
 ### Features
