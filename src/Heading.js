@@ -23,6 +23,7 @@ const StyledHeading = styled.Text.attrs({ allowFontScaling: false })(
     variant({
       prop: 'size',
       variants: {
+        '4xs': { fontSize: '2xs', lineHeight: '12px' },
         '3xs': { fontSize: 'xs', lineHeight: '14px' },
         '2xs': { fontSize: 'sm', lineHeight: '16px' },
         xs: { fontSize: 'md', lineHeight: '20px', letterSpacing: '-0.25px' },
@@ -50,6 +51,7 @@ Heading.propTypes = {
   lineHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   /** results in smaller or larger Heading text size */
   size: PropTypes.oneOf([
+    '4xs',
     '3xs',
     '2xs',
     'xs',
