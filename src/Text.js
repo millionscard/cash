@@ -4,8 +4,9 @@ import styled from 'styled-components/native';
 import { color, space, lineHeight, system, compose } from 'styled-system';
 
 const StyledText = styled.Text.attrs({ allowFontScaling: false })(
-  ({ theme, weight }) => ({
+  ({ theme, weight, uppercase }) => ({
     fontFamily: theme.fonts.Inter?.[weight] || theme.fonts.Inter.regular,
+    textTransform: uppercase ? 'uppercase' : 'none',
   }),
   compose(
     color,
@@ -53,6 +54,8 @@ Text.propTypes = {
   shadow: PropTypes.string,
   /** will shorten text with an ellipsis */
   numberOfLines: PropTypes.number,
+  /** converts all characters to uppercase */
+  uppercase: PropTypes.bool,
 };
 
 Text.defaultProps = {
