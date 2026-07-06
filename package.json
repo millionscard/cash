@@ -62,7 +62,7 @@
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "3.13.1",
     "react-native-svg": "12.3.0",
-    "styled-components": "5.3.3",
+    "styled-components": "6.4.3",
     "styled-system": "5.1.5"
   },
   "peerDependencies": {
